@@ -20,7 +20,7 @@ The nature of web projects and tasks will mean that some checks are not relevant
 
 2. Ensure all relevant pre-release checks take place at a time that will allow for any necessary changes. By following the progressive enhancement approach set out in this Development Guide, developers will have a good sense of the project 'health' at any given time, reducing the likelihood that substantial changes will be needed as development nears completion.
 
-> A lessons learned form for each project that is to be completed during a Design Team meeting with a view to capturing insights that might benefit our approach to future projects.
+A lessons learned form for each project that is to be completed during a Design Team meeting with a view to capturing insights that might benefit our approach to future projects.
 
 ## Conducting a peer review
 
