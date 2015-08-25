@@ -115,7 +115,7 @@ There are no forms on this page.
 
 ### Tables
 
-All tabular data is placed in HTML <table> elements. We do not use tables for layout and do not repurpose other elements to recreate table-like representations of data. WebAIM provide guidance on ensuring tables are accessible7
+All tabular data is placed in HTML ```<table>``` elements. We do not use tables for layout and do not repurpose other elements to recreate table-like representations of data. WebAIM provide guidance on ensuring tables are accessible7
 
 The peer review will check that:	
 
@@ -285,9 +285,9 @@ There are a few principles which we follow for all JavaScript development. The p
 1. JavaScript is well commented to aid maintainability
 2. JavaScript is well formatted with consistent indentation
 3. JavaScript does not cause any errors (including tests across older IE which do not support ECMAScript 5)
-4. JavaScript is externalised into .js files. We do not place JavaScript in <script> tags or use native8 inline event handling (i.e. <a href="#" onclick="triggerAlert('Bad practice!'); return false;">Joe</a>
+4. JavaScript is externalised into .js files. We do not place JavaScript in ```<script>``` tags or use native8 inline event handling (i.e. ```<a href="#" onclick="triggerAlert('Bad practice!'); return false;">Joe</a>```
 5. JavaScript is minified and concatenated where possible
-6. JavaScript dependent elements are created with JavaScript. For example, if a <button> is used to perform a JavaScript action only, that button should be created with JavaScript
+6. JavaScript dependent elements are created with JavaScript. For example, if a ```<button>``` is used to perform a JavaScript action only, that button should be created with JavaScript
 7. Server-side processing is used to ensure JavaScript is loaded only where needed
 Are these checks relevant to this specific project? (If not, provide a comment and proceed to next item)
 
@@ -295,7 +295,7 @@ Are these checks relevant to this specific project? (If not, provide a comment a
 
 ##### Reviewer comments
 
-The toggleable elements are currently using accordion functionality from our library. They should use the $.bindToggle() utility. 
+The toggleable elements are currently using accordion functionality from our library. They should use the ```$.bindToggle()``` utility. 
 
 Please speak to the Lead Front-end Developer if you need guidance on meeting any of these requirements.
 
