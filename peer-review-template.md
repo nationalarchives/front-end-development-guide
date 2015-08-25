@@ -1,8 +1,8 @@
 # Development guide
 
-# Checkpoint 1: We meet needs using HTML
+## Checkpoint 1: We meet needs using HTML
 
-## General HTML principles
+### General HTML principles
 There are a few principles which we follow for all HTML we produce. The peer review will check that:
 
 1. HTML5 Document type is used and ```<html>``` tag includes an appropriate ```‘lang’``` attribute2 – typically ```en-gb```
@@ -10,13 +10,13 @@ There are a few principles which we follow for all HTML we produce. The peer rev
 3. The ```<title>``` tag is present and follows pattern ```{h1} | The National Archives```
 4. HTML is indented to illustrate its structure
 
-### Are these checks relevant to this specific project? (If not, provide a comment and proceed to next item)
+#### Are these checks relevant to this specific project? (If not, provide a comment and proceed to next item)
 
-### Developer(s) comments
+##### Developer(s) comments
 
-### Reviewer comments
+##### Reviewer comments
 
-## HTML5 syntax style
+### HTML5 syntax style
 
 HTML5 has considerably relaxed the syntax rules for HTML. To ensure consistency across projects we have agreed upon a house syntax style. The peer review will check that:
 
@@ -26,11 +26,11 @@ HTML5 has considerably relaxed the syntax rules for HTML. To ensure consistency 
 4. All tag names and attributes are in lower case
 Are these checks relevant to this specific project? (If not, provide a comment and proceed to next item)
 
-### Developer(s) comments
+##### Developer(s) comments
 
-### Reviewer comments
+##### Reviewer comments
 
-## There is an appropriate HTML outline
+### There is an appropriate HTML outline
 
 HTML outlines are an important means for navigating pages with assistive technologies. All digital services we produce should have a logical document outline with one ```<h1>``` tag, and each subsequent <h*> 'sectioning' the content below it. Because the HTML5 outlining algorithm is not yet implemented in any browsers, we do not rely on HTML5 sectioning elements for outlines.
 
@@ -39,13 +39,13 @@ The peer review will check that:
 1. The HTML outline is logical and based on an appropriate heading structure
 2. All content appears in the correct part of the outline
 
-### Are these checks relevant to this specific project? (If not, provide a comment and proceed to next item)
+#### Are these checks relevant to this specific project? (If not, provide a comment and proceed to next item)
 
-### Developer(s) comments
+##### Developer(s) comments
 
-### Reviewer comments
+##### Reviewer comments
 
-## Appropriate semantics are used
+### Appropriate semantics are used
 
 We use HTML elements for their intended purpose, ensuring valid semantics4 wherever possible. We do use HTML5 sectioning element semantics (<section>, <article>, <nav>, <aside>), but do so with care and avoid using them for document outlining (the HTML5 outline5 algorithm is not yet implemented in any user agents).
 
@@ -55,25 +55,25 @@ We use WAI-ARIA landmark roles (application, banner, complementary, contentinfo,
 2. HTML5 sectioning elements are used for semantics not structure
 3. HTML5 sectioning elements are not over used in place of <div> elements
 4. All relevant WAI-ARIA landmarks have been applied
-## Are these checks relevant to this specific project? (If not, provide a comment and proceed to next item)
+### Are these checks relevant to this specific project? (If not, provide a comment and proceed to next item)
 
-### Developer(s) comments
+##### Developer(s) comments
 
-### Reviewer comments
+##### Reviewer comments
 
-## HTML is ordered to support user needs
+### HTML is ordered to support user needs
 
 Navigation will typically be before primary content, and secondary content after primary. The peer review will check that:
 
 1. The tab order fits the user goals
 2. In-page navigation is facilitated with 'skip to content' and 'back to top' links where appropriate
-### Are these checks relevant to this specific project? (If not, provide a comment and proceed to next item)
+#### Are these checks relevant to this specific project? (If not, provide a comment and proceed to next item)
 
-### Developer(s) comments
+##### Developer(s) comments
 
-### Reviewer comments
+##### Reviewer comments
 
-## Forms
+### Forms
 
 We ensure our forms are accessible6, usable and make best use of HTML5 and ARIA semantics. The peer review will check that:
 
@@ -87,13 +87,13 @@ We ensure our forms are accessible6, usable and make best use of HTML5 and ARIA 
 8. HTML5 form validation is used, supported by JavaScript validation for older browsers. This is covered in the JavaScript section of this document
 9. Error messages are clearly visible and associated (both visually and within the DOM) to the corresponding input
 
-### Are these checks relevant to this specific project? (If not, provide a comment and proceed to next item)
+#### Are these checks relevant to this specific project? (If not, provide a comment and proceed to next item)
 
-### Developer(s) comments
+##### Developer(s) comments
 
-### Reviewer comments
+##### Reviewer comments
 
-## Tables
+### Tables
 
 All tabular data is placed in HTML <table> elements. We do not use tables for layout and do not repurpose other elements to recreate table-like representations of data. WebAIM provide guidance on ensuring tables are accessible7
 
@@ -102,13 +102,13 @@ The peer review will check that:
 1. All tabular data is in ```<table>``` elements
 2. A brief descriptive ```<caption>``` is provided for tables
 3. Table headings are provided in ```<th>``` elements with an appropriate scope attribute
-### Are these checks relevant to this specific project? (If not, provide a comment and proceed to next item)
+#### Are these checks relevant to this specific project? (If not, provide a comment and proceed to next item)
 
-### Developer(s) comments
+##### Developer(s) comments
 
-### Reviewer comments
+##### Reviewer comments
 
-## SVGs are accessible
+### SVGs are accessible
 Where appropriate images should be delivered in SVG format since this offers two significant accessibility benefits: the scalability of the image allows users with less than 20/20 vision to enjoy crisp images when zoomed, and; the inclusion of links within the SVG will allow for keyboard navigation by default. 
 
 Guidance for using SVG includes: 
@@ -125,14 +125,14 @@ Related resources are:
 1. Tips for creating accessible SVG, by Leonie Watson http://www.sitepoint.com/tips-accessible-svg/ 
 
 Where SVGs are used, they are used accessibly
-### Are these checks relevant to this specific project? (If not, provide a comment and proceed to next item)
+#### Are these checks relevant to this specific project? (If not, provide a comment and proceed to next item)
 
-### Developer(s) comments
+##### Developer(s) comments
 
-### Reviewer comments
+##### Reviewer comments
 
 
-## There is good use of appropriate ARIA roles to support native semantics
+### There is good use of appropriate ARIA roles to support native semantics
 While HTML5 provides a range of new semantic elements which are recognised by newer browsers, there is poor support (even in newer browsers) when it comes to reporting these elements to the Accessibility API. This, and the lack of semantics when these elements are polyfilled with JavaScript, makes ARIA an important tool. The HTML5 spec was updated in mid-2014 to indicate compatibility between elements and ARIA roles.
 
 Related resources are: 
@@ -141,16 +141,16 @@ Related resources are:
 2. ARIA authoring guidance http://www.w3.org/TR/wai-aria-practices/
 3. WCAG 2.0 Principle 4 http://www.w3.org/TR/WCAG20/#robust 
 
-## ARIA roles are provided to support native semantics
+### ARIA roles are provided to support native semantics
 Are these checks relevant to this specific project? (If not, provide a comment and proceed to next item)
 
-### Developer(s) comments
+##### Developer(s) comments
 
-### Reviewer comments
+##### Reviewer comments
 
-# Checkpoint 2: Enhance with CSS
+## Checkpoint 2: Enhance with CSS
 
-## General CSS principles
+### General CSS principles
 
 There are a number of principles which we adopt for all CSS. The peer review will check that:
 
@@ -163,24 +163,24 @@ There are a number of principles which we adopt for all CSS. The peer review wil
 7. Styles targeting older IE are placed in IE specific stylesheets that are included using conditional comments
 8. Hacks for other browsers are placed in the 'shame.css' file
 
-### Are these checks relevant to this specific project? (If not, provide a comment and proceed to next item)
+#### Are these checks relevant to this specific project? (If not, provide a comment and proceed to next item)
 
-###  Developer(s) comments
+####  Developer(s) comments
 
-### Reviewer comments
+##### Reviewer comments
 
-## User focus is clearly visible
+### User focus is clearly visible
 
 It is important to ensure interactive elements have a distinct visual appearance when activated. The peer review will check that:
 
 All interactive elements have a clearly differentiated visual appearance when they have focus (this can typically be achieved using :focus) 
-### Are these checks relevant to this specific project? (If not, provide a comment and proceed to next item)
+#### Are these checks relevant to this specific project? (If not, provide a comment and proceed to next item)
 
-### Developer(s) comments
+##### Developer(s) comments
 
-### Reviewer comments
+##### Reviewer comments
 
-## Mobile first responsive design
+### Mobile first responsive design
 We adopt a mobile-first approach which includes:
 
 * Beginning from the premise that all content will be available to all users regardless of their screen size, unless there is a clear justification for doing otherwise
@@ -194,13 +194,13 @@ The peer review will check that:
 2. We have developed in a way that accommodates devices which have low processing power and/or a slow network
 3. The viewport is fixed in older IE
 
-### Are these checks relevant to this specific project? (If not, provide a comment and proceed to next item)
+#### Are these checks relevant to this specific project? (If not, provide a comment and proceed to next item)
 
-### Developer(s) comments
+##### Developer(s) comments
 
-### Reviewer comments
+##### Reviewer comments
 
-## CSS formatting standards
+### CSS formatting standards
 To ensure consistency across developers and assist with the maintainability of our code base we adopt a number of general CSS code formatting standards. The peer review will check that:
 
 1. Code blocks have consistent indentation to reflect their hierarchy
@@ -208,23 +208,23 @@ To ensure consistency across developers and assist with the maintainability of o
 3. All rules are closed with a semicolon
 Are these checks relevant to this specific project? (If not, provide a comment and proceed to next item)
 
-### Developer(s) comments
+##### Developer(s) comments
 
-### Reviewer comments
+##### Reviewer comments
 
-## CSS structure
+### CSS structure
 CSS is structured to reflect a mobile-first approach. Each stylesheet begins with universal rules outside of a media query block. The peer review will check that:
 
 1. @media rules are introduced sequentially, from smallest to largest
 2. Overly specific queries that are difficult to test are avoided - i.e. @media tv and (min-width: 700px) and (max-width: 960px) and (orientation: landscape) { ... }
 
-### Are these checks relevant to this specific project? (If not, provide a comment and proceed to next item)
+#### Are these checks relevant to this specific project? (If not, provide a comment and proceed to next item)
 
-### Developer(s) comments
+##### Developer(s) comments
 
-### Reviewer comments
+##### Reviewer comments
 
-## Print CSS
+### Print CSS
 We need to ensure we have accounted for users printing our content. While modern browsers provide a facility to emulate and debug print from within Developer Tools, we have encountered issues where IE prints differently to other browsers. The peer review will check that:
 
 1. The printed page is well formatted, with legible content
@@ -233,13 +233,13 @@ We need to ensure we have accounted for users printing our content. While modern
 4. Print styles are contained within in a @media = print block
 Are these checks relevant to this specific project? (If not, provide a comment and proceed to next item)
 
-## Developer(s) comments
+#### Developer(s) comments
 
-## Reviewer comments
+#### Reviewer comments
 
-# Checkpoint 3: Enhance with JavaScript
+## Checkpoint 3: Enhance with JavaScript
 
-## General JavaScript principles
+### General JavaScript principles
 There are a few principles which we follow for all JavaScript development. The peer review will check that:
 
 1. JavaScript is well commented to aid maintainability
@@ -251,9 +251,9 @@ There are a few principles which we follow for all JavaScript development. The p
 7. Server-side processing is used to ensure JavaScript is loaded only where needed
 Are these checks relevant to this specific project? (If not, provide a comment and proceed to next item)
 
-### Developer(s) comments
+##### Developer(s) comments
 
-### Reviewer comments
+##### Reviewer comments
 
 Please speak to the Lead Front-end Developer if you need guidance on meeting any of these requirements.
 
@@ -262,7 +262,7 @@ Please speak to the Lead Front-end Developer if you need guidance on meeting any
 
 We therefore use only jQuery or similarly 'battle tested' framework (such as AngularJS) for managing interaction with the DOM.
 
-## jQueryUI is the primary source for custom widgets
+### jQueryUI is the primary source for custom widgets
 It is essential that we consider the implications for users of assistive technologies when reviewing third-party plugins that provide non-standard user interface elements. This will include:
 
 * Ensuring that suitable ARIA role and state management is provided
@@ -271,7 +271,7 @@ It is essential that we consider the implications for users of assistive technol
 
 For this reason, jQueryUI presents a good tool as its authors have worked hard to include the necessary ARIA role and state management in the library components. Nonetheless, we should test the accessibility of custom widgets before they are used.
 
-## JavaScript form validation
+### JavaScript form validation
 We provide JavaScript validation for user agents that do not support HTML5.
 
 When working outside of .NET MVC:
@@ -282,15 +282,15 @@ When working outside of .NET MVC:
 
 When working with .NET MVC: the MVC framework provides mechanisms to manage client- and server-side validation in tandem. When working with .NET MVC it is important that we rely upon these since it will be substantially easier to implement and maintain. A Systems Architect or a Senior Developer can advise on a suitable approach when working with .NET.
 
-## Our JavaScript library is used for common patterns
+### Our JavaScript library is used for common patterns
 We have a library of common utilities that cover a range of common UI patterns used across our digital services. The peer review will check that:
 
 * Where possible, we have made use of tna-definitions.js, tna-bindings.js, and tna-run-on-page-load.js rather than reinventing code that already exists.
 * Where appropriate, we have packaged any new patterns into reusable components that are included in tna-definitions.js
 
-# Checkpoint 5: pre-release checks
+## Checkpoint 5: pre-release checks
 
-## Release version is WCAG 2.0 compliant at AA
+### Release version is WCAG 2.0 compliant at AA
 
 The peer review will:
 
@@ -302,11 +302,11 @@ Is the release version:
 1. WCAG compliant at AA, including appropriate use and management of ARIA roles and states
 2. Accessible and usable without JavaScript and/or CSS
 
-### Developer(s) comments
+##### Developer(s) comments
 
-### Reviewer comments
+##### Reviewer comments
 
-## Testing user goals across browsers, devices and contexts
+### Testing user goals across browsers, devices and contexts
 The service should be tested on:
 
 1. all supported desktop browsers (the current list is available from Webmaster) 
@@ -316,22 +316,22 @@ The service should be tested on:
 
 While issues remain, iterate.
 
-## Is the site/application usable across browsers, devices and contexts
+### Is the site/application usable across browsers, devices and contexts
 
-### Developer(s) comments
+##### Developer(s) comments
 
-### Reviewer comments
+##### Reviewer comments
 
-# Lessons learned
+## Lessons learned
 Everything we build provides opportunities to for improvement to our processes and approach. By documenting the lessons learned and considering their implications for this development guide, we can understand the root cause of any problems as well as any opportunities for improvement.
 Questions to consider
 * What worked well either for this project or for the team?
 * What didn't work well?
 * What surprises did the team have to deal with?
 * What would you do differently if given the chance to begin this project again
-## Key lessons
+### Key lessons
 
-## Having considered these questions, what are the key lessons to take forward for future projects?
+### Having considered these questions, what are the key lessons to take forward for future projects?
 
 
 
