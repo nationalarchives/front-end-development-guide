@@ -2,16 +2,13 @@
 
 ## Introduction
 
-This document outlines a development approach that will support us in delivering high quality, inclusive and maintainable digital services while achieving a good balance between innovation and effective use of our development capability. 
+This repository outlines a development approach that will support us in delivering high quality, inclusive and maintainable digital services while achieving a good balance between innovation and effective use of our development capability. This is presented as sequential checkpoints and can be used as a companion to the development process. 
 
-It is a living, open tool to which we should all contribute.
+It is a living, open tool to which we should all contribute in response to contributions, industry developments and lessons learned.
 
-The sections contained are:
-* A **development guide** which describes practices that underpin our development standards and seeks to streamline our approach. This is presented as sequential checkpoints and can be used as a companion to the development process. It is the responsibility of the Lead Front-end Developer to maintain and version control the guide in response to contributions, industry developments and lessons learned.
+Each section within the development guide describes related [peer review checks](/peer-review-template.md), including:
 
-Each section within the development guide describes related peer review checks, including:
-
- * A section for comments from the ‘peer reviewer’. 
+ * A section for comments from the peer reviewer. 
  * A section for developer(s) comments.
 
 The nature of web projects and tasks will mean that some checks are not relevant to all projects or tasks. **It is therefore the responsibility of developers to**: 
