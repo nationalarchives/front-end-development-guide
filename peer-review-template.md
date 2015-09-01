@@ -95,7 +95,7 @@ We ensure our forms are accessible6, usable and make best use of HTML5 and ARIA 
 
 ### Tables
 
-All tabular data is placed in HTML <table> elements. We do not use tables for layout and do not repurpose other elements to recreate table-like representations of data. WebAIM provide guidance on ensuring tables are accessible7
+All tabular data is placed in HTML <table> elements. We do not use tables for layout and do not re-purpose other elements to recreate table-like representations of data. WebAIM provide guidance on ensuring tables are accessible7
 
 The peer review will check that:	
 
@@ -114,11 +114,11 @@ Where appropriate images should be delivered in SVG format since this offers two
 Guidance for using SVG includes: 
 
 1. Use inline SVG where possible
-2. Provide a title for the SVG in <title> tags and a description within <desc> tags
-3. Use the <text> tag for any text to appear in the SVG
-4. Use <a> tags for links within the SVG
+2. Provide a title for the SVG in ```<title>``` tags and a description within ```<desc>``` tags
+3. Use the ```<text>``` tag for any text to appear in the SVG
+4. Use ```<a>``` tags for links within the SVG
 5. Provide an ARIA role for the SVG
-6. Provide a non-SVG alternative. If the SVG is purely graphical, the <title> and <desc> tags may suffice. If the SVG is interactive, an HTML alternative should be considered
+6. Provide a non-SVG alternative. If the SVG is purely graphical, the ```<title>``` and ```<desc>``` tags may suffice. If the SVG is interactive, an HTML alternative should be considered
 
 Related resources are:
 
