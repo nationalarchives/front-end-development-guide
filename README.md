@@ -21,6 +21,6 @@ A lessons learned form for each project that is to be completed during a Desig
 
 To conduct a peer review follow these steps: 
 
-* The peer reviewer shoud create a copy of the peer-review-template.md and add it to this repository with the name of the peer review being conducted. For example, a peer review of a meeting minutes template might be saved as meeting-minutes.md
+* The peer reviewer should create a copy of the peer-review-template.md and add it to this repository with the name of the peer review being conducted. For example, a peer review of a meeting minutes template might be saved as meeting-minutes.md
 * The peer reviewer should then populate the created file with the peer review comments and let the developer know when you've finished.
 * The developer should then act on the comments and, where appropriate, provide further comments. 
