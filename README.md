@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository outlines a development approach that will support us in delivering high quality, inclusive and maintainable digital services while achieving a good balance between innovation and effective use of our development capability. It is a living, open tool to which we should all contribute in response to industry developments and lessons learned.
+This repository outlines a development approach that will support us in delivering high quality, inclusive and maintainable digital services while achieving a good balance between innovation and effective use of our development capability. It is a living, open tool to which we should all contribute.
 
 The guidance is presented as sequential checkpoints and can be used as a companion to the development process. Each section within the development guide describes related [peer review checks](/peer-review-template.md), including:
 
@@ -11,16 +11,27 @@ The guidance is presented as sequential checkpoints and can be used as a compani
 
 The nature of web projects and tasks will mean that some checks are not relevant to all projects or tasks. **It is therefore the responsibility of developers to**: 
 
-1. Identify the checks relevant to the specific development activity and ensure their development work meets all relevant checks. 
+1. Identify the checks relevant to the specific development activity and **ensure their development work meets all relevant checks**. 
 
-2. Ensure all relevant pre-release checks take place at a time that will allow for any necessary changes. By following the progressive enhancement approach set out in this Development Guide, developers will have a good sense of the project 'health' at any given time, reducing the likelihood that substantial changes will be needed as development nears completion.
+2. Ensure all relevant **pre-release checks take place at a time that will allow for any necessary changes** before the product or service is made public. By following the progressive enhancement approach set out in this Development Guide, developers will have a good sense of the project 'health' at any given time, reducing the likelihood that substantial changes will be needed as development nears completion.
 
 A lessons learned form for each project that is to be completed during a Design Team meeting with a view to capturing insights that might benefit our approach to future projects.
 
 ## Conducting a peer review
 
-To conduct a peer review follow these steps: 
+The process for conducting a peer review is separated into two distinct steps: 
 
-* The peer reviewer should create a copy of the peer-review-template.md and add it to this repository with the name of the peer review being conducted. For example, a peer review of a meeting minutes template might be saved as meeting-minutes.md
-* The peer reviewer should then populate the created file with the peer review comments and let the developer know when you've finished.
-* The developer should then act on the comments and, where appropriate, provide further comments. 
+### Before any code is migrated to a target platform (i.e. WordPress) 
+
+1 The peer reviewer should clone this repository to their development machine and create a copy of ```peer-review-template.md```. The copy should then be added to this repository in the relevant folder. For example, a peer review of a meeting minutes template conducted in 2015 would be saved as ```meeting-minutes.md``` within the ```2015``` directory.
+2 The peer reviewer should then populate the created file with the peer review comments and discuss these with the developer when completed. 
+3 The developer should then act on the comments and, where appropriate, provide further comments. 
+
+### Migrating the code into WordPress
+
+4 Once the necessary changes have been made the code can be ported to the target platform (i.e. WordPress). **Please bear in mind that this is an excellent knowledge sharing opportunity to discuss implementation and technical design decisions with others**
+5 Having ported the code to the target platform the peer reviewer should:
+  * Perform all the **pre-release checks**
+  * Check that porting the code to a target platform hasn't compromised the code. 
+
+**If any member of the team has concerns or suggestions about this process please raise them**. 
