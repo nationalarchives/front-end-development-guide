@@ -5,7 +5,7 @@
 ### General HTML principles
 There are a few principles which we follow for all HTML we produce. The peer review will check that:
 
-1. HTML5 Document type is used and the ```<html>``` tag includes an appropriate ```'lang'``` attribute2 (typically ```en-gb```)
+1. HTML5 Document type is used and the ```<html>``` tag includes an appropriate ```'lang'``` attribute (typically ```en-gb```)
 2. HTML validates (W3C validation tool options include http://validator.w3.org/ or the newer, but still experimental http://validator.w3.org/nu/)
 3. The ```<title>``` tag is present and follows pattern ```{h1} | The National Archives```
 4. HTML is indented to illustrate its structure
@@ -33,7 +33,7 @@ HTML5 has considerably relaxed the syntax rules for HTML. To ensure consistency 
 
 ### There is an appropriate HTML outline
 
-HTML outlines are an important means for navigating pages with assistive technologies. All digital services we produce should have a logical document outline with one ```<h1>``` tag, and each subsequent <h*> 'sectioning' the content below it. Because the HTML5 outlining algorithm is not yet implemented in any browsers, we do not rely on HTML5 sectioning elements for outlines.
+HTML outlines are an important means for navigating pages with assistive technologies. All digital services we produce should have a logical document outline with one ```<h1>``` tag, and each subsequent ```<h*>``` 'sectioning' the content below it. Because the HTML5 outlining algorithm is not yet implemented in any browsers, we do not rely on HTML5 sectioning elements for outlines.
 
 The peer review will check that:
 
@@ -48,13 +48,13 @@ The peer review will check that:
 
 ### Appropriate semantics are used
 
-We use HTML elements for their intended purpose, ensuring valid semantics wherever possible. We do use HTML5 sectioning element semantics (<section>, <article>, <nav>, <aside>), but do so with care and avoid using them for document outlining (the HTML5 outline algorithm is not yet implemented in any user agents).
+We use HTML elements for their intended purpose, ensuring valid semantics wherever possible. We do use HTML5 sectioning element semantics (```<section>```, ```<article>```, ```<nav>```, ```<aside>```), but do so with care and avoid using them for document outlining (the HTML5 outline algorithm is not yet implemented in any user agents).
 
-We use WAI-ARIA landmark roles (application, banner, complementary, contentinfo, form, main, navigation, search) and a traditional document outline for structuring documents. The peer review will check that:
+We use WAI-ARIA landmark roles (```application, banner, complementary, contentinfo, form, main, navigation, search```) and a traditional document outline for structuring documents. The peer review will check that:
 
-1. There should be one <main> element 
+1. There should be one ```<main>``` element 
 2. HTML5 sectioning elements are used for semantics not structure
-3. HTML5 sectioning elements are not over used in place of <div> elements
+3. HTML5 sectioning elements are not over used in place of ```<div>``` elements
 4. All relevant WAI-ARIA landmarks have been applied
 
 ##### Reviewer comments
@@ -94,6 +94,8 @@ We ensure our forms are accessible6, usable and make best use of HTML5 and ARIA 
 
 ##### Reviewer comments
 
+---
+
 ### Tables
 
 All tabular data is placed in HTML ```<table>``` elements. We do not use tables for layout and do not re-purpose other elements to recreate table-like representations of data. WebAIM provide guidance on ensuring tables are accessible7
@@ -124,7 +126,7 @@ Guidance for using SVG includes:
 
 Related resources are:
 
-1. Tips for creating accessible SVG, by Leonie Watson http://www.sitepoint.com/tips-accessible-svg/ 
+1. [Tips for creating accessible](http://www.sitepoint.com/tips-accessible-svg/) SVG, by Leonie Watson  
 
 Where SVGs are used, they are used accessibly
 
@@ -140,9 +142,9 @@ While HTML5 provides a range of new semantic elements which are recognised by ne
 
 Related resources are: 
 
-1. W3C introduction to ARIA http://www.w3.org/WAI/intro/aria 
-2. ARIA authoring guidance http://www.w3.org/TR/wai-aria-practices/
-3. WCAG 2.0 Principle 4 http://www.w3.org/TR/WCAG20/#robust 
+1. [W3C introduction to ARIA](http://www.w3.org/WAI/intro/aria) 
+2. [ARIA authoring guidance](http://www.w3.org/TR/wai-aria-practices/)
+3. [WCAG 2.0 Principle 4](http://www.w3.org/TR/WCAG20/#robust)
 
 The peer review will check that ARIA roles are provided to support native semantics
 
