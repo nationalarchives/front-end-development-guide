@@ -90,9 +90,9 @@ We ensure our forms are accessible6, usable and make best use of HTML5 and ARIA 
 8. HTML5 form validation is used, supported by JavaScript validation for older browsers. This is covered in the JavaScript section of this document
 9. Error messages are clearly visible and associated (both visually and within the DOM) to the corresponding input
 
-#### Developer(s) actions in response
-
 #### Reviewer comments
+
+#### Developer(s) actions in response
 
 ---
 
@@ -243,7 +243,7 @@ We need to ensure we have accounted for users printing our content. While modern
 
 #### Reviewer comments
 
-#### Developer(s) comments
+#### Developer(s) actions in response
 
 ---
 
