@@ -29,9 +29,11 @@ The process for conducting a peer review is separated into two distinct steps:
 
 Options for working with coded prototypes in the Discovery and Alpha phases of a project include using our dev.labs server or, preferably, linking an Azure website to the associated GitHub repository. 
 
+<mark><p>Before migrating a prototype into a target environment ensure you have <strong>discussed the proposed approach with webmaster and the editorial team</strong>.This is also an excellent knowledge sharing opportunity so please discuss implementation and technical design decisions with others</p></mark>
+
 ### Step 2: Migrating the code into WordPress
 
-* Once the necessary changes have been made the code can be ported to the target platform (i.e. WordPress). **Please bear in mind that this is an excellent knowledge sharing opportunity to discuss implementation and technical design decisions with others**
+* Once the necessary changes have been made the code can be ported to the target platform (i.e. WordPress).
 * Having ported the code to the target platform the peer reviewer should:
   * Perform all the **pre-release checks**
   * Check that porting the code to a target platform hasn't compromised the code. 
