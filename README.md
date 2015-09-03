@@ -27,6 +27,8 @@ The process for conducting a peer review is separated into two distinct steps:
 * The peer reviewer should then populate the created file with the peer review comments and discuss these with the developer when completed. 
 * The developer should then act on the comments and, where appropriate, provide further comments. 
 
+Options for working with coded prototypes in the Discovery and Alpha phases of a project include using our dev.labs server or, preferably, linking an Azure website to the associated GitHub repository. 
+
 ### Step 2: Migrating the code into WordPress
 
 * Once the necessary changes have been made the code can be ported to the target platform (i.e. WordPress). **Please bear in mind that this is an excellent knowledge sharing opportunity to discuss implementation and technical design decisions with others**
