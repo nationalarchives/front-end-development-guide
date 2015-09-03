@@ -15,23 +15,23 @@ The nature of web projects and tasks will mean that some checks are not relevant
 
 2. Ensure all relevant **pre-release checks take place at a time that will allow for any necessary changes** before the product or service is made public. By following the progressive enhancement approach set out in this Development Guide, developers will have a good sense of the project 'health' at any given time, reducing the likelihood that substantial changes will be needed as development nears completion.
 
-A lessons learned form for each project that is to be completed during a Design Team meeting with a view to capturing insights that might benefit our approach to future projects.
+3. Where appropriate, discuss any lessons learned during a Design Team 10% meeting with a view to capturing insights that might benefit our approach to future projects.
 
 ## Conducting a peer review
 
 The process for conducting a peer review is separated into two distinct steps: 
 
-### Before any code is migrated to a target platform (i.e. WordPress) 
+### Step 1: Before any code is migrated to a target platform (i.e. WordPress) 
 
 1 The peer reviewer should clone this repository to their development machine and create a copy of ```peer-review-template.md```. The copy should then be added to this repository in the relevant folder. For example, a peer review of a meeting minutes template conducted in 2015 would be saved as ```meeting-minutes.md``` within the ```2015``` directory.
 2 The peer reviewer should then populate the created file with the peer review comments and discuss these with the developer when completed. 
 3 The developer should then act on the comments and, where appropriate, provide further comments. 
 
-### Migrating the code into WordPress
+### Step 2: Migrating the code into WordPress
 
 4 Once the necessary changes have been made the code can be ported to the target platform (i.e. WordPress). **Please bear in mind that this is an excellent knowledge sharing opportunity to discuss implementation and technical design decisions with others**
 5 Having ported the code to the target platform the peer reviewer should:
   * Perform all the **pre-release checks**
   * Check that porting the code to a target platform hasn't compromised the code. 
 
-**If any member of the team has concerns or suggestions about this process please raise them**. 
+While this process has emerged from several discussions in the design team, it is open to change and improvement. **If any member of the team has concerns or suggestions about this process please raise them**. 
