@@ -25,7 +25,7 @@ The process for conducting a peer review is separated into two distinct steps:
 
 * The peer reviewer should clone this repository to their development machine and create a copy of ```peer-review-template.md```. The copy should then be added to this repository in the relevant folder. For example, a peer review of a meeting minutes template conducted in 2015 would be saved as ```meeting-minutes.md``` within the ```2015``` directory.
 * The peer reviewer should then populate the created file with the peer review comments and discuss these with the developer when completed. 
-* The developer should then act on the comments and, where appropriate, provide further comments. 
+* The developer should then act on the comments and, where necessary, describe their response. 
 
 Options for working with coded prototypes in the Discovery and Alpha phases of a project include using our dev.labs server or, preferably, linking an Azure website to the associated GitHub repository. 
 
