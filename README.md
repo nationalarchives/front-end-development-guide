@@ -23,14 +23,14 @@ The process for conducting a peer review is separated into two distinct steps:
 
 ### Step 1: Before any code is migrated to a target platform (i.e. WordPress) 
 
-1 The peer reviewer should clone this repository to their development machine and create a copy of ```peer-review-template.md```. The copy should then be added to this repository in the relevant folder. For example, a peer review of a meeting minutes template conducted in 2015 would be saved as ```meeting-minutes.md``` within the ```2015``` directory.
-2 The peer reviewer should then populate the created file with the peer review comments and discuss these with the developer when completed. 
-3 The developer should then act on the comments and, where appropriate, provide further comments. 
+* The peer reviewer should clone this repository to their development machine and create a copy of ```peer-review-template.md```. The copy should then be added to this repository in the relevant folder. For example, a peer review of a meeting minutes template conducted in 2015 would be saved as ```meeting-minutes.md``` within the ```2015``` directory.
+* The peer reviewer should then populate the created file with the peer review comments and discuss these with the developer when completed. 
+* The developer should then act on the comments and, where appropriate, provide further comments. 
 
 ### Step 2: Migrating the code into WordPress
 
-4 Once the necessary changes have been made the code can be ported to the target platform (i.e. WordPress). **Please bear in mind that this is an excellent knowledge sharing opportunity to discuss implementation and technical design decisions with others**
-5 Having ported the code to the target platform the peer reviewer should:
+* Once the necessary changes have been made the code can be ported to the target platform (i.e. WordPress). **Please bear in mind that this is an excellent knowledge sharing opportunity to discuss implementation and technical design decisions with others**
+* Having ported the code to the target platform the peer reviewer should:
   * Perform all the **pre-release checks**
   * Check that porting the code to a target platform hasn't compromised the code. 
 
