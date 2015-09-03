@@ -23,7 +23,7 @@ The process for conducting a peer review is separated into two distinct steps:
 
 ### Step 1: Before any code is migrated to a target platform (i.e. WordPress) 
 
-* The peer reviewer should clone this repository to their development machine and create a copy of ```peer-review-template.md```. The copy should then be added to this repository in the relevant folder. For example, a peer review of a meeting minutes template conducted in 2015 would be saved as ```meeting-minutes.md``` within the ```2015``` directory.
+* The peer reviewer should clone this repository to their development machine and create a copy of ```peer-review-template.md```. The copy should then be added to this repository in the relevant folder. For example, a peer review of a meeting minutes template conducted in 2015 would be saved as ```peer-review-meeting-minutes.md``` within the ```2015``` directory.
 * The peer reviewer should then populate the created file with the peer review comments and discuss these with the developer when completed. 
 * The developer should then act on the comments and, where necessary, describe how they have addressed any issues raised. 
 
