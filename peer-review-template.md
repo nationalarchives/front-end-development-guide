@@ -10,9 +10,9 @@ There are a few principles which we follow for all HTML we produce. The peer rev
 3. The ```<title>``` tag is present and follows pattern ```{h1} | The National Archives```
 4. HTML is indented to illustrate its structure
 
-##### Reviewer comments
+#### Reviewer comments
 
-##### Developer(s) actions in response
+#### Developer(s) actions in response
 
 ---
 
@@ -25,9 +25,9 @@ HTML5 has considerably relaxed the syntax rules for HTML. To ensure consistency 
 3. Full attribute syntax is used and all attributes are quoted
 4. All tag names and attributes are in lower case
 
-##### Reviewer comments
+#### Reviewer comments
 
-##### Developer(s) actions in response
+#### Developer(s) actions in response
 
 ---
 
@@ -40,9 +40,9 @@ The peer review will check that:
 1. The HTML outline is logical and based on an appropriate heading structure
 2. All content appears in the correct part of the outline
 
-##### Reviewer comments
+#### Reviewer comments
 
-##### Developer(s) actions in response
+#### Developer(s) actions in response
 
 ---
 
@@ -57,9 +57,9 @@ We use WAI-ARIA landmark roles (```application, banner, complementary, contentin
 3. HTML5 sectioning elements are not over used in place of ```<div>``` elements
 4. All relevant WAI-ARIA landmarks have been applied
 
-##### Reviewer comments
+#### Reviewer comments
 
-##### Developer(s) actions in response
+#### Developer(s) actions in response
 
 ---
 
@@ -70,9 +70,9 @@ Navigation will typically be before primary content, and secondary content after
 1. The tab order fits the user goals
 2. In-page navigation is facilitated with 'skip to content' and 'back to top' links where appropriate
 
-##### Reviewer comments
+#### Reviewer comments
 
-##### Developer(s) actions in response
+#### Developer(s) actions in response
 
 ---
 
@@ -90,9 +90,9 @@ We ensure our forms are accessible6, usable and make best use of HTML5 and ARIA 
 8. HTML5 form validation is used, supported by JavaScript validation for older browsers. This is covered in the JavaScript section of this document
 9. Error messages are clearly visible and associated (both visually and within the DOM) to the corresponding input
 
-##### Developer(s) actions in response
+#### Developer(s) actions in response
 
-##### Reviewer comments
+#### Reviewer comments
 
 ---
 
@@ -106,9 +106,9 @@ The peer review will check that:
 2. A brief descriptive ```<caption>``` is provided for tables
 3. Table headings are provided in ```<th>``` elements with an appropriate scope attribute
 
-##### Reviewer comments
+#### Reviewer comments
 
-##### Developer(s) actions in response
+#### Developer(s) actions in response
 
 ---
 
@@ -130,9 +130,9 @@ Related resources are:
 
 Where SVGs are used, they are used accessibly
 
-##### Reviewer comments
+#### Reviewer comments
 
-##### Developer(s) actions in response
+#### Developer(s) actions in response
 
 ---
 
@@ -148,9 +148,9 @@ Related resources are:
 
 The peer review will check that ARIA roles are provided to support native semantics
 
-##### Reviewer comments
+#### Reviewer comments
 
-##### Developer(s) actions in response
+#### Developer(s) actions in response
 
 ---
 
@@ -168,7 +168,7 @@ There are a number of principles which we adopt for all CSS. The peer review wil
 6. Styles targeting older IE are placed in IE specific stylesheets that are included using conditional comments
 7. Hacks for other browsers are placed in the 'shame.css' file
 
-##### Reviewer comments
+#### Reviewer comments
 
 ####  Developer(s) comments
 
@@ -178,9 +178,9 @@ There are a number of principles which we adopt for all CSS. The peer review wil
 
 It is important to ensure interactive elements have a distinct visual appearance when activated. The peer review will check that all interactive elements have a clearly differentiated visual appearance when they have focus (this can typically be achieved using ```:focus```)
 
-##### Reviewer comments
+#### Reviewer comments
 
-##### Developer(s) actions in response
+#### Developer(s) actions in response
 
 ---
 
@@ -199,9 +199,9 @@ The peer review will check that:
 2. We have developed in a way that accommodates devices which have low processing power and/or a slow network
 3. The viewport is fixed in older IE
 
-##### Reviewer comments
+#### Reviewer comments
 
-##### Developer(s) actions in response
+#### Developer(s) actions in response
 
 ---
 
@@ -213,9 +213,9 @@ To ensure consistency across developers and assist with the maintainability of o
 2. Rules are separated with new lines
 3. All rules are closed with a semicolon
 
-##### Reviewer comments
+#### Reviewer comments
 
-##### Developer(s) actions in response
+#### Developer(s) actions in response
 
 ---
 
@@ -226,9 +226,9 @@ CSS is structured to reflect a mobile-first approach. Each stylesheet begins wit
 1. ```@media``` rules are introduced sequentially, from smallest to largest
 2. Overly specific queries that are difficult to test are avoided - i.e. ```@media tv and (min-width: 700px) and (max-width: 960px) and (orientation: landscape) { ... }```
 
-##### Reviewer comments
+#### Reviewer comments
 
-##### Developer(s) actions in response
+#### Developer(s) actions in response
 
 ---
 
@@ -262,9 +262,9 @@ There are a few principles which we follow for all JavaScript development. The p
 
 Please speak to the Lead Front-end Developer if you need guidance on meeting any of these requirements.
 
-##### Reviewer comments
+#### Reviewer comments
 
-##### Developer(s) actions in response
+#### Developer(s) actions in response
 
 ---
 
@@ -274,9 +274,9 @@ Please speak to the Lead Front-end Developer if you need guidance on meeting any
 
 We therefore use only jQuery or similarly 'battle tested' framework (such as AngularJS) for managing interaction with the DOM.
 
-##### Reviewer comments
+#### Reviewer comments
 
-##### Developer(s) actions in response
+#### Developer(s) actions in response
 
 ---
 
@@ -289,9 +289,9 @@ It is essential that we consider the implications for users of assistive technol
 
 For this reason, jQueryUI presents a good tool as its authors have worked hard to include the necessary ARIA role and state management in the library components. Nonetheless, we should test the accessibility of custom widgets before they are used.
 
-##### Reviewer comments
+#### Reviewer comments
 
-##### Developer(s) actions in response
+#### Developer(s) actions in response
 
 ---
 
@@ -307,9 +307,9 @@ When working outside of .NET MVC:
 
 When working with .NET MVC: the MVC framework provides mechanisms to manage client- and server-side validation in tandem. When working with .NET MVC it is important that we rely upon these since it will be substantially easier to implement and maintain. A Systems Architect or a Senior Developer can advise on a suitable approach when working with .NET.
 
-##### Reviewer comments
+#### Reviewer comments
 
-##### Developer(s) actions in response
+#### Developer(s) actions in response
 
 ---
 
@@ -319,9 +319,9 @@ We have a library of common utilities that cover a range of common UI patterns u
 * Where possible, we have made use of tna-definitions.js, tna-bindings.js, and tna-run-on-page-load.js rather than reinventing code that already exists.
 * Where appropriate, we have packaged any new patterns into reusable components that are included in tna-definitions.js
 
-##### Reviewer comments
+#### Reviewer comments
 
-##### Developer(s) actions in response
+#### Developer(s) actions in response
 
 ---
 
@@ -340,9 +340,9 @@ The peer reviewer will:
 1. WCAG compliant at AA, including appropriate use and management of ARIA roles and states
 2. Accessible and usable without JavaScript and/or CSS
 
-##### Reviewer comments
+#### Reviewer comments
 
-##### Developer(s) actions in response
+#### Developer(s) actions in response
 
 ---
 
@@ -357,9 +357,9 @@ The site/service should be tested on:
 
 While issues remain, iterate.
 
-##### Reviewer comments
+#### Reviewer comments
 
-##### Developer(s) actions in response
+#### Developer(s) actions in response
 
 ---
 
