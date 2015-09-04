@@ -16,6 +16,8 @@ Having created an account, click the 'portal' menu link (at the time of writing 
 
 ![Azure management portal](https://raw.githubusercontent.com/nationalarchives/development-guide-and-peer-reviews/master/images/azure-management-portal.png?token=ACfFGbixqP4O1tOqW5Lu0ZUb9vIt0HvEks5V8wNIwA%3D%3D)
 
+## Step 3: Create the site
+
 At this point you should: 
 
 * Click the 'New' button (bottom left of screen)
@@ -27,6 +29,8 @@ At this point you should:
 
 From this point forward, any code pushed that the selected branch on GitHub will be immediately deployed to the Azure site. 
 
+## Step 4: Manage the site
 
+Having created this link it's important to **ensure you delete the site when it's no longer needed**. Also consider stopping the site (which temporarily, and instantly, makes it unavailable) when it is not being used. 
 
 
