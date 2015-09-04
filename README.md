@@ -27,7 +27,7 @@ The process for conducting a peer review is separated into two distinct steps:
 * The peer reviewer should then populate the created file with the peer review comments and discuss these with the developer when completed. 
 * The developer should then act on the comments and, where necessary, describe how they have addressed any issues raised. 
 
-Options for working with coded prototypes in the Discovery and Alpha phases of a project include using our dev.labs server or, preferably, linking an Azure website to the associated GitHub repository. 
+Options for working with coded prototypes in the Discovery and Alpha phases of a project include using our dev.labs server or, preferably, linking an Azure website to the associated GitHub repository. Full instructions on deploying an Azure website can be found in [deploying-to-azure.md](/deploying-to-azure.md).
 
 Before migrating a prototype into a target environment **discuss the proposed approach with webmaster and the editorial team**.This is also an excellent knowledge sharing opportunity so please **discuss implementation and technical design decisions with others**</span>
 
