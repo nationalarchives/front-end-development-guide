@@ -1,8 +1,8 @@
 # Deploying to Azure 
 
-These instructions describe the process for deploying HTML prototypes to an Azure website for testing and review. Please remember that Azure websites are public. While this is unlikely to present any issues for most development activity, developers should consider - on a case-by-case basis - whether Azure is the best option for hosting the prototype. In all cases, it is important to:
-* turn the site off when it's not being used, and delete it when it is no longer needed. 
-* consider obfuscating the url. One option for doing this is to create a SHA hash on the command line and use this as the site name (see instructions below).
+These instructions describe the process for deploying HTML prototypes to an Azure website for testing and review. **This offers significant advantages in terms of the ease and speed of deployment as well as providing access to remote users**. However, product teams need to remember that Azure websites are public. While this is unlikely to present any issues for most development activity, developers should consider - on a case-by-case basis - whether Azure is the best option for hosting the prototype. In all cases, it is important to:
+* delete the Azure website when it is no longer needed.
+* consider whether it might be a good idea to obfuscate the url. One option for doing this is to create a SHA hash on the command line and use this as the site name (see instructions below).
 
 These instructions are accurate at the time of creation but, ***if you find the process has changed when you come to use them, please update the instuctions for the benefit of others***. 
 
@@ -27,7 +27,7 @@ At this point you should:
 * Choose GitHub as the answer to the 'Where is your source code?' question and proceed. If you have not yet authorised Azure to access your GitHub account, you will be prompted to do so at this point. 
 * You can then select the **repository** AND **branch** that will be used for automated deployments. 
 
-From this point forward, any code pushed that the selected branch on GitHub will be immediately deployed to the Azure site. 
+From this point forward, any code pushed to the selected branch on GitHub will be immediately deployed to the Azure site. 
 
 ## Step 4: Manage the site
 
