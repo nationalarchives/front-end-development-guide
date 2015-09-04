@@ -14,6 +14,6 @@ Create an account for your TNA development at [http://azure.microsoft.com](http:
 
 Having created an account, click the 'portal' menu link (at the time of writing this is at the top-left of the screen) and sign in. Having done this, you should see a screen similar to this 
 
-![Azure management portal](https://raw.githubusercontent.com/nationalarchives/development-guide-and-peer-reviews/master/azure-management-portal.png)
+![Azure management portal](https://raw.githubusercontent.com/nationalarchives/development-guide-and-peer-reviews/master/images/azure-management-portal.png?token=ACfFGbixqP4O1tOqW5Lu0ZUb9vIt0HvEks5V8wNIwA%3D%3D)
 
 
