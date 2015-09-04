@@ -21,7 +21,7 @@ Having created an account, click the 'portal' menu link (at the time of writing 
 At this point you should: 
 
 * Click the 'New' button (bottom left of screen)
-* Select COMPUTE > WEB APP > CUSTOM CREATE, at which point you'll be prompted for a URL. The text that you enter here will be used as subdomain for the site on azurewebsites.net. If you'd like to create an obfuscated URL, typing ```echo 'tna-business-plan' | openssl sha1 | pbcopy``` (with tna-business-plan replaced with your chosen string) will **copy a SHA1 hash to your clipboard**. You can then paste this into the form field. 
+* Select COMPUTE > WEB APP > CUSTOM CREATE, at which point you'll be prompted for a URL. The text that you enter here will be used as subdomain for the site on azurewebsites.net. If you'd like to create an obfuscated URL, **opening Terminal** and typing ```echo 'tna-business-plan' | openssl sha1 | pbcopy``` (with tna-business-plan replaced with your chosen string) will **copy a SHA1 hash to your clipboard**. You can then paste this into the form field. 
 * Ignore the APP SERVICE PLAN and DATABASE fields
 * Check the option to **publish from source control** at which point you can proceed to the next step
 * Choose GitHub as the answer to the 'Where is your source code?' question and proceed. If you have not yet authorised Azure to access your GitHub account, you will be prompted to do so at this point. 
