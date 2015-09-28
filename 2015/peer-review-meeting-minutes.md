@@ -41,6 +41,8 @@ All OK.
 
 #### Developer(s) actions in response
 
+HTML is all ok
+
 ---
 
 ### There is an appropriate HTML outline
@@ -57,6 +59,8 @@ The peer review will check that:
 * There are a number of ```<h2>``` beneath the ```<h2>2015</h2>``` should be ```<h3>```
 
 #### Developer(s) actions in response
+
+This has now been fixed to <h3>
 
 ---
 
@@ -77,6 +81,8 @@ The ```main``` attribute and element are present and (once the issues described 
 
 #### Developer(s) actions in response
 
+This has been addressed.
+
 ---
 
 ### HTML is ordered to support user needs
@@ -92,7 +98,7 @@ All OK.
 
 #### Developer(s) actions in response
 
----
+All Ok.
 
 ### Forms
 
@@ -114,7 +120,7 @@ There are no forms on the page.
 
 #### Developer(s) actions in response
 
----
+There are no forms on this page.
 
 ### Tables
 
@@ -132,7 +138,7 @@ There are no tables on the page.
 
 #### Developer(s) actions in response
 
----
+There are no tables on the page.
 
 ### SVGs are accessible
 Where appropriate images should be delivered in SVG format since this offers two significant accessibility benefits: the scalability of the image allows users with less than 20/20 vision to enjoy crisp images when zoomed, and; the inclusion of links within the SVG will allow for keyboard navigation by default. 
@@ -158,6 +164,8 @@ There are no SVGs on the page.
 
 #### Developer(s) actions in response
 
+There are no SVGs on the page. 
+
 ---
 
 ### There is good use of appropriate ARIA roles to support native semantics
@@ -178,7 +186,9 @@ Could you look into whether ```role=navigation``` would be appropriate to use in
 
 #### Developer(s) actions in response
 
----
+This is important as it is a collection of linked pdf documents. When navigating the document or related documents. This could allow a user to make informed decisions on which actions may be taken on an element and activate the selected action in a device independent way.
+
+http://www.w3.org/TR/2007/WD-xhtml-role-20071004/
 
 ## Checkpoint 2: Enhance with CSS
 
@@ -198,6 +208,9 @@ There are a number of principles which we adopt for all CSS. The peer review wil
 
 ####  Developer(s) comments
 
+* All CSS is valid, and reletive units are mainly used.
+* !important has not been applied.
+
 ---
 
 ### User focus is clearly visible
@@ -210,7 +223,7 @@ None of the interactive elements are currently able to receive focus. The hyperl
 
 #### Developer(s) actions in response
 
----
+This issue has now been addressed.
 
 ### Mobile first responsive design
 
@@ -237,7 +250,7 @@ The only issues here are:
 
 #### Developer(s) actions in response
 
----
+This has now been removed. The appropriate media queries has now been applied.
 
 ### CSS formatting standards
 
@@ -253,7 +266,7 @@ All OK here.
 
 #### Developer(s) actions in response
 
----
+All OK here. 
 
 ### CSS structure
 
@@ -266,7 +279,7 @@ CSS is structured to reflect a mobile-first approach. Each stylesheet begins wit
 
 #### Developer(s) actions in response
 
----
+Appropriate @media rules are applied.
 
 ### Print CSS
 
@@ -308,7 +321,7 @@ The toggleable elements are currently using accordion functionality from our lib
 
 #### Developer(s) actions in response
 
----
+Checked with the lead developer and it has been done as an accordian.
 
 ### jQuery or AngularJS are used for DOM abstraction
 
@@ -413,7 +426,7 @@ While issues remain, iterate.
 
 ## Lessons learned
 
-Everything we build provides opportunities to for improvement to our processes and approach. By documenting the lessons learned and considering their implications for this development guide, we can understand the root cause of any problems as well as any opportunities for improvement.
+Everything we build provides opportunities for improvement to our processes and approach. By documenting the lessons learned and considering their implications for this development guide, we can understand the root cause of any problems as well as any opportunities for improvement.
 Questions to consider
 
 * What worked well either for this project or for the team?
@@ -423,7 +436,21 @@ Questions to consider
 
 ### Having considered these questions, what are the key lessons to take forward for future projects?
 
+###### What worked well either for this project or for the team?
+* The key points that work really well are the team discussions and gathering ideas on how the task is best be approached.
+* Going through various stages from phtoshop prototype to html prototype.
+* Having a team review of the minutes landing page design and gathering different design thoughts from other developers.
+* Having drawing the editorial process on paper and replicating it in the code, which made the development process into wordpress much clear and quicker.
 
 
+###### What didn't work well?
+* The process from bringing the template from Html into Wordpress, was a very long process and there were 4 itterations of the backend functinality.
+* Innitial meeting for the reqirements were believed to be for the executive team members, and after having the editorial team do a review had metioned, that the template should cater to different types of meetings.
+* After every editorial review more and more backend functionalities had to be changed.
 
+###### What surprises did the team have to deal with?
+* There were different itterations of the backend process which after meetings had to be scrapped as it did not meet the requirements of the editorial team and had to go back to the drawing board.
 
+###### What would you do differently if given the chance to begin this project again?
+* Before starting the project i would try be as clear as possible with the requirements and have meetings with all the team members who would be involved in updating the meetings minutes page, to have their input on what would be the ideal workflow for the editors.
+* Ask the right questions and know your users.
