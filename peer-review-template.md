@@ -8,7 +8,7 @@ There are a few principles which we follow for all HTML we produce. The peer rev
 1. HTML5 Document type is used and the ```<html>``` tag includes an appropriate ```'lang'``` attribute (typically ```en-gb```)
 2. HTML validates (W3C validation tool options include http://validator.w3.org/ or the newer, but still experimental http://validator.w3.org/nu/)
 3. The ```<title>``` tag is present and follows pattern ```{h1} | The National Archives```
-4. HTML is indented to illustrate its structure
+4. Source code is indented to illustrate its structure
 
 #### Reviewer comments
 

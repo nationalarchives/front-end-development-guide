@@ -18,7 +18,8 @@ There are a few principles which we follow for all HTML we produce. The peer rev
 
 #### Developer(s) actions in response
 
----
+* peer-review-template.md updated to refer to 'source code' rather than HTML
+* Title tag fixed
 
 ### HTML5 syntax style
 
@@ -35,7 +36,7 @@ HTML5 has considerably relaxed the syntax rules for HTML. To ensure consistency 
 
 #### Developer(s) actions in response
 
----
+* camelCased attributes replaced 
 
 ### There is an appropriate HTML outline
 
@@ -73,7 +74,7 @@ We use WAI-ARIA landmark roles (```application, banner, complementary, contentin
 
 #### Developer(s) actions in response
 
----
+* Banner role added to header
 
 ### HTML is ordered to support user needs
 
@@ -107,9 +108,10 @@ We ensure our forms are accessible6, usable and make best use of HTML5 and ARIA 
 
 #### Reviewer comments
 
-————
-<mark>Resume peer review from here - the page is not visible without JavaScript</mark>
-———-
+Mostly fine with the forms and there is good integration with ARIA. There are a few changes needed, though: 
+
+* Each input should have an associated ```label```
+* Clicking 'Find by' should activate the associated form element. 
 
 #### Developer(s) actions in response
 
@@ -129,7 +131,7 @@ The peer review will check that:
 
 #### Developer(s) actions in response
 
----
+No tables used on this page. 
 
 ### SVGs are accessible
 Where appropriate images should be delivered in SVG format since this offers two significant accessibility benefits: the scalability of the image allows users with less than 20/20 vision to enjoy crisp images when zoomed, and; the inclusion of links within the SVG will allow for keyboard navigation by default. 
@@ -151,6 +153,8 @@ Where SVGs are used, they are used accessibly
 
 #### Reviewer comments
 
+No SVGs used on this page. 
+
 #### Developer(s) actions in response
 
 ---
@@ -168,6 +172,8 @@ Related resources are:
 The peer review will check that ARIA roles are provided to support native semantics
 
 #### Reviewer comments
+
+ARIA roles are used to good effect. 
 
 #### Developer(s) actions in response
 
@@ -189,6 +195,8 @@ There are a number of principles which we adopt for all CSS. The peer review wil
 
 #### Reviewer comments
 
+The CSS is all good. 
+
 ####  Developer(s) comments
 
 ---
@@ -198,6 +206,8 @@ There are a number of principles which we adopt for all CSS. The peer review wil
 It is important to ensure interactive elements have a distinct visual appearance when activated. The peer review will check that all interactive elements have a clearly differentiated visual appearance when they have focus (this can typically be achieved using ```:focus```)
 
 #### Reviewer comments
+
+User focus is visible but the effect is relatively low contrast. Consider using a style simiar to that in use on the main TNA website. 
 
 #### Developer(s) actions in response
 
@@ -220,6 +230,8 @@ The peer review will check that:
 
 #### Reviewer comments
 
+All good on the responsive front. 
+
 #### Developer(s) actions in response
 
 ---
@@ -233,6 +245,8 @@ To ensure consistency across developers and assist with the maintainability of o
 3. All rules are closed with a semicolon
 
 #### Reviewer comments
+
+CSS is minified but the associated SASS is well formatted. 
 
 #### Developer(s) actions in response
 
@@ -262,6 +276,8 @@ We need to ensure we have accounted for users printing our content. While modern
 
 #### Reviewer comments
 
+There is quite a lot of change needed to ensure points 1-4 are needed. 
+
 #### Developer(s) actions in response
 
 ---
@@ -283,6 +299,12 @@ Please speak to the Lead Front-end Developer if you need guidance on meeting any
 
 #### Reviewer comments
 
+Some suggestions here: 
+
+* Use GruntJS to concatenate and minify the JavaScript used on this page (GJ can help with this) 
+* The 'jQuery' seems to be initialized twice in script.js (lines 2 and 6) 
+* Where there is no JavaScript, the header does not have an opaque background. Easy to address this with Modernizr.
+
 #### Developer(s) actions in response
 
 ---
@@ -294,6 +316,8 @@ Please speak to the Lead Front-end Developer if you need guidance on meeting any
 We therefore use only jQuery or similarly 'battle tested' framework (such as AngularJS) for managing interaction with the DOM.
 
 #### Reviewer comments
+
+jQuery and some associated plugins are used for DOM abstraction. 
 
 #### Developer(s) actions in response
 
@@ -309,6 +333,8 @@ It is essential that we consider the implications for users of assistive technol
 For this reason, jQueryUI presents a good tool as its authors have worked hard to include the necessary ARIA role and state management in the library components. Nonetheless, we should test the accessibility of custom widgets before they are used.
 
 #### Reviewer comments
+
+jQueryUI isn't used for the JavaScript select, but the chosen plugin does provide ARIA state management. 
 
 #### Developer(s) actions in response
 
@@ -328,6 +354,8 @@ When working with .NET MVC: the MVC framework provides mechanisms to manage clie
 
 #### Reviewer comments
 
+The user is currently able to submit the form without having first made a selection. Is it worth preventing them from doing so until they've made a selection? 
+
 #### Developer(s) actions in response
 
 ---
@@ -339,6 +367,8 @@ We have a library of common utilities that cover a range of common UI patterns u
 * Where appropriate, we have packaged any new patterns into reusable components that are included in tna-definitions.js
 
 #### Reviewer comments
+
+The library isn't currently used because it's existing functionality would not provide much to this page. I would like to see the JavaScript-powered header animation wrapped into a jQuery plugin and added to our library for reuse. 
 
 #### Developer(s) actions in response
 
