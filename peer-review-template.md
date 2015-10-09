@@ -184,6 +184,16 @@ It is important to ensure interactive elements have a distinct visual appearance
 
 ---
 
+### SASS guidelines
+
+As we more routinely incorporate CSS-preprocessing into our workflow we need to ensure our approach is maintainable (and that future developers understand the code we're writing today) and as simple as possible. Some useful insights are provided at [SASS guidelines](http://sass-guidelin.es) but developers will need to exercise judgement about what is most appropriate in the specific circumstances. A useful principle to bear in mind (from the SASS guidelines) is that: 
+
+> ... CSS is a simple language. Sass, being intended to write CSS, should not get much more complex than regular CSS. The KISS principle (Keep It Simple Stupid) is key here and may even take precedence over the DRY principle (Don’t Repeat Yourself) in some circumstances.
+
+> Sometimes, it’s better to repeat a little to keep the code maintainable, rather than building a top-heavy, unwieldy, unnecessarily complicated system that is completely unmaintainable because it is overly complex.
+
+**Developers are strongly encouraged to contribute to this section of the development guide as we get more familiar with SASS**
+
 ### SASS/CSS formatting standards
 
 To ensure consistency across developers and assist with the maintainability of our code base we adopt a number of general CSS code formatting standards. The peer review will check that:
