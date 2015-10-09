@@ -6,9 +6,9 @@
 There are a few principles which we follow for all HTML we produce. The peer review will check that:
 
 1. HTML5 Document type is used and the ```<html>``` tag includes an appropriate ```'lang'``` attribute (typically ```en-gb```)
-2. HTML validates (W3C validation tool options include http://validator.w3.org/ or the newer, but still experimental http://validator.w3.org/nu/)
-3. The ```<title>``` tag is present and follows pattern ```{h1} | The National Archives```
-4. Source code is indented to illustrate its structure
+2. HTML validates (W3C validation tool options include http://validator.w3.org/ or the newer, but still experimental - as of October 2015 - http://validator.w3.org/nu/)
+3. The ```<title>``` tag is present and follows pattern ```{h1} - The National Archives```
+4. Source code is correctly indented to illustrate its structure
 
 #### Reviewer comments
 
@@ -21,8 +21,8 @@ There are a few principles which we follow for all HTML we produce. The peer rev
 HTML5 has considerably relaxed the syntax rules for HTML. To ensure consistency across projects we have agreed upon a house syntax style. The peer review will check that:
 
 1. [Optional tags](http://www.w3.org/TR/html5/syntax.html#optional-tags) are used
-2. All tags are closed, even where HTML5 might allow them not to be
-3. Full attribute syntax is used and all attributes are quoted
+2. All tags are closed, even where HTML5 might allow them not to be (as is the case for ```<li>``` and ```<p>``` tags)
+3. Full attribute syntax is used and all attributes are quoted. See the W3C description of [quoted attribute syntax](http://www.w3.org/TR/html-markup/syntax.html#syntax-attributes)
 4. All tag names and attributes are in lower case
 
 #### Reviewer comments
@@ -33,7 +33,7 @@ HTML5 has considerably relaxed the syntax rules for HTML. To ensure consistency 
 
 ### There is an appropriate HTML outline
 
-HTML outlines are an important means for navigating pages with assistive technologies. All digital services we produce should have a logical document outline with one ```<h1>``` tag, and each subsequent ```<h*>``` 'sectioning' the content below it. Because the HTML5 outlining algorithm is not yet implemented in any browsers, we do not rely on HTML5 sectioning elements for outlines.
+HTML outlines are an important means for navigating pages with assistive technologies. All digital services we produce should have a logical document outline with one ```<h1>``` tag, and each subsequent ```<h*>``` serving to 'section' the content below it. Because the HTML5 outlining algorithm is not yet implemented in any browsers, we do not rely on HTML5 sectioning elements for outlines.
 
 The peer review will check that:
 
@@ -67,7 +67,7 @@ We use WAI-ARIA landmark roles (```application, banner, complementary, contentin
 
 Navigation will typically be before primary content, and secondary content after primary. The peer review will check that:
 
-1. The tab order fits the user goals
+1. The order in which elements receive focus when a user tabs through the document supports user goals.
 2. In-page navigation is facilitated with 'skip to content' and 'back to top' links where appropriate
 
 #### Reviewer comments
@@ -78,7 +78,7 @@ Navigation will typically be before primary content, and secondary content after
 
 ### Forms
 
-We ensure our forms are accessible6, usable and make best use of HTML5 and ARIA semantics. The peer review will check that:
+We ensure our forms are **accessible**, **usable** and make best use of HTML5 and ARIA semantics. The peer review will check that:
 
 1. Forms are fully accessible via keyboard alone
 2. Forms are logically organised
@@ -98,7 +98,7 @@ We ensure our forms are accessible6, usable and make best use of HTML5 and ARIA 
 
 ### Tables
 
-All tabular data is placed in HTML ```<table>``` elements. We do not use tables for layout and do not re-purpose other elements to recreate table-like representations of data. WebAIM provide guidance on ensuring tables are accessible7
+Where appropriate, tabular data is placed in HTML ```<table>``` elements. We never use tables for layout and avoid re-purposing other elements to recreate table-like representations of data. WebAIM provide guidance on ensuring tables are accessible7
 
 The peer review will check that:	
 
@@ -138,7 +138,7 @@ Where SVGs are used, they are used accessibly
 
 ### There is good use of appropriate ARIA roles to support native semantics
 
-While HTML5 provides a range of new semantic elements which are recognised by newer browsers, there is poor support (even in newer browsers) when it comes to reporting these elements to the Accessibility API. This, and the lack of semantics when these elements are polyfilled with JavaScript, makes ARIA an important tool. The HTML5 spec was updated in mid-2014 to indicate compatibility between elements and ARIA roles.
+While HTML5 provides a range of new semantic elements which are recognised by newer browsers, there is poor support (even in newer browsers) when it comes to reporting these elements to the Accessibility API. This, and the lack of semantics when these elements are polyfilled with JavaScript, makes ARIA an important tool. Because the HTML5 spec was updated in mid-2014 to indicate compatibility between elements and ARIA roles, developers can see the compatibility of an element with ARIA roles, states and properties by looking up the tag within the [HTML5 specification](http://www.w3.org/TR/2014/REC-html5-20141028/) .
 
 Related resources are: 
 
@@ -184,47 +184,13 @@ It is important to ensure interactive elements have a distinct visual appearance
 
 ---
 
-### Mobile first responsive design
-
-We adopt a mobile-first approach which includes:
-
-* Beginning from the premise that all content will be available to all users regardless of their screen size, unless there is a clear justification for doing otherwise
-* Seeking to avoid duplicating HTML for display at different resolutions
-* Recognising that there is no correlation between a user's screen resolution, network speed, device capability or processing power
-* Fixing the viewport in older IE, rather than polyfilling media queries
-
-The peer review will check that:
-
-1. The principles of our mobile-first approach have been adopted
-2. We have developed in a way that accommodates devices which have low processing power and/or a slow network
-3. The viewport is fixed in older IE
-
-#### Reviewer comments
-
-#### Developer(s) actions in response
-
----
-
-### CSS formatting standards
+### SASS/CSS formatting standards
 
 To ensure consistency across developers and assist with the maintainability of our code base we adopt a number of general CSS code formatting standards. The peer review will check that:
 
 1. Code blocks have consistent indentation to reflect their hierarchy
 2. Rules are separated with new lines
 3. All rules are closed with a semicolon
-
-#### Reviewer comments
-
-#### Developer(s) actions in response
-
----
-
-### CSS structure
-
-CSS is structured to reflect a mobile-first approach. Each stylesheet begins with universal rules outside of a media query block. The peer review will check that:
-
-1. ```@media``` rules are introduced sequentially, from smallest to largest
-2. Overly specific queries that are difficult to test are avoided - i.e. ```@media tv and (min-width: 700px) and (max-width: 960px) and (orientation: landscape) { ... }```
 
 #### Reviewer comments
 
