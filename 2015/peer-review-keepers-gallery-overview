@@ -12,7 +12,7 @@ There are a few principles which we follow for all HTML we produce. The peer rev
 
 #### Reviewer comments
 
-All good
+It did not pass the validation due to some global elements.
 
 #### Developer(s) actions in response
 
