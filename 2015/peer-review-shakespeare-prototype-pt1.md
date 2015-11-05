@@ -385,7 +385,7 @@ Works well with mobile devices and browsers.
 #### Developer(s) actions in response
 
 
-#### Additional reviewer comments
+## Additional reviewer comments
 ## On http://contrastchecker.com/
 1. The colour contrast returns as 'FAIL' using 'Foreground: #00EC0' and Background: #F0ECE.
 
