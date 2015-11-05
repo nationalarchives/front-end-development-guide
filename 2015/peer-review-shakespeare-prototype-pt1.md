@@ -386,7 +386,7 @@ Works well with mobile devices and browsers.
 
 
 ## Additional reviewer comments
-## On http://contrastchecker.com/
+#### Colour contrast and  color blindness checks using http://contrastchecker.com/
 1. The colour contrast returns as 'FAIL' using 'Foreground: #00EC0' and Background: #F0ECE.
 
 2. The color contrast returns as 'FAIL' for users with color blindness. 'Foreground: #000' and 'Background: #00ff03'.
