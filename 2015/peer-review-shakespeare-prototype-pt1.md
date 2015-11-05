@@ -173,7 +173,7 @@ The peer review will check that ARIA roles are provided to support native semant
 
 #### Reviewer comments
 
-ARIA roles are not used in this page. Investigate of needed.
+ARIA roles are not used in this page. Investigate if needed.
 
 #### Developer(s) actions in response
 
