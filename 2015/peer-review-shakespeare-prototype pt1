@@ -386,10 +386,10 @@ Works well with mobile devices and browsers.
 
 
 #### Additional reviewer comments
-On http://contrastchecker.com/
-The colour contrast returns as 'FAIL' using 'Foreground: #00EC0' and Background: #F0ECE.
+## On http://contrastchecker.com/
+1. The colour contrast returns as 'FAIL' using 'Foreground: #00EC0' and Background: #F0ECE.
 
-The color contrast returns as 'FAIL' for users with color blindness. 'Foreground: #000' and 'Background: #00ff03'.
+2. The color contrast returns as 'FAIL' for users with color blindness. 'Foreground: #000' and 'Background: #00ff03'.
 
 ---
 
