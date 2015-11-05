@@ -69,8 +69,8 @@ We use WAI-ARIA landmark roles (```application, banner, complementary, contentin
 
 #### Reviewer comments
 
-No '''<main>''' element used.
-'''<div>''' elements are used instead of sectioning elements.
+No ```<main>``` element used.
+```<div>``` elements are used instead of sectioning elements.
 
 Relevant ARIA attritubes have been used.
 
