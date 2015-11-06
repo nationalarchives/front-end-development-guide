@@ -179,6 +179,7 @@ Maybe the <title> for the SVG could be more like 'Regional map of the UK' and yo
 No <text> tags needed
 <a> tags used correctly
 Add <aria-labelledby="title desc"> and <role="navigation"> to indicate that it is a navigation element.
+Fallback is not in place (see IE8)
 
 #### Developer(s) actions in response
 
@@ -197,6 +198,8 @@ Related resources are:
 The peer review will check that ARIA roles are provided to support native semantics
 
 #### Reviewer comments
+
+ARIA roles are added.
 
 #### Developer(s) actions in response
 
@@ -218,6 +221,9 @@ There are a number of principles which we adopt for all CSS. The peer review wil
 
 #### Reviewer comments
 
+prototype-styles.css validates
+override-main.css has 3 rules which are invalid (they relate to styling the SVG)
+
 ####  Developer(s) comments
 
 ---
@@ -227,6 +233,8 @@ There are a number of principles which we adopt for all CSS. The peer review wil
 It is important to ensure interactive elements have a distinct visual appearance when activated. The peer review will check that all interactive elements have a clearly differentiated visual appearance when they have focus (this can typically be achieved using ```:focus```)
 
 #### Reviewer comments
+
+User focus is clear
 
 #### Developer(s) actions in response
 
@@ -252,6 +260,8 @@ To ensure consistency across developers and assist with the maintainability of o
 
 #### Reviewer comments
 
+Application does not use SASS.
+
 #### Developer(s) actions in response
 
 ---
@@ -266,6 +276,9 @@ We need to ensure we have accounted for users printing our content. While modern
 4. Print specific styles are contained within in a ```@media = print``` block
 
 #### Reviewer comments
+
+Print versions of the details pages and the lists of organisations + places of deposit print with all the information showing. Presentation could be improved but no show stoppers.
+The homepage of POD doesn't print anything after the map image. However, it is less likely that this page will be printed as it is purely a navigation page. Worth fixing if there's time but less important than the other pages.
 
 #### Developer(s) actions in response
 
@@ -287,6 +300,9 @@ There are a few principles which we follow for all JavaScript development. The p
 Please speak to the Lead Front-end Developer if you need guidance on meeting any of these requirements.
 
 #### Reviewer comments
+
+Javascript in prototype-scripts.js is well commented, although a comment could be added to the bottom section to indicate what it does. All other Javascript is standard TNA script or libraries such as JQuery, Angular or Modernizr
+Formatting is good. No errors in the console. All Javascript is externalised. Prototype-styles.js is not minified or concatenated.
 
 #### Developer(s) actions in response
 
@@ -315,6 +331,8 @@ For this reason, jQueryUI presents a good tool as its authors have worked hard t
 
 #### Reviewer comments
 
+No extra plug-ins used.
+
 #### Developer(s) actions in response
 
 ---
@@ -333,6 +351,8 @@ When working with .NET MVC: the MVC framework provides mechanisms to manage clie
 
 #### Reviewer comments
 
+No forms used.
+
 #### Developer(s) actions in response
 
 ---
@@ -344,6 +364,8 @@ We have a library of common utilities that cover a range of common UI patterns u
 * Where appropriate, we have packaged any new patterns into reusable components that are included in tna-definitions.js
 
 #### Reviewer comments
+
+No patterns available for POD-specific Javascript created. New Javascript is fine.
 
 #### Developer(s) actions in response
 
@@ -382,6 +404,11 @@ The site/service should be tested on:
 While issues remain, iterate.
 
 #### Reviewer comments
+
+Fixing required in IE8. The POD homepage is badly broken and other pages are also broken. IE9/10/11 and Edge work well. Firefox and Chrome work fine.
+
+iPhone testing brought up a problem with the tables used on the details page. They need working on at mobile view. Don't respond well.
+iPad testing brought no major issues, although the visual design as a whole could do with tightening up a bit. It looks untidy across all browsers/devices.
 
 #### Developer(s) actions in response
 
