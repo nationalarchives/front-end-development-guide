@@ -13,16 +13,16 @@ There are a few principles which we follow for all HTML we produce. The peer rev
 #### Reviewer comments
 
 http://places-of-deposit.azurewebsites.net/
-A few validation errors - Duplicate ID's within SVG ('#title') which could be changed to classes. Scotland is missing an opening <a> tag. Northern Ireland is missing an <a> tag.
+A few validation errors - Duplicate ID's within SVG ('#title') which could be changed to classes. Scotland is missing an opening <a> tag. Northern Ireland is missing an 'a' tag.
 
 http://places-of-deposit.azurewebsites.net/results.php?region=london
 Only one problem area - 'div class="aria-tabs id=" tabs-pointed'. A spacing issue is causing the validation error.
 
 http://places-of-deposit.azurewebsites.net/transferring-body.php?id=400
-Breadcrumb text is outside of a <li> tag and causing validation error and 'tdbody' is being used instead of 'tbody' within the table.
+Breadcrumb text is outside of a 'li' tag and causing validation error and 'tdbody' is being used instead of 'tbody' within the table.
 
 http://places-of-deposit.azurewebsites.net/place-of-deposit.php?id=31
-Breadcrumb text is outside of a <li> tag and causing validation error. Also a typo and misplaced quote mark for the mailto link on line 228.
+Breadcrumb text is outside of a 'li' tag and causing validation error. Also a typo and misplaced quote mark for the mailto link on line 228.
 
 Title tag is present but is the same across all. Can it match the H1? Do we want it to match the H1 in every case?
 
@@ -175,10 +175,10 @@ Where SVGs are used, they are used accessibly
 #### Reviewer comments
 
 Inline SVG used.
-Maybe the <title> for the SVG could be more like 'Regional map of the UK' and you could add a <desc> which could be 'Select a region to find out where you should transfer your organisation’s records'
-No <text> tags needed
-<a> tags used correctly
-Add <aria-labelledby="title desc"> and <role="navigation"> to indicate that it is a navigation element.
+Maybe the 'title' for the SVG could be more like 'Regional map of the UK' and you could add a 'desc which could be 'Select a region to find out where you should transfer your organisation’s records'
+No 'text' tags needed
+'a' tags used correctly
+Add 'aria-labelledby="title desc"' and 'role="navigation"' to indicate that it is a navigation element.
 Fallback is not in place (see IE8)
 
 #### Developer(s) actions in response
