@@ -12,6 +12,8 @@ There are a few principles which we follow for all HTML we produce. The peer rev
 
 #### Reviewer comments
 
+All ok
+
 #### Developer(s) actions in response
 
 ---
@@ -27,6 +29,8 @@ HTML5 has considerably relaxed the syntax rules for HTML. To ensure consistency 
 
 #### Reviewer comments
 
+All ok
+
 #### Developer(s) actions in response
 
 ---
@@ -41,6 +45,8 @@ The peer review will check that:
 2. All content appears in the correct part of the outline
 
 #### Reviewer comments
+
+All checks fine
 
 #### Developer(s) actions in response
 
@@ -59,6 +65,8 @@ We use WAI-ARIA landmark roles (```application, banner, complementary, contentin
 
 #### Reviewer comments
 
+You are using ARIA role 'main' which is fine.
+
 #### Developer(s) actions in response
 
 ---
@@ -71,6 +79,8 @@ Navigation will typically be before primary content, and secondary content after
 2. In-page navigation is facilitated with 'skip to content' and 'back to top' links where appropriate
 
 #### Reviewer comments
+
+All ok
 
 #### Developer(s) actions in response
 
@@ -92,6 +102,8 @@ We ensure our forms are **accessible**, **usable** and make best use of HTML5 an
 
 #### Reviewer comments
 
+No forms used in this template, therefore all checks fine.
+
 #### Developer(s) actions in response
 
 ---
@@ -107,6 +119,8 @@ The peer review will check that:
 3. Table headings are provided in ```<th>``` elements with an appropriate scope attribute
 
 #### Reviewer comments
+
+No table is used. All ok
 
 #### Developer(s) actions in response
 
@@ -132,6 +146,8 @@ Where SVGs are used, they are used accessibly
 
 #### Reviewer comments
 
+No SVG is used for this template.
+
 #### Developer(s) actions in response
 
 ---
@@ -149,6 +165,8 @@ Related resources are:
 The peer review will check that ARIA roles are provided to support native semantics
 
 #### Reviewer comments
+
+All ok
 
 #### Developer(s) actions in response
 
@@ -170,6 +188,8 @@ There are a number of principles which we adopt for all CSS. The peer review wil
 
 #### Reviewer comments
 
+All CSS checks are fine. No additional styling has been added.
+
 ####  Developer(s) comments
 
 ---
@@ -179,6 +199,8 @@ There are a number of principles which we adopt for all CSS. The peer review wil
 It is important to ensure interactive elements have a distinct visual appearance when activated. The peer review will check that all interactive elements have a clearly differentiated visual appearance when they have focus (this can typically be achieved using ```:focus```)
 
 #### Reviewer comments
+
+All ok
 
 #### Developer(s) actions in response
 
@@ -204,11 +226,14 @@ To ensure consistency across developers and assist with the maintainability of o
 
 #### Reviewer comments
 
+All ok
+
 #### Developer(s) actions in response
 
 ---
 
 ### Print CSS
+
 
 We need to ensure we have accounted for users printing our content. While modern browsers provide a facility to emulate and debug print from within Developer Tools, we have encountered issues where IE prints differently to other browsers. The peer review will check that:
 
@@ -218,6 +243,8 @@ We need to ensure we have accounted for users printing our content. While modern
 4. Print specific styles are contained within in a ```@media = print``` block
 
 #### Reviewer comments
+
+All ok
 
 #### Developer(s) actions in response
 
@@ -240,6 +267,8 @@ Please speak to the Lead Front-end Developer if you need guidance on meeting any
 
 #### Reviewer comments
 
+No additional js been added to the template.
+
 #### Developer(s) actions in response
 
 ---
@@ -251,6 +280,8 @@ Please speak to the Lead Front-end Developer if you need guidance on meeting any
 We therefore use only jQuery or similarly 'battle tested' framework (such as AngularJS) for managing interaction with the DOM.
 
 #### Reviewer comments
+
+All ok
 
 #### Developer(s) actions in response
 
@@ -266,6 +297,8 @@ It is essential that we consider the implications for users of assistive technol
 For this reason, jQueryUI presents a good tool as its authors have worked hard to include the necessary ARIA role and state management in the library components. Nonetheless, we should test the accessibility of custom widgets before they are used.
 
 #### Reviewer comments
+
+All ok
 
 #### Developer(s) actions in response
 
@@ -285,6 +318,8 @@ When working with .NET MVC: the MVC framework provides mechanisms to manage clie
 
 #### Reviewer comments
 
+JS validates fine.
+
 #### Developer(s) actions in response
 
 ---
@@ -296,6 +331,8 @@ We have a library of common utilities that cover a range of common UI patterns u
 * Where appropriate, we have packaged any new patterns into reusable components that are included in tna-definitions.js
 
 #### Reviewer comments
+
+All ok
 
 #### Developer(s) actions in response
 
@@ -318,6 +355,8 @@ The peer reviewer will:
 
 #### Reviewer comments
 
+All ok
+
 #### Developer(s) actions in response
 
 ---
@@ -334,6 +373,8 @@ The site/service should be tested on:
 While issues remain, iterate.
 
 #### Reviewer comments
+
+All checks fine.
 
 #### Developer(s) actions in response
 
