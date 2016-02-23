@@ -12,16 +12,12 @@ There are a few principles which we follow for all HTML we produce. The peer rev
 
 #### Reviewer comments
 
-The W3C validator picked up a number of issues, some of which relate to known issues that are site-wide (and have been identified to be fixed as part of the open source work), others related to the use of placehold.it (and are therefore not a problem for the production code).
+The W3C validator picked up a number of issues, related to the use of role= (and are therefore not a problem for the production code).
 
 Things that need to be addressed are: 
 
 * The title tag should use a pipe character rather than a dash
 * There are images which are missing an alt attribute. 
-* There is quite a lot of CSS in the HTML which needs to be removed (I'm aware this is a known thing to fix) 
-* There are some page-specific ```<section>``` elements which lack headings. 
-
-There are also a few places where the grid is used incorrectly ('.breather' being used as a wrapper for '.container' specifically)
 
 #### Developer(s) actions in response
 
@@ -55,7 +51,7 @@ The peer review will check that:
 
 #### Reviewer comments
 
-All seems to be OK here. Just need to be sure that the 'Timeline' and 'TNA concept' sections have appropriate headings
+All seems to be OK here.
 
 #### Developer(s) actions in response
 
@@ -74,9 +70,7 @@ We use WAI-ARIA landmark roles (```application, banner, complementary, contentin
 
 #### Reviewer comments
 
-* There is no ```<main>``` element on the page
-* Is there a case for using```role="banner"``` on this page?
-
+* All good
 
 #### Developer(s) actions in response
 
@@ -91,9 +85,7 @@ Navigation will typically be before primary content, and secondary content after
 
 #### Reviewer comments
 
-* While the order seems to be appropriate, there are point when using the keyboard to navigate when it's not clear where I am
-* I wasn't able to control the slider with the keyboard or see when/if its controls had received focus.
-
+* All good
 #### Developer(s) actions in response
 
 ---
@@ -132,7 +124,7 @@ The peer review will check that:
 
 #### Reviewer comments
 
-There are no tables on the page. 
+No tables on the page. 
 
 #### Developer(s) actions in response
 
@@ -158,7 +150,7 @@ Where SVGs are used, they are used accessibly
 
 #### Reviewer comments
 
-No SVGs are currently on the page but we'll need to review this section if any of the placeholders are replaced with SVG images. 
+No SVGs are currently on the page.
 
 #### Developer(s) actions in response
 
@@ -178,8 +170,7 @@ The peer review will check that ARIA roles are provided to support native semant
 
 #### Reviewer comments
 
-* The slider currently uses hyperlinks for navigation. Would buttons be a better option here? 
-* I couldn't see the slider making any changes to the ARIA states of elements. 
+* All good
 
 #### Developer(s) actions in response
 
@@ -201,7 +192,7 @@ There are a number of principles which we adopt for all CSS. The peer review wil
 
 #### Reviewer comments
 
-Note: CSS review will be deferred until all the code is separated into a CSS file. 
+# CSS it is not valid. 4 errors needs to be addressed.
 
 ####  Developer(s) comments
 
@@ -213,9 +204,8 @@ It is important to ensure interactive elements have a distinct visual appearance
 
 #### Reviewer comments
 
-* Some elements did not have a visible activation state applied
-* The activation states between elements was not uniform - some had a blue border, others the standard orange colour
-
+* All good
+* 
 #### Developer(s) actions in response
 
 ---
@@ -237,10 +227,7 @@ The peer review will check that:
 
 #### Reviewer comments
 
-The page responds nicely and a broadly mobile-first approach is adopted. This should be reviewed when: 
-
-* The timeline has been implemented, since this is likely to be quite challenging
-* All of the placeholder content is in place. 
+# All good
 
 #### Developer(s) actions in response
 
@@ -256,7 +243,7 @@ To ensure consistency across developers and assist with the maintainability of o
 
 #### Reviewer comments
 
-This needs to be reviewed when the CSS has been extraced to a separate CSS file. 
+# All good
 
 #### Developer(s) actions in response
 
@@ -271,7 +258,7 @@ CSS is structured to reflect a mobile-first approach. Each stylesheet begins wit
 
 #### Reviewer comments
 
-This needs to be reviewed when the CSS has been extracted to a separate CSS file. 
+# All good 
 
 #### Developer(s) actions in response
 
@@ -288,7 +275,7 @@ We need to ensure we have accounted for users printing our content. While modern
 
 #### Reviewer comments
 
-Seems OK but this needs to be reviewed when all the content is in place and the placeholders have been replaced.
+# Seems OK but it needs more work in terms of the layout.
 
 #### Developer(s) actions in response
 
@@ -313,9 +300,7 @@ Please speak to the Lead Front-end Developer if you need guidance on meeting any
 
 There are a few issues with the JavaScript implementation: 
 
-* The slider content seems to be invisible where JavaScript is disabled
-* There are script tags within the HTML that should be extracted to a JavaScript file
-* The bpSlider instantiation code should be within the document ready block
+* When JS is switched off the drop down block with the search options it's visible and some links from mega menu are not visible anymore.
  
 
 #### Developer(s) actions in response
@@ -344,8 +329,6 @@ It is essential that we consider the implications for users of assistive technol
 For this reason, jQueryUI presents a good tool as its authors have worked hard to include the necessary ARIA role and state management in the library components. Nonetheless, we should test the accessibility of custom widgets before they are used.
 
 #### Reviewer comments
-
-* The slider does not seem to change the ARIA accessibility states for elements.
 
 #### Developer(s) actions in response
 
