@@ -23,7 +23,10 @@ Validation picked up a few issues
 
 #### Developer(s) actions in response
 
----
+* 'logo' ID used twice in header. - DONE
+* Bad value 'xmlns="http://www.w3.org/1999/html'. Remove from Main. - DONE
+* Typo on OGL logo link in footer. 'title' spelt wrong. - DONE
+* The element h4 must not appear as a descendant of the address element. - DONE
 
 ### HTML5 syntax style
 
