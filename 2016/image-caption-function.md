@@ -37,7 +37,7 @@ HTML5 has considerably relaxed the syntax rules for HTML. To ensure consistency 
 #### Reviewer comments
 
 * Should there div element with role='button' be a button element
-* Consider using <figure> and <figcaption> to improve accessibility
+* Consider using figure and figcaption elements to improve accessibility
 
 #### Developer(s) actions in response
 
