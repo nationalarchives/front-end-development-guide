@@ -12,6 +12,15 @@ There are a few principles which we follow for all HTML we produce. The peer rev
 
 #### Reviewer comments
 
+* Try not use empty div containers
+
+Validation picked up a few issues
+
+* 'logo' ID used twice in header.
+* Bad value 'xmlns="http://www.w3.org/1999/html'. Remove from Main.
+* Typo on OGL logo link in footer. 'title' spelt wrong.
+* The element h4 must not appear as a descendant of the address element.
+
 #### Developer(s) actions in response
 
 ---
@@ -26,6 +35,9 @@ HTML5 has considerably relaxed the syntax rules for HTML. To ensure consistency 
 4. All tag names and attributes are in lower case
 
 #### Reviewer comments
+
+* Should there div element with role='button' be a button element
+* Consider using <figure> and <figcaption> to improve accessibility
 
 #### Developer(s) actions in response
 
@@ -179,6 +191,8 @@ There are a number of principles which we adopt for all CSS. The peer review wil
 It is important to ensure interactive elements have a distinct visual appearance when activated. The peer review will check that all interactive elements have a clearly differentiated visual appearance when they have focus (this can typically be achieved using ```:focus```)
 
 #### Reviewer comments
+
+* :focus not used on button
 
 #### Developer(s) actions in response
 
