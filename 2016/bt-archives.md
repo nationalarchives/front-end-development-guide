@@ -12,12 +12,12 @@ There are a few principles which we follow for all HTML we produce. The peer rev
 
 #### Reviewer comments
 
-* <div> elements can't be inside a <span>
-* closing </p> inside figure elements without opening <p>
+* div elements can't be inside a span
+* closing p inside figure elements without opening p
 
 Suggestions (not crucial)
 
-* <main> should wrap and indicate where the main content starts
+* main should wrap and indicate where the main content starts
 * Try not rename Bootstrap's classes. Try keep Bootstrap's HTML/CSS structure. Use additional classes to achieve desired results.
 
 Overall, HTML structure well built
@@ -37,7 +37,7 @@ HTML5 has considerably relaxed the syntax rules for HTML. To ensure consistency 
 
 #### Reviewer comments
 
-* closing </p> inside figure elements without opening <p>
+* closing p inside figure elements without opening p
 
 Suggestion (not crucial)
 
@@ -77,8 +77,8 @@ We use WAI-ARIA landmark roles (```application, banner, complementary, contentin
 
 #### Reviewer comments
 
-* <figcaption> must be used inside a <figure> element
-* <aside> is used for 'related' content, such as quotes, glossaries or related links. Not for the top banner.
+* figcaption must be used inside a figure element
+* aside is used for 'related' content, such as quotes, glossaries or related links. Not for the top banner.
 
 #### Developer(s) actions in response
 
