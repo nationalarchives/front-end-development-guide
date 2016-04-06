@@ -6,41 +6,42 @@
 There are a few principles which we follow for all HTML we produce. The peer review will check that:
 
 1. HTML5 Document type is used and the ```<html>``` tag includes an appropriate ```'lang'``` attribute (typically ```en-gb```)
-2. HTML validates (W3C validation tool options include http://validator.w3.org/ or the newer, but still experimental - as of October 2015 - http://validator.w3.org/nu/)
-3. The ```<title>``` tag is present and follows pattern ```{h1} - The National Archives```
-4. Source code is correctly indented to illustrate its structure
+2. HTML validates (W3C validation tool options include http://validator.w3.org/ or the newer, but still experimental http://validator.w3.org/nu/)
+3. The ```<title>``` tag is present and follows pattern ```{h1} | The National Archives```
+4. HTML is indented to illustrate its structure
 
 #### Reviewer comments
 
-* Try not use empty div containers
+* div elements can't be inside a span
+* closing p inside figure elements without opening p
 
-Validation picked up a few issues
+Suggestions (not crucial)
 
-* 'logo' ID used twice in header.
-* Bad value 'xmlns="http://www.w3.org/1999/html'. Remove from Main.
-* Typo on OGL logo link in footer. 'title' spelt wrong.
-* The element h4 must not appear as a descendant of the address element.
+* main should wrap and indicate where the main content starts
+* Try not rename Bootstrap's classes. Try keep Bootstrap's HTML/CSS structure. Use additional classes to achieve desired results.
+
+Overall, HTML structure well built
 
 #### Developer(s) actions in response
 
-* 'logo' ID used twice in header. - DONE
-* Bad value 'xmlns="http://www.w3.org/1999/html'. Remove from Main. - DONE
-* Typo on OGL logo link in footer. 'title' spelt wrong. - DONE
-* The element h4 must not appear as a descendant of the address element. - DONE
+---
 
 ### HTML5 syntax style
 
 HTML5 has considerably relaxed the syntax rules for HTML. To ensure consistency across projects we have agreed upon a house syntax style. The peer review will check that:
 
 1. [Optional tags](http://www.w3.org/TR/html5/syntax.html#optional-tags) are used
-2. All tags are closed, even where HTML5 might allow them not to be (as is the case for ```<li>``` and ```<p>``` tags)
-3. Full attribute syntax is used and all attributes are quoted. See the W3C description of [quoted attribute syntax](http://www.w3.org/TR/html-markup/syntax.html#syntax-attributes)
+2. All tags are closed, even where HTML5 might allow them not to be
+3. Full attribute syntax is used and all attributes are quoted
 4. All tag names and attributes are in lower case
 
 #### Reviewer comments
 
-* Should there div element with role='button' be a button element
-* Consider using figure and figcaption elements to improve accessibility
+* closing p inside figure elements without opening p
+
+Suggestion (not crucial)
+
+* For consistency across projects try keep the Bootstrap HTML/CSS structure.
 
 #### Developer(s) actions in response
 
@@ -48,7 +49,7 @@ HTML5 has considerably relaxed the syntax rules for HTML. To ensure consistency 
 
 ### There is an appropriate HTML outline
 
-HTML outlines are an important means for navigating pages with assistive technologies. All digital services we produce should have a logical document outline with one ```<h1>``` tag, and each subsequent ```<h*>``` serving to 'section' the content below it. Because the HTML5 outlining algorithm is not yet implemented in any browsers, we do not rely on HTML5 sectioning elements for outlines.
+HTML outlines are an important means for navigating pages with assistive technologies. All digital services we produce should have a logical document outline with one ```<h1>``` tag, and each subsequent ```<h*>``` 'sectioning' the content below it. Because the HTML5 outlining algorithm is not yet implemented in any browsers, we do not rely on HTML5 sectioning elements for outlines.
 
 The peer review will check that:
 
@@ -56,6 +57,8 @@ The peer review will check that:
 2. All content appears in the correct part of the outline
 
 #### Reviewer comments
+
+All good. No comments.
 
 #### Developer(s) actions in response
 
@@ -74,6 +77,9 @@ We use WAI-ARIA landmark roles (```application, banner, complementary, contentin
 
 #### Reviewer comments
 
+* figcaption must be used inside a figure element
+* aside is used for 'related' content, such as quotes, glossaries or related links. Not for the top banner.
+
 #### Developer(s) actions in response
 
 ---
@@ -82,10 +88,12 @@ We use WAI-ARIA landmark roles (```application, banner, complementary, contentin
 
 Navigation will typically be before primary content, and secondary content after primary. The peer review will check that:
 
-1. The order in which elements receive focus when a user tabs through the document supports user goals.
+1. The tab order fits the user goals
 2. In-page navigation is facilitated with 'skip to content' and 'back to top' links where appropriate
 
 #### Reviewer comments
+
+* Maybe should tab through breadcrumbs before navigation
 
 #### Developer(s) actions in response
 
@@ -93,7 +101,7 @@ Navigation will typically be before primary content, and secondary content after
 
 ### Forms
 
-We ensure our forms are **accessible**, **usable** and make best use of HTML5 and ARIA semantics. The peer review will check that:
+We ensure our forms are accessible6, usable and make best use of HTML5 and ARIA semantics. The peer review will check that:
 
 1. Forms are fully accessible via keyboard alone
 2. Forms are logically organised
@@ -107,13 +115,15 @@ We ensure our forms are **accessible**, **usable** and make best use of HTML5 an
 
 #### Reviewer comments
 
+NA
+
 #### Developer(s) actions in response
 
 ---
 
 ### Tables
 
-Where appropriate, tabular data is placed in HTML ```<table>``` elements. We never use tables for layout and avoid re-purposing other elements to recreate table-like representations of data. WebAIM provide guidance on ensuring tables are accessible7
+All tabular data is placed in HTML ```<table>``` elements. We do not use tables for layout and do not re-purpose other elements to recreate table-like representations of data. WebAIM provide guidance on ensuring tables are accessible7
 
 The peer review will check that:	
 
@@ -122,6 +132,8 @@ The peer review will check that:
 3. Table headings are provided in ```<th>``` elements with an appropriate scope attribute
 
 #### Reviewer comments
+
+NA
 
 #### Developer(s) actions in response
 
@@ -147,13 +159,15 @@ Where SVGs are used, they are used accessibly
 
 #### Reviewer comments
 
+NA
+
 #### Developer(s) actions in response
 
 ---
 
 ### There is good use of appropriate ARIA roles to support native semantics
 
-While HTML5 provides a range of new semantic elements which are recognised by newer browsers, there is poor support (even in newer browsers) when it comes to reporting these elements to the Accessibility API. This, and the lack of semantics when these elements are polyfilled with JavaScript, makes ARIA an important tool. Because the HTML5 spec was updated in mid-2014 to indicate compatibility between elements and ARIA roles, developers can see the compatibility of an element with ARIA roles, states and properties by looking up the tag within the [HTML5 specification](http://www.w3.org/TR/2014/REC-html5-20141028/) .
+While HTML5 provides a range of new semantic elements which are recognised by newer browsers, there is poor support (even in newer browsers) when it comes to reporting these elements to the Accessibility API. This, and the lack of semantics when these elements are polyfilled with JavaScript, makes ARIA an important tool. The HTML5 spec was updated in mid-2014 to indicate compatibility between elements and ARIA roles.
 
 Related resources are: 
 
@@ -164,6 +178,8 @@ Related resources are:
 The peer review will check that ARIA roles are provided to support native semantics
 
 #### Reviewer comments
+
+All good. No comments.
 
 #### Developer(s) actions in response
 
@@ -185,6 +201,12 @@ There are a number of principles which we adopt for all CSS. The peer review wil
 
 #### Reviewer comments
 
+* Remove unused CSS files
+* 0 values shouldn't have units specified
+* Fallback HEX colours should precede RGBA colours
+* float can't be used with display: inline-block
+* -moz-border-radius used without standard border-radius
+
 ####  Developer(s) comments
 
 ---
@@ -195,23 +217,37 @@ It is important to ensure interactive elements have a distinct visual appearance
 
 #### Reviewer comments
 
-* :focus not used on button
+All good. No comments.
 
 #### Developer(s) actions in response
 
 ---
 
-### SASS guidelines
+### Mobile first responsive design
 
-As we more routinely incorporate CSS-preprocessing into our workflow we need to ensure our approach is maintainable (and that future developers understand the code we're writing today) and as simple as possible. Some useful insights are provided at [SASS guidelines](http://sass-guidelin.es) but developers will need to exercise judgement about what is most appropriate in the specific circumstances. A useful principle to bear in mind (from the SASS guidelines) is that: 
+We adopt a mobile-first approach which includes:
 
-> ... CSS is a simple language. Sass, being intended to write CSS, should not get much more complex than regular CSS. The KISS principle (Keep It Simple Stupid) is key here and may even take precedence over the DRY principle (Don’t Repeat Yourself) in some circumstances.
+* Beginning from the premise that all content will be available to all users regardless of their screen size, unless there is a clear justification for doing otherwise
+* Seeking to avoid duplicating HTML for display at different resolutions
+* Recognising that there is no correlation between a user's screen resolution, network speed, device capability or processing power
+* Fixing the viewport in older IE, rather than polyfilling media queries
 
-> Sometimes, it’s better to repeat a little to keep the code maintainable, rather than building a top-heavy, unwieldy, unnecessarily complicated system that is completely unmaintainable because it is overly complex.
+The peer review will check that:
 
-**Developers are strongly encouraged to contribute to this section of the development guide as we get more familiar with SASS**
+1. The principles of our mobile-first approach have been adopted
+2. We have developed in a way that accommodates devices which have low processing power and/or a slow network
+3. The viewport is fixed in older IE
 
-### SASS/CSS formatting standards
+#### Reviewer comments
+
+* Heading overflows x on iPhone 5/4 (320px wide)
+* 'In association...' overflows y on iPhone 5/4
+
+#### Developer(s) actions in response
+
+---
+
+### CSS formatting standards
 
 To ensure consistency across developers and assist with the maintainability of our code base we adopt a number of general CSS code formatting standards. The peer review will check that:
 
@@ -220,6 +256,23 @@ To ensure consistency across developers and assist with the maintainability of o
 3. All rules are closed with a semicolon
 
 #### Reviewer comments
+
+No comments
+
+#### Developer(s) actions in response
+
+---
+
+### CSS structure
+
+CSS is structured to reflect a mobile-first approach. Each stylesheet begins with universal rules outside of a media query block. The peer review will check that:
+
+1. ```@media``` rules are introduced sequentially, from smallest to largest
+2. Overly specific queries that are difficult to test are avoided - i.e. ```@media tv and (min-width: 700px) and (max-width: 960px) and (orientation: landscape) { ... }```
+
+#### Reviewer comments
+
+@media rules could be structured better
 
 #### Developer(s) actions in response
 
@@ -235,6 +288,10 @@ We need to ensure we have accounted for users printing our content. While modern
 4. Print specific styles are contained within in a ```@media = print``` block
 
 #### Reviewer comments
+
+* h1 missing from print view
+* quote marks obstruct text for blockquotes
+* background images not printing if background turned off by print options
 
 #### Developer(s) actions in response
 
@@ -257,6 +314,8 @@ Please speak to the Lead Front-end Developer if you need guidance on meeting any
 
 #### Reviewer comments
 
+* Background images not loading via lazyloading
+
 #### Developer(s) actions in response
 
 ---
@@ -268,6 +327,8 @@ Please speak to the Lead Front-end Developer if you need guidance on meeting any
 We therefore use only jQuery or similarly 'battle tested' framework (such as AngularJS) for managing interaction with the DOM.
 
 #### Reviewer comments
+
+* No evidence of lazyloading working for background images
 
 #### Developer(s) actions in response
 
@@ -283,6 +344,8 @@ It is essential that we consider the implications for users of assistive technol
 For this reason, jQueryUI presents a good tool as its authors have worked hard to include the necessary ARIA role and state management in the library components. Nonetheless, we should test the accessibility of custom widgets before they are used.
 
 #### Reviewer comments
+
+NA
 
 #### Developer(s) actions in response
 
@@ -302,6 +365,8 @@ When working with .NET MVC: the MVC framework provides mechanisms to manage clie
 
 #### Reviewer comments
 
+NA
+
 #### Developer(s) actions in response
 
 ---
@@ -313,6 +378,8 @@ We have a library of common utilities that cover a range of common UI patterns u
 * Where appropriate, we have packaged any new patterns into reusable components that are included in tna-definitions.js
 
 #### Reviewer comments
+
+No comments
 
 #### Developer(s) actions in response
 
@@ -335,6 +402,8 @@ The peer reviewer will:
 
 #### Reviewer comments
 
+* There maybe an issue when JS turned off images don't load because of lazyloading - need clarification because I can't test it.
+
 #### Developer(s) actions in response
 
 ---
@@ -351,6 +420,8 @@ The site/service should be tested on:
 While issues remain, iterate.
 
 #### Reviewer comments
+
+* Spacing issue with right nav overlapping header/search form on IE and Firefox with smaller screens
 
 #### Developer(s) actions in response
 
