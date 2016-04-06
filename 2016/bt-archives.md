@@ -18,7 +18,7 @@ There are a few principles which we follow for all HTML we produce. The peer rev
 Suggestions (not crucial)
 
 * main should wrap and indicate where the main content starts
-* Try not rename Bootstrap's classes. Try keep Bootstrap's HTML/CSS structure. Use additional classes to achieve desired results.
+* Try not rename Bootstrap's classes. Try keep Bootstrap's HTML/CSS structure. Use overwrites or additional classes to achieve desired results.
 
 Overall, HTML structure well built
 
@@ -92,6 +92,8 @@ Navigation will typically be before primary content, and secondary content after
 2. In-page navigation is facilitated with 'skip to content' and 'back to top' links where appropriate
 
 #### Reviewer comments
+
+Suggestion
 
 * Maybe should tab through breadcrumbs before navigation
 
@@ -403,6 +405,10 @@ The peer reviewer will:
 #### Reviewer comments
 
 * There maybe an issue when JS turned off images don't load because of lazyloading - need clarification because I can't test it.
+
+Suggestion (not crucial)
+
+* Font colour on background colour doesn't pass WCAG AAA. We only need to comply with AA, so not crucial.
 
 #### Developer(s) actions in response
 
