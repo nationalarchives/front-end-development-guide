@@ -328,7 +328,7 @@ We therefore use only jQuery or similarly 'battle tested' framework (such as Ang
 
 #### Reviewer comments
 
-* No evidence of lazyloading working
+* No evidence of lazyloading working for background images
 
 #### Developer(s) actions in response
 
