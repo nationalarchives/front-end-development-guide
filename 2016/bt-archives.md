@@ -24,6 +24,9 @@ Overall, HTML structure well built
 
 #### Developer(s) actions in response
 
+* Div elements are outside of the span.
+* Closing p has been addressed and fixed. 
+
 ---
 
 ### HTML5 syntax style
@@ -45,7 +48,7 @@ Suggestion (not crucial)
 
 #### Developer(s) actions in response
 
----
+This has been addressed and fixed.
 
 ### There is an appropriate HTML outline
 
@@ -82,7 +85,8 @@ We use WAI-ARIA landmark roles (```application, banner, complementary, contentin
 
 #### Developer(s) actions in response
 
----
+* The <figcaption> is now part of a <figure> tag. 
+* Using a <div> instead of <aside>
 
 ### HTML is ordered to support user needs
 
@@ -99,7 +103,7 @@ Suggestion
 
 #### Developer(s) actions in response
 
----
+This issue has been addressed.
 
 ### Forms
 
@@ -211,7 +215,11 @@ There are a number of principles which we adopt for all CSS. The peer review wil
 
 ####  Developer(s) comments
 
----
+* Removed unused CSS
+* 0 value is just 0 now
+* Fallback HEX colours have been added
+* Removed Display inline-block
+* Standard border-radius has now been added.
 
 ### User focus is clearly visible
 
@@ -247,6 +255,9 @@ The peer review will check that:
 
 #### Developer(s) actions in response
 
+* Heading overflows have been fixed.
+* Correct text size displays on older iPhones.
+
 ---
 
 ### CSS formatting standards
@@ -278,6 +289,8 @@ CSS is structured to reflect a mobile-first approach. Each stylesheet begins wit
 
 #### Developer(s) actions in response
 
+Will be adding Sass to organise the code, later on. This will give a much better structure over all.
+
 ---
 
 ### Print CSS
@@ -297,7 +310,7 @@ We need to ensure we have accounted for users printing our content. While modern
 
 #### Developer(s) actions in response
 
----
+This needs to be reviewed, as this will require alot of additinal styles for printing.
 
 ## Checkpoint 3: Enhance with JavaScript
 
@@ -320,7 +333,7 @@ Please speak to the Lead Front-end Developer if you need guidance on meeting any
 
 #### Developer(s) actions in response
 
----
+* Background and normal images are loading via lazy load.
 
 ### jQuery or AngularJS are used for DOM abstraction
 
@@ -334,7 +347,7 @@ We therefore use only jQuery or similarly 'battle tested' framework (such as Ang
 
 #### Developer(s) actions in response
 
----
+* Background and normal images are loading via lazy load.
 
 ### jQueryUI is the primary source for custom widgets
 It is essential that we consider the implications for users of assistive technologies when reviewing third-party plugins that provide non-standard user interface elements. This will include:
@@ -431,7 +444,7 @@ While issues remain, iterate.
 
 #### Developer(s) actions in response
 
----
+Been tested on browserstack and seems to be working fine. If there is browser issues, kindly let me know.
 
 ## Lessons learned
 
