@@ -392,7 +392,7 @@ We have a library of common utilities that cover a range of common UI patterns u
 
 #### Reviewer comments
 
-Custom JS has been written for eventbrite interactions. This is handled in a separate JS file. 
+Custom JS has been written for eventbrite interactions. This is handled in a separate JS file.
 
 #### Developer(s) actions in response
 
