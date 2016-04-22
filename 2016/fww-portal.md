@@ -94,6 +94,8 @@ Navigation will typically be before primary content, and secondary content after
 
 #### Developer(s) actions in response
 
+1. By defualt Firfox tab through forms for mac users. To tab through links the user needs to change this via settings. 
+
 ---
 
 ### Forms
@@ -123,6 +125,9 @@ We ensure our forms are accessible6, usable and make best use of HTML5 and ARIA 
 9. Error message works ok.
 
 #### Developer(s) actions in response
+
+5. Label added to form
+7. role="form" added
 
 ---
 
@@ -187,6 +192,8 @@ The peer review will check that ARIA roles are provided to support native semant
 1. Might be worth adding 'aria-required=true' to as well as 'required' to the email input box?
 
 #### Developer(s) actions in response
+
+1. aria-required=true added to form
 
 ---
 
@@ -330,6 +337,8 @@ Please speak to the Lead Front-end Developer if you need guidance on meeting any
 7. Select a subject dropdown needs a fallback submit button. Currently doesn't work without JS.
 
 #### Developer(s) actions in response
+
+1. Comments added to JS explaining the function
 
 ---
 
