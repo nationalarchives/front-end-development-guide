@@ -385,6 +385,7 @@ The peer reviewer will:
 <title> could be more descriptive
 <a> tabs without titles
 2. Content accessible with JS and CSS disabled
+Select menu needs a button to navigation when JS disabled
 
 #### Developer(s) actions in response
 
