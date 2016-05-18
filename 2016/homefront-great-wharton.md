@@ -78,7 +78,7 @@ We use WAI-ARIA landmark roles (```application, banner, complementary, contentin
 4. Missing 'main' WAI-ARIA landmark from wharton-sub.htm. Also on the same HTML page, the dropdown menu is missing 'navigation' landmark. On wharton.htm, the pins are a form of navigation, should they also have a 'navigation' landmark?
 
 #### Developer(s) actions in response
-
+1. ```<main>``` added to the story page
 ---
 
 ### HTML is ordered to support user needs
@@ -181,7 +181,7 @@ Missing 'main' WAI-ARIA landmark from wharton-sub.htm. Also on the same HTML pag
 
 #### Developer(s) actions in response
 
----
+Added main to the story page
 
 ## Checkpoint 2: Enhance with CSS
 
@@ -209,7 +209,7 @@ There are a number of principles which we adopt for all CSS. The peer review wil
 
 ####  Developer(s) comments
 
----
+6. Added html5shiv.min.js and respond.min.js
 
 ### User focus is clearly visible
 
@@ -267,7 +267,7 @@ We need to ensure we have accounted for users printing our content. While modern
 
 #### Developer(s) actions in response
 
----
+1. Added print css support to the story
 
 ## Checkpoint 3: Enhance with JavaScript
 
@@ -296,7 +296,7 @@ Please speak to the Lead Front-end Developer if you need guidance on meeting any
 
 #### Developer(s) actions in response
 
----
+3. Error available in the Draggable library
 
 ### jQuery or AngularJS are used for DOM abstraction
 
@@ -310,7 +310,7 @@ Is the no js function working?
 
 #### Developer(s) actions in response
 
----
+1. No JS function working fine
 
 ### jQueryUI is the primary source for custom widgets
 It is essential that we consider the implications for users of assistive technologies when reviewing third-party plugins that provide non-standard user interface elements. This will include:
@@ -327,7 +327,7 @@ For this reason, jQueryUI presents a good tool as its authors have worked hard t
 
 #### Developer(s) actions in response
 
----
+1. Jquery UI is used for the LEARN MORE feature
 
 ### JavaScript form validation
 
@@ -348,7 +348,7 @@ Curly braces missing from a few 'if', 'else' and 'while'
 
 #### Developer(s) actions in response
 
----
+1. Added ';' on line 20
 
 ### Our JavaScript library is used for common patterns
 We have a library of common utilities that cover a range of common UI patterns used across our digital services. The peer review will check that:
