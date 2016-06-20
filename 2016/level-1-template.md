@@ -11,6 +11,9 @@ There are a few principles which we follow for all HTML we produce. The peer rev
 4. Source code is correctly indented to illustrate its structure
 
 #### Reviewer comments
+1. Error on line 233, where <article should not have the role attr `banner`.
+2. Use the `div class="container"` should be wrapped inside the `<main>` tag not outside.
+3. The element `<main` does not need a `role` attr.
 
 #### Developer(s) actions in response
 
@@ -26,6 +29,7 @@ HTML5 has considerably relaxed the syntax rules for HTML. To ensure consistency 
 4. All tag names and attributes are in lower case
 
 #### Reviewer comments
+1. W3C is pointing out un closed tags.
 
 #### Developer(s) actions in response
 
@@ -317,6 +321,19 @@ The peer reviewer will:
 2. Accessible and usable without JavaScript and/or CSS
 
 #### Reviewer comments
+
+#### Developer(s) actions in response
+
+---
+
+## Checkpoint 6: Php
+
+### This php should be clean and well commented.
+
+#### Reviewer comments
+1. `page-level-1-landing.php` on line 21, instead of writing a condition to do nothing, add `!empty` then do something.
+2. `page-level-1-landing.php` on line 87 - 88, the else might not be required. It will anyways do nothing.
+3. `page-level-1-landing.php` on line 71 add the styles to the template.scss `center center;background-size: cover;height: 180px;`.
 
 #### Developer(s) actions in response
 
