@@ -49,6 +49,7 @@ The peer review will check that:
 2. All content appears in the correct part of the outline
 
 #### Reviewer comments
+All checks ok.
 
 #### Developer(s) actions in response
 
@@ -66,6 +67,7 @@ We use WAI-ARIA landmark roles (```application, banner, complementary, contentin
 4. All relevant WAI-ARIA landmarks have been applied
 
 #### Reviewer comments
+All checks ok.
 
 #### Developer(s) actions in response
 
@@ -79,6 +81,7 @@ Navigation will typically be before primary content, and secondary content after
 2. In-page navigation is facilitated with 'skip to content' and 'back to top' links where appropriate
 
 #### Reviewer comments
+All checks ok
 
 #### Developer(s) actions in response
 
@@ -99,6 +102,7 @@ We ensure our forms are **accessible**, **usable** and make best use of HTML5 an
 9. Error messages are clearly visible and associated (both visually and within the DOM) to the corresponding input
 
 #### Reviewer comments
+No forms used
 
 #### Developer(s) actions in response
 
@@ -115,6 +119,7 @@ The peer review will check that:
 3. Table headings are provided in ```<th>``` elements with an appropriate scope attribute
 
 #### Reviewer comments
+No tables used
 
 #### Developer(s) actions in response
 
@@ -139,7 +144,7 @@ Related resources are:
 Where SVGs are used, they are used accessibly
 
 #### Reviewer comments
-
+No SVG used.
 #### Developer(s) actions in response
 
 ---
@@ -157,6 +162,7 @@ Related resources are:
 The peer review will check that ARIA roles are provided to support native semantics
 
 #### Reviewer comments
+All checks ok.
 
 #### Developer(s) actions in response
 
@@ -177,7 +183,7 @@ There are a number of principles which we adopt for all CSS. The peer review wil
 7. Hacks for other browsers are placed in the 'shame.css' file
 
 #### Reviewer comments
-
+All checks ok.
 ####  Developer(s) comments
 
 ---
@@ -187,6 +193,7 @@ There are a number of principles which we adopt for all CSS. The peer review wil
 It is important to ensure interactive elements have a distinct visual appearance when activated. The peer review will check that all interactive elements have a clearly differentiated visual appearance when they have focus (this can typically be achieved using ```:focus```)
 
 #### Reviewer comments
+All checks ok
 
 #### Developer(s) actions in response
 
@@ -211,7 +218,7 @@ To ensure consistency across developers and assist with the maintainability of o
 3. All rules are closed with a semicolon
 
 #### Reviewer comments
-
+All checks ok
 #### Developer(s) actions in response
 
 ---
@@ -226,6 +233,7 @@ We need to ensure we have accounted for users printing our content. While modern
 4. Print specific styles are contained within in a ```@media = print``` block
 
 #### Reviewer comments
+All checks ok
 
 #### Developer(s) actions in response
 
@@ -247,6 +255,7 @@ There are a few principles which we follow for all JavaScript development. The p
 Please speak to the Lead Front-end Developer if you need guidance on meeting any of these requirements.
 
 #### Reviewer comments
+All checks ok
 
 #### Developer(s) actions in response
 
@@ -259,6 +268,7 @@ Please speak to the Lead Front-end Developer if you need guidance on meeting any
 We therefore use only jQuery or similarly 'battle tested' framework (such as AngularJS) for managing interaction with the DOM.
 
 #### Reviewer comments
+All checks ok
 
 #### Developer(s) actions in response
 
@@ -274,6 +284,7 @@ It is essential that we consider the implications for users of assistive technol
 For this reason, jQueryUI presents a good tool as its authors have worked hard to include the necessary ARIA role and state management in the library components. Nonetheless, we should test the accessibility of custom widgets before they are used.
 
 #### Reviewer comments
+All checks ok
 
 #### Developer(s) actions in response
 
@@ -292,6 +303,7 @@ When working outside of .NET MVC:
 When working with .NET MVC: the MVC framework provides mechanisms to manage client- and server-side validation in tandem. When working with .NET MVC it is important that we rely upon these since it will be substantially easier to implement and maintain. A Systems Architect or a Senior Developer can advise on a suitable approach when working with .NET.
 
 #### Reviewer comments
+N/A
 
 #### Developer(s) actions in response
 
@@ -304,6 +316,7 @@ We have a library of common utilities that cover a range of common UI patterns u
 * Where appropriate, we have packaged any new patterns into reusable components that are included in tna-definitions.js
 
 #### Reviewer comments
+N/A
 
 #### Developer(s) actions in response
 
@@ -325,6 +338,7 @@ The peer reviewer will:
 2. Accessible and usable without JavaScript and/or CSS
 
 #### Reviewer comments
+All checks ok
 
 #### Developer(s) actions in response
 
@@ -359,6 +373,7 @@ The site/service should be tested on:
 While issues remain, iterate.
 
 #### Reviewer comments
+The content on the banner section overlays above the heading. Check it in responsive mode, using the chrome dev tools.
 
 #### Developer(s) actions in response
 
