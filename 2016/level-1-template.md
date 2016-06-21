@@ -16,6 +16,9 @@ There are a few principles which we follow for all HTML we produce. The peer rev
 3. The element `<main` does not need a `role` attr.
 
 #### Developer(s) actions in response
+1. Will move banner attr
+2. ?
+3. This is an accepted warning we are aware about, as we choose not to use HTML5 elements for structue, see below. Maybe should be reviewed.
 
 ---
 
@@ -32,6 +35,7 @@ HTML5 has considerably relaxed the syntax rules for HTML. To ensure consistency 
 1. W3C is pointing out un closed tags.
 
 #### Developer(s) actions in response
+2. This is content used on the test site. Not the actual code for the template. So not applicable.
 
 ---
 
@@ -336,6 +340,10 @@ The peer reviewer will:
 3. `page-level-1-landing.php` on line 71 add the styles to the template.scss `center center;background-size: cover;height: 180px;`.
 
 #### Developer(s) actions in response
+
+1. This is creatied for easily understandable code for all and easy debugging. Understand the comment and worth considering.
+2. As above. The comment indicates the conidition requires two values. Good for debugging and flagging future issues.
+3. Good point. Will refactor with a new condition and variable to insert class.
 
 ---
 
