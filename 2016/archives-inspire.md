@@ -72,13 +72,13 @@ We use WAI-ARIA landmark roles (```application, banner, complementary, contentin
 
 #### Reviewer comments
 
-1. ```<main>``` missing from wharton-sub.htm
+1. ```<main>``` is available
 2. HTML5 sectioning used for semantics
 3. HTML5 sectioning elements are not over used
-4. Missing 'main' WAI-ARIA landmark from wharton-sub.htm. Also on the same HTML page, the dropdown menu is missing 'navigation' landmark. On wharton.htm, the pins are a form of navigation, should they also have a 'navigation' landmark?
+4. WAI-ARIA landmark available
 
 #### Developer(s) actions in response
-1. ```<main>``` added to the story page
+
 ---
 
 ### HTML is ordered to support user needs
@@ -91,7 +91,7 @@ Navigation will typically be before primary content, and secondary content after
 #### Reviewer comments
 
 1. Tabbing needs attention, elements don't receive focus when tabbing.
-2. NA
+2. NA                                                                                                                                               
 
 #### Developer(s) actions in response
 
