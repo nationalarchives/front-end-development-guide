@@ -13,7 +13,11 @@ There are a few principles which we follow for all HTML we produce. The peer rev
 #### Reviewer comments
 
 1. HTML5 doc type used with html tag with lang attribute
-2. HTML validates with one warning, but acceptable
+2. HTML validates with three warnings and three errors
+  2.1 The frameborder attribute on the iframe element is obsolete
+  2.2 Section laks heading
+  2.3 Bad character < after <
+  2.4 Style used inside <noscript> tags
 3. title and h1 tag present
 4. Source code nicely indented and formated
 
@@ -90,7 +94,7 @@ Navigation will typically be before primary content, and secondary content after
 
 #### Reviewer comments
 
-1. Tabbing needs attention, elements don't receive focus when tabbing.
+1. All good
 2. NA                                                                                                                                               
 
 #### Developer(s) actions in response
@@ -113,7 +117,7 @@ We ensure our forms are **accessible**, **usable** and make best use of HTML5 an
 
 #### Reviewer comments
 
-Select menu needs a label (hidden) and a name attribute for the select tag.
+NA
 
 #### Developer(s) actions in response
 
@@ -177,11 +181,11 @@ The peer review will check that ARIA roles are provided to support native semant
 
 #### Reviewer comments
 
-Missing 'main' WAI-ARIA landmark from wharton-sub.htm. Also on the same HTML page, the dropdown menu is missing 'navigation' landmark. On wharton.htm, the pins are a form of navigation, should they also have a 'navigation' landmark?
+NA
 
 #### Developer(s) actions in response
 
-Added main to the story page
+
 
 ## Checkpoint 2: Enhance with CSS
 
@@ -189,7 +193,7 @@ Added main to the story page
 
 There are a number of principles which we adopt for all CSS. The peer review will check that:
 
-1. CSS is valid
+1. CSS is valid 
 2. All CSS is placed in external stylesheets
 3. Relative units are used where possible
 4. ID and class names reflect the purpose of the element in question
@@ -199,17 +203,17 @@ There are a number of principles which we adopt for all CSS. The peer review wil
 
 #### Reviewer comments
 
-1. A number of warnings but validates
+1. CSS is not valid because of Bootstrap's carousel
 2. CSS is an external stylesheet
 3. Relative units are used, except for a few font-sizes
 4. ID and classes names reflect purpose
-5. !important are used
+5. !important are not used
 6. Where using Bootstrap, html5shiv.min.js and respond.min.js should be used as fallback for older IEs
 7. NA
 
 ####  Developer(s) comments
 
-6. Added html5shiv.min.js and respond.min.js
+NA
 
 ### User focus is clearly visible
 
@@ -261,13 +265,16 @@ We need to ensure we have accounted for users printing our content. While modern
 #### Reviewer comments
 
 1. Needs formatting
-3. Border and navigational elements should not be included. Logo could be smaller
-3. No content hyperlinks present to test
-4. ```@media = print``` not present
+3. Border and navigational elements should not be included. 
+   3.1 YouTube video should not pe visible
+   3.2 Hide the tabs and leave the content
+   3.3 Hide the left and right arrows 
+4. No content hyperlinks present to test
+5. ```@media = print``` not present
 
 #### Developer(s) actions in response
 
-1. Added print css support to the story
+
 
 ## Checkpoint 3: Enhance with JavaScript
 
@@ -286,9 +293,8 @@ Please speak to the Lead Front-end Developer if you need guidance on meeting any
 
 #### Reviewer comments
 
-1. Well Commented
-2. Well formatted
-3. One error: Uncaught ReferenceError: Draggable is not defined
+1. NA
+2. NA
 4. JS is within an external file with the exception of no js function
 5. JS framework minified
 6. JS dependent elements are not accessible with JS disabled
@@ -296,7 +302,7 @@ Please speak to the Lead Front-end Developer if you need guidance on meeting any
 
 #### Developer(s) actions in response
 
-3. Error available in the Draggable library
+
 
 ### jQuery or AngularJS are used for DOM abstraction
 
@@ -323,11 +329,11 @@ For this reason, jQueryUI presents a good tool as its authors have worked hard t
 
 #### Reviewer comments
 
-??
+NA
 
 #### Developer(s) actions in response
 
-1. Jquery UI is used for the LEARN MORE feature
+
 
 ### JavaScript form validation
 
@@ -343,12 +349,11 @@ When working with .NET MVC: the MVC framework provides mechanisms to manage clie
 
 #### Reviewer comments
 
-scripts.js line 20 missing ';'
-Curly braces missing from a few 'if', 'else' and 'while'
+NA
 
 #### Developer(s) actions in response
 
-1. Added ';' on line 20
+
 
 ### Our JavaScript library is used for common patterns
 We have a library of common utilities that cover a range of common UI patterns used across our digital services. The peer review will check that:
@@ -381,11 +386,7 @@ The peer reviewer will:
 
 #### Reviewer comments
 
-1. ```<i>``` used, not sure why.
-```<title>``` could be more descriptive
-```<a>``` tabs without titles
-2. Content accessible with JS and CSS disabled
-Select menu needs a button to navigation when JS disabled
+NA
 
 #### Developer(s) actions in response
 
@@ -404,6 +405,10 @@ While issues remain, iterate.
 
 #### Reviewer comments
 
+1. Tested in Mozilla, IE and Chrome
+2. Tested with chrome's inspector tool
+3. NA
+4. NA
 
 
 #### Developer(s) actions in response
