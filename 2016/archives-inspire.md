@@ -15,13 +15,17 @@ There are a few principles which we follow for all HTML we produce. The peer rev
 1. HTML5 doc type used with html tag with lang attribute
 2. HTML validates with three warnings and three errors
   2.1 The frameborder attribute on the iframe element is obsolete
-  2.2 Section laks heading
+  2.2 Section lacks heading
   2.3 Bad character < after <
   2.4 Style used inside <noscript> tags
 3. title and h1 tag present
 4. Source code nicely indented and formated
 
 #### Developer(s) actions in response
+2.1 This is a feature from youtube, which cannot be avoided.
+2.2 This has now been fixed, all sections now have a heading.
+2.3 The bad character indicates are greater and less then keys which is why the validater is treating it as a bad character. This has now been changed to symbols.
+2.4 The <noscript> has been removed now after speaking with other developers and is not using the no-js class to display content when js is turned off.
 
 ---
 
@@ -43,7 +47,7 @@ HTML5 has considerably relaxed the syntax rules for HTML. To ensure consistency 
 
 #### Developer(s) actions in response
 
----
+All checks fine.
 
 ### There is an appropriate HTML outline
 
@@ -61,7 +65,7 @@ The peer review will check that:
 
 #### Developer(s) actions in response
 
----
+All check fine.
 
 ### Appropriate semantics are used
 
@@ -83,7 +87,7 @@ We use WAI-ARIA landmark roles (```application, banner, complementary, contentin
 
 #### Developer(s) actions in response
 
----
+All checks fine.
 
 ### HTML is ordered to support user needs
 
@@ -99,7 +103,7 @@ Navigation will typically be before primary content, and secondary content after
 
 #### Developer(s) actions in response
 
----
+All checks fine
 
 ### Forms
 
@@ -121,7 +125,7 @@ NA
 
 #### Developer(s) actions in response
 
----
+NA
 
 ### Tables
 
@@ -139,7 +143,7 @@ NA
 
 #### Developer(s) actions in response
 
----
+NA
 
 ### SVGs are accessible
 Where appropriate images should be delivered in SVG format since this offers two significant accessibility benefits: the scalability of the image allows users with less than 20/20 vision to enjoy crisp images when zoomed, and; the inclusion of links within the SVG will allow for keyboard navigation by default. 
@@ -165,7 +169,7 @@ NA
 
 #### Developer(s) actions in response
 
----
+NA
 
 ### There is good use of appropriate ARIA roles to support native semantics
 
@@ -185,7 +189,7 @@ NA
 
 #### Developer(s) actions in response
 
-
+NA
 
 ## Checkpoint 2: Enhance with CSS
 
@@ -213,7 +217,7 @@ There are a number of principles which we adopt for all CSS. The peer review wil
 
 ####  Developer(s) comments
 
-NA
+6. The site has been browser tested with older versions of IE and it is compatible.
 
 ### User focus is clearly visible
 
@@ -225,7 +229,7 @@ User focus not present
 
 #### Developer(s) actions in response
 
----
+There is focus on every <a> element.
 
 ### SASS guidelines
 
@@ -266,7 +270,7 @@ We need to ensure we have accounted for users printing our content. While modern
 
 1. Needs formatting
 3. Border and navigational elements should not be included. 
-   3.1 YouTube video should not pe visible
+   3.1 YouTube video should not be visible
    3.2 Hide the tabs and leave the content
    3.3 Hide the left and right arrows 
 4. No content hyperlinks present to test
@@ -274,7 +278,11 @@ We need to ensure we have accounted for users printing our content. While modern
 
 #### Developer(s) actions in response
 
-
+3.1 The youtube video is there to remind viewers that the page has a video on the page.
+3.2 This has now been fixed, tabs are now hidden in print view.
+3.3 The left and right arrows are now hidden in print view.
+4. All hyperlinks destinations are present.
+5. There is now a ```@media = print``` css property which caters for printing.
 
 ## Checkpoint 3: Enhance with JavaScript
 
@@ -302,7 +310,7 @@ Please speak to the Lead Front-end Developer if you need guidance on meeting any
 
 #### Developer(s) actions in response
 
-
+NA
 
 ### jQuery or AngularJS are used for DOM abstraction
 
@@ -333,7 +341,7 @@ NA
 
 #### Developer(s) actions in response
 
-
+NA
 
 ### JavaScript form validation
 
@@ -353,7 +361,7 @@ NA
 
 #### Developer(s) actions in response
 
-
+NA
 
 ### Our JavaScript library is used for common patterns
 We have a library of common utilities that cover a range of common UI patterns used across our digital services. The peer review will check that:
@@ -367,7 +375,7 @@ NA
 
 #### Developer(s) actions in response
 
----
+NA
 
 ## Checkpoint 5: pre-release checks
 
@@ -390,7 +398,7 @@ NA
 
 #### Developer(s) actions in response
 
----
+NA
 
 ### Testing user goals across browsers, devices and contexts
 
@@ -413,7 +421,7 @@ While issues remain, iterate.
 
 #### Developer(s) actions in response
 
----
+All checks fine.
 
 ## Lessons learned
 
