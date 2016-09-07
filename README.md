@@ -6,8 +6,9 @@ This repository outlines a development approach that will support us in deliveri
 
 The [development guide and peer review](/peer-review-template.md) is presented as sequential checkpoints and can be used as a companion to the development process. Each section includes related peer review checks along with:
 
- * A section for comments from the peer reviewer. 
  * A section for developer(s) comments.
+ * A section for comments from the peer reviewer.
+ * A section for comments from the product owner.
 
 The nature of web projects and tasks will mean that some checks are not relevant to all projects or tasks. **It is therefore the responsibility of developers to**: 
 
@@ -19,23 +20,12 @@ The nature of web projects and tasks will mean that some checks are not relevant
 
 ## Conducting a peer review
 
-The process for conducting a peer review is separated into two distinct steps: 
+The process for conducting a peer review is separated into [X] distinct steps: 
 
-### Step 1: Before any code is migrated to a target platform (i.e. WordPress) 
+_To be agreed with the team:_
 
-* The peer reviewer should clone this repository to their development machine and create a copy of ```peer-review-template.md```. The copy should then be added to this repository in the relevant folder. For example, a peer review of a meeting minutes template conducted in 2015 would be saved as ```peer-review-meeting-minutes.md``` within the ```2015``` directory.
-* The peer reviewer should then populate the created file with the peer review comments and discuss these with the developer when completed. 
-* The developer should then act on the comments and, where necessary, describe how they have addressed any issues raised. 
+* _Coding standards, knowledge sharing (Pull requests etc.)_
+* _User-focussed considerations (accessibility etc.)_
+* _Product owner sign off_ 
+* _What do we peer review, when and how_
 
-Options for working with coded prototypes in the Discovery and Alpha phases of a project include using our dev.labs server or, preferably, linking an Azure website to the associated GitHub repository. Full instructions on deploying an Azure website can be found in [deploying-to-azure.md](/deploying-to-azure.md).
-
-Before migrating a prototype into a target environment **discuss the proposed approach with webmaster and the editorial team**. This is also an excellent knowledge sharing opportunity so please **discuss implementation and technical design decisions with others**
-
-### Step 2: Migrating the code into WordPress
-
-* Once the necessary changes have been made the code can be ported to the target platform (i.e. WordPress).
-* Having ported the code to the target platform the peer reviewer should:
-  * Perform all the **pre-release checks**
-  * Check that porting the code to a target platform hasn't compromised the code. 
-
-While this process has emerged from several discussions in the design team, it is open to change and improvement. **If any member of the team has concerns or suggestions about this process please raise them**. 
