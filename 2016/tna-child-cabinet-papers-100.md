@@ -398,6 +398,16 @@ While issues remain, iterate.
 
 #### Reviewer comments
 
+On landing page overlay not 100% width
+On the sub page template missing bottom margin
+Slider breaks and difficult to accessible on iPhone
+Issue with overlay when text exceeds box element
+On sub page image isn’t responsive. It’s heavily cropped inside the wrapping element
+On iPad the book images don’t need to stack
+On iPad overlay exceeds image left and right
+Also on IE9 the slider’s pagination is not aligned or maybe shouldn’t be there
+
+
 #### Developer(s) actions in response
 
 ---
