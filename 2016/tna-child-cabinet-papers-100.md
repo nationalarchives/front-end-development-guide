@@ -13,7 +13,7 @@ There are a few principles which we follow for all HTML we produce. The peer rev
 #### Reviewer comments
 
 1.  All good
-2.  The border attribute is obsolete for img tags - page.php
+2.  **The border attribute is obsolete for img tags**
 3.  All good
 4.  All good
 
@@ -201,15 +201,17 @@ There are a number of principles which we adopt for all CSS. The peer review wil
 
 #### Reviewer comments
 
-1.  !important used in a number of places
+1.  **!important used in a number of places**
     float can't be used with display:inline-block
-    Fallback background hex colour should proceed RGBA
+    **Fallback background hex colour should proceed RGBA**
     box-sizing should come after webkit-box-sizing
     No need for units with 0 value
+    **Parse Error on @media - remove 'only'**
+    **Value Error : background rgba(0,0,0,0.8) is not a background value**
 2.  Fine
 3.  Relative units not used as much as should
 4.  All good
-5.  !important used
+5.  **!important used**
 6.  NA
 7.  NA
 
@@ -269,6 +271,8 @@ We need to ensure we have accounted for users printing our content. While modern
 #### Reviewer comments
 
 No print CSS and print view isn't formatted or legible
+
+**Print media query css present - full URLs not formatting correctly**
 
 #### Developer(s) actions in response
 
