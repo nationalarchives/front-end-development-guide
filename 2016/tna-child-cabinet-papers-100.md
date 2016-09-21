@@ -201,13 +201,13 @@ There are a number of principles which we adopt for all CSS. The peer review wil
 
 #### Reviewer comments
 
-1.  **!important used in a number of places**
-    float can't be used with display:inline-block
-    **Fallback background hex colour should proceed RGBA**
-    box-sizing should come after webkit-box-sizing
-    No need for units with 0 value
-    **Parse Error on @media - remove 'only'**
-    **Value Error : background rgba(0,0,0,0.8) is not a background value**
+1.  * **!important used in a number of places**
+    * float can't be used with display:inline-block
+    * **Fallback background hex colour should proceed RGBA**
+    * box-sizing should come after webkit-box-sizing
+    * No need for units with 0 value
+    * **Parse Error on @media - remove 'only'**
+    * **Value Error : background rgba(0,0,0,0.8) is not a background value**
 2.  Fine
 3.  Relative units not used as much as should
 4.  All good
@@ -403,13 +403,14 @@ While issues remain, iterate.
 #### Reviewer comments
 
 * On landing page overlay not 100% width
-* On the sub page template missing bottom margin
+* **On the sub page template missing bottom margin**
 * Slider breaks and difficult to accessible on iPhone
 * Issue with overlay when text exceeds box element
 * On sub page image isn’t responsive. It’s heavily cropped inside the wrapping element
 * On iPad the book images don’t need to stack
 * On iPad overlay exceeds image left and right
 * Also on IE9 the slider’s pagination is not aligned or maybe shouldn’t be there
+* **On android the left and right arrows showing above slider**
 
 
 #### Developer(s) actions in response
