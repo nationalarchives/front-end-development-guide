@@ -19,6 +19,8 @@ There are a few principles which we follow for all HTML we produce. The peer rev
 
 #### Developer(s) actions in response
 
+The border attributes has now been removed from all img tags.
+
 ---
 
 ### HTML5 syntax style
@@ -39,7 +41,8 @@ HTML5 has considerably relaxed the syntax rules for HTML. To ensure consistency 
 
 #### Developer(s) actions in response
 
----
+1. All img tags now have a alt attribute value.
+
 
 ### There is an appropriate HTML outline
 
@@ -57,7 +60,8 @@ The peer review will check that:
 
 #### Developer(s) actions in response
 
----
+1. Done a re-check, and all seems fine.
+
 
 ### Appropriate semantics are used
 
@@ -79,7 +83,9 @@ We use WAI-ARIA landmark roles (```application, banner, complementary, contentin
 
 #### Developer(s) actions in response
 
----
+1. Role main has now been rectified.
+2. The sectioning element are now structured as per the bootstrap framework. This has now been resolved.
+
 
 ### HTML is ordered to support user needs
 
@@ -95,7 +101,7 @@ Navigation will typically be before primary content, and secondary content after
 
 #### Developer(s) actions in response
 
----
+1. Focus has now been fixed on all elements where required.
 
 ### Forms
 
@@ -117,7 +123,8 @@ NA
 
 #### Developer(s) actions in response
 
----
+NA
+
 
 ### Tables
 
@@ -135,7 +142,8 @@ NA
 
 #### Developer(s) actions in response
 
----
+NA
+
 
 ### SVGs are accessible
 Where appropriate images should be delivered in SVG format since this offers two significant accessibility benefits: the scalability of the image allows users with less than 20/20 vision to enjoy crisp images when zoomed, and; the inclusion of links within the SVG will allow for keyboard navigation by default. 
@@ -161,7 +169,8 @@ NA
 
 #### Developer(s) actions in response
 
----
+NA
+
 
 ### There is good use of appropriate ARIA roles to support native semantics
 
@@ -183,7 +192,8 @@ The peer review will check that ARIA roles are provided to support native semant
 
 #### Developer(s) actions in response
 
----
+1. role='main' is now added to both templates.
+
 
 ## Checkpoint 2: Enhance with CSS
 
@@ -217,7 +227,13 @@ There are a number of principles which we adopt for all CSS. The peer review wil
 
 ####  Developer(s) comments
 
----
+1. !important has been used mainly to override !important styles from base css. In the future will have to look at betters way to tackle such issues.
+2. display:inline-block, has been removed ehere flost is used.
+3. box-sizing comes after webkit-box-sizing.
+4. Units have been removed that has a value of 0.
+5. Error fixes for media query 'only'.
+6. Fixed value for background-color.
+
 
 ### User focus is clearly visible
 
@@ -229,7 +245,8 @@ Some elements focus is not visible
 
 #### Developer(s) actions in response
 
----
+Focus is now fixed for required elements.
+
 
 ### SASS guidelines
 
@@ -257,7 +274,8 @@ To ensure consistency across developers and assist with the maintainability of o
 
 #### Developer(s) actions in response
 
----
+Re-checked, all good.
+
 
 ### Print CSS
 
@@ -276,7 +294,8 @@ No print CSS and print view isn't formatted or legible
 
 #### Developer(s) actions in response
 
----
+1. @media = print, as now been added with the relevant rule.
+
 
 ## Checkpoint 3: Enhance with JavaScript
 
@@ -299,7 +318,8 @@ bx-slider js used
 
 #### Developer(s) actions in response
 
----
+Bx-slider is to be removed in the next feature release.
+
 
 ### jQuery or AngularJS are used for DOM abstraction
 
@@ -313,7 +333,8 @@ NA
 
 #### Developer(s) actions in response
 
----
+NA
+
 
 ### jQueryUI is the primary source for custom widgets
 It is essential that we consider the implications for users of assistive technologies when reviewing third-party plugins that provide non-standard user interface elements. This will include:
@@ -330,7 +351,8 @@ All good
 
 #### Developer(s) actions in response
 
----
+Re-checked, all good.
+
 
 ### JavaScript form validation
 
@@ -350,7 +372,8 @@ NA
 
 #### Developer(s) actions in response
 
----
+NA
+
 
 ### Our JavaScript library is used for common patterns
 We have a library of common utilities that cover a range of common UI patterns used across our digital services. The peer review will check that:
@@ -364,7 +387,8 @@ NA
 
 #### Developer(s) actions in response
 
----
+NA
+
 
 ## Checkpoint 5: pre-release checks
 
@@ -387,7 +411,8 @@ The peer reviewer will:
 
 #### Developer(s) actions in response
 
----
+1. BX-slider now works when JS is turned off.
+
 
 ### Testing user goals across browsers, devices and contexts
 
@@ -415,7 +440,15 @@ While issues remain, iterate.
 
 #### Developer(s) actions in response
 
----
+1. Overlay is now 100% width.
+2. sub-page template margin-bottom is now added.
+3. Bx-slider now responsive to all touch devices.
+4. All images are now responsive.
+5. On iPad the images do now stack up anymore.
+6. The image is now 100%, which is inline with the left and right overlay.
+7. on IE( the slider pagination is now fixed.
+8. On android the left and right, arrows do not show anymore.
+
 
 ## Lessons learned
 
@@ -429,7 +462,7 @@ Questions to consider
 
 ### Having considered these questions, what are the key lessons to take forward for future projects?
 
-
+Lessons learnt, CSS print media query does not print background images.
 
 
 
