@@ -12,6 +12,11 @@ There are a few principles which we follow for all HTML we produce. The peer rev
 
 #### Reviewer comments
 
+1. The HTML5 document type is used. All good.
+2. It validates using the w3c validation tool. All good.
+3. H1 tag is used only for the title. All good.
+5. The structure is well indented. All good.
+
 #### Developer(s) actions in response
 
 ---
@@ -27,6 +32,10 @@ HTML5 has considerably relaxed the syntax rules for HTML. To ensure consistency 
 
 #### Reviewer comments
 
+1. All tags are closed. All good.
+2. Proper attributes are used. All good.
+3. All tag names are in lowercase.
+
 #### Developer(s) actions in response
 
 ---
@@ -38,9 +47,12 @@ HTML outlines are an important means for navigating pages with assistive technol
 The peer review will check that:
 
 1. The HTML outline is logical and based on an appropriate heading structure
-2. All content appears in the correct part of the outline
+2. All content appears in the correct part of the outline.
+3. The HTML5 section is used appropriately.
 
 #### Reviewer comments
+
+All good.
 
 #### Developer(s) actions in response
 
@@ -59,6 +71,11 @@ We use WAI-ARIA landmark roles (```application, banner, complementary, contentin
 
 #### Reviewer comments
 
+1. ```<main>``` is being used with the role='main'.
+2. HTML5 ```<section>``` used appropriately.
+3. ```<section>``` is not over used.
+4. All relevant WAI-ARIA landmarks are applied.
+
 #### Developer(s) actions in response
 
 ---
@@ -71,6 +88,9 @@ Navigation will typically be before primary content, and secondary content after
 2. In-page navigation is facilitated with 'skip to content' and 'back to top' links where appropriate
 
 #### Reviewer comments
+
+1. Navigation elements have :focus.
+2. 'Skip to content' and 'back to top' links are present.
 
 #### Developer(s) actions in response
 
@@ -92,6 +112,12 @@ We ensure our forms are **accessible**, **usable** and make best use of HTML5 an
 
 #### Reviewer comments
 
+1. Form is accessible and usable.
+2. Input type is defined as 'email'
+3. role is defined as 'form'
+4. Error messages are displayed clearly
+
+
 #### Developer(s) actions in response
 
 ---
@@ -107,6 +133,8 @@ The peer review will check that:
 3. Table headings are provided in ```<th>``` elements with an appropriate scope attribute
 
 #### Reviewer comments
+
+NA
 
 #### Developer(s) actions in response
 
@@ -132,6 +160,8 @@ Where SVGs are used, they are used accessibly
 
 #### Reviewer comments
 
+NA
+
 #### Developer(s) actions in response
 
 ---
@@ -149,6 +179,8 @@ Related resources are:
 The peer review will check that ARIA roles are provided to support native semantics
 
 #### Reviewer comments
+
+Relevant role have been defined. All good.
 
 #### Developer(s) actions in response
 
@@ -170,6 +202,9 @@ There are a number of principles which we adopt for all CSS. The peer review wil
 
 #### Reviewer comments
 
+CSS is valid, using the w3c validator.
+!important is being used, on line 137, which will be deleted.
+
 ####  Developer(s) comments
 
 ---
@@ -179,6 +214,9 @@ There are a number of principles which we adopt for all CSS. The peer review wil
 It is important to ensure interactive elements have a distinct visual appearance when activated. The peer review will check that all interactive elements have a clearly differentiated visual appearance when they have focus (this can typically be achieved using ```:focus```)
 
 #### Reviewer comments
+
+There is focus on relevant items.
+On the background images the focus is filling/covering the image, with yellow. I would suggest overiding it with a background: transparent.
 
 #### Developer(s) actions in response
 
@@ -204,6 +242,8 @@ To ensure consistency across developers and assist with the maintainability of o
 
 #### Reviewer comments
 
+NA
+
 #### Developer(s) actions in response
 
 ---
@@ -218,6 +258,11 @@ We need to ensure we have accounted for users printing our content. While modern
 4. Print specific styles are contained within in a ```@media = print``` block
 
 #### Reviewer comments
+
+1. Print text is legible.
+2. Correctly formatted.
+3. Images do'nt render in print view.
+
 
 #### Developer(s) actions in response
 
@@ -240,6 +285,9 @@ Please speak to the Lead Front-end Developer if you need guidance on meeting any
 
 #### Reviewer comments
 
+1. JS is well commented and formatted
+2. I would recommend using ```use strict``` on line 8 of the ```black-history.js```
+
 #### Developer(s) actions in response
 
 ---
@@ -251,6 +299,8 @@ Please speak to the Lead Front-end Developer if you need guidance on meeting any
 We therefore use only jQuery or similarly 'battle tested' framework (such as AngularJS) for managing interaction with the DOM.
 
 #### Reviewer comments
+
+All good.
 
 #### Developer(s) actions in response
 
@@ -266,6 +316,8 @@ It is essential that we consider the implications for users of assistive technol
 For this reason, jQueryUI presents a good tool as its authors have worked hard to include the necessary ARIA role and state management in the library components. Nonetheless, we should test the accessibility of custom widgets before they are used.
 
 #### Reviewer comments
+
+Using equalHeights.js plugin. All works well
 
 #### Developer(s) actions in response
 
@@ -285,6 +337,8 @@ When working with .NET MVC: the MVC framework provides mechanisms to manage clie
 
 #### Reviewer comments
 
+NA
+
 #### Developer(s) actions in response
 
 ---
@@ -296,6 +350,8 @@ We have a library of common utilities that cover a range of common UI patterns u
 * Where appropriate, we have packaged any new patterns into reusable components that are included in tna-definitions.js
 
 #### Reviewer comments
+
+NA
 
 #### Developer(s) actions in response
 
@@ -318,6 +374,8 @@ The peer reviewer will:
 
 #### Reviewer comments
 
+The site is accessible and usable without JS.
+
 #### Developer(s) actions in response
 
 ---
@@ -334,6 +392,8 @@ The site/service should be tested on:
 While issues remain, iterate.
 
 #### Reviewer comments
+
+All good with IE9, and touch devices.
 
 #### Developer(s) actions in response
 
