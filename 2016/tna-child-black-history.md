@@ -48,11 +48,10 @@ The peer review will check that:
 
 1. The HTML outline is logical and based on an appropriate heading structure
 2. All content appears in the correct part of the outline.
-3. The HTML5 section is used appropriately.
 
 #### Reviewer comments
 
-All good.
+1. The HTML5 section is used appropriately. All good.
 
 #### Developer(s) actions in response
 
