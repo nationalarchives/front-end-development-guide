@@ -1,6 +1,32 @@
 # Development guide
 
-## Checkpoint 1: We meet needs using HTML
+## Checkpoint 1: Coding standards
+
+### Version control and code reviews
+
+We follow the [Git Flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) branching methodology and routinely undertake code reviews using [pull requests](https://help.github.com/articles/about-pull-requests/) in GitHub to ensure all code has been reviewed before being merged into develop. The process is as follows: 
+
+* A feature branch is made from `Develop` on a local development machine and pushed to GitHub
+* A pull request is made and assigned to one or more other developers
+* When work is concluded the pull request is merged on GitHub
+* Developers pull Develop from GitHub.
+
+Key things to bear in mind are: 
+
+* Merges to Develop are done via a pull request to ensure there has been some review of code before it is merged to Develop
+* No development should be done on the `Develop` or `Master` branches. Urgent fixes can be managed via the 'Hotfix' process of in [Git flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+
+### WordPress coding style for PHP
+
+As part of our efforts to ensure clean, readable and consistent code across projects and developers we follow the [WordPress PHP Coding Standards](https://make.wordpress.org/core/handbook/best-practices/coding-standards/php/)
+
+### Testing
+
+* PHP code is tested using PHPUnit. There is a wealth of documentation and guidance on the [PHPUnit website](https://phpunit.de/) including: a [getting started guide](https://phpunit.de/), extensive [library documentation](https://phpunit.de/manual/current/en/index.html) and [presentations and videos](https://phpunit.de/presentations.html) 
+* JavaScript and jQuery code is tested using QUnit. There is good documentation available on the [QUnit website] including [an introduction to unit testing](http://qunitjs.com/intro/), a [cookbook](http://qunitjs.com/cookbook/) and good [documentation](http://api.qunitjs.com/) of the API.
+* Travis CI has been integrated into the repository to run PHPUnit and QUnit tests automatically when a branch is pushed to GitHub. This is very simple to achieve via a `.travis.yml` file in the project root. Travis also has good [documentation](https://docs.travis-ci.com).
+
+## Checkpoint 2: We meet needs using HTML
 
 ### General HTML principles
 There are a few principles which we follow for all HTML we produce. The peer review will check that:
@@ -118,7 +144,7 @@ The peer review will check that ARIA roles are provided to support native semant
 
 ---
 
-## Checkpoint 2: Enhance with CSS
+## Checkpoint 3: Enhance with CSS
 
 ### General CSS principles
 
@@ -171,7 +197,7 @@ We need to ensure we have accounted for users printing our content. While modern
 
 ---
 
-## Checkpoint 3: Enhance with JavaScript
+## Checkpoint 4: Enhance with JavaScript
 
 ### General JavaScript principles
 There are a few principles which we follow for all JavaScript development. The peer review will check that:
