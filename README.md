@@ -2,9 +2,9 @@
 
 ## Introduction
 
-This repository outlines a development approach that will support us in delivering high quality, inclusive and maintainable digital services while achieving a good balance between innovation and effective use of our development capability. It is a living, open tool to which we should all contribute.
+This repository outlines a development approach that will support us in delivering high quality, inclusive and maintainable digital services while achieving a good balance between innovation and effective use of our development capability. It is a living, open tool to which we should all contribute and is also comprehensively reviewed each year (See details of the [2016 review](reviews/2016-review.md) here).
 
-The [development guide](/development-guide.md) is presented as sequential checkpoints and can be used as a companion to the development process. Each section includes related peer review checks. This is accompanied by a [peer review checklist](/peer-review-template.md) with corresponding sections including:
+The [development guide](/development-guide.md) is presented as sequential checkpoints and can be used as a companion to the development process. Each section includes related peer review checks. This is accompanied by a [peer review checklist](/peer-review-checklist.md) with corresponding sections including:
 
  * A section for comments from the peer reviewer. 
  * A section for developer(s) comments.
