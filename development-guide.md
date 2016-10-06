@@ -257,7 +257,7 @@ When working with .NET MVC: the MVC framework provides mechanisms to manage clie
 
 The peer reviewer will:
 
-1. Check compliance with the Web Content Accessibility Guidelines (WCAG 2.0) using the W3C Quick Reference
+1. Check compliance with the Web Content Accessibility Guidelines (WCAG 2.0) using the [W3C Quick Reference](https://www.w3.org/WAI/WCAG20/quickref/)
 2. Ensure the site remains accessible in the event that JavaScript and CSS are not available
 3. Review [An Alphabet of Accessibility Issues](https://the-pastry-box-project.net/anne-gibson/2014-july-31) to consider how the implementation will meet the needs described.
 
