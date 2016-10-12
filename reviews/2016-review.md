@@ -8,7 +8,7 @@ We held three workshops with developers to shape this review. This included:
 
 We identified five broad aims for the Development Guide / Peer Review:
 
-* Supporting us in meeting requirements of the Government Service Design Manual, including
+* Supporting us in meeting requirements of the Government Service Design Manual
 * Improving our productivity, including: 
     * Working smarter to avoid duplicated effort, ensure we are documenting our work properly and avoiding technical debt
     * Improving our estimates
