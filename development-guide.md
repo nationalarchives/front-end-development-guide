@@ -1,6 +1,32 @@
 # Development guide
 
-## Checkpoint 1: We meet needs using HTML
+## Checkpoint 1: Coding standards
+
+### Version control and code reviews
+
+We follow the [Git Flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) branching methodology and routinely undertake code reviews using [pull requests](https://help.github.com/articles/about-pull-requests/) in GitHub to ensure all code has been reviewed before being merged into develop. The process is as follows: 
+
+* A feature branch is made from `Develop` on a local development machine and pushed to GitHub
+* A pull request is made and assigned to one or more other developers
+* When work is concluded the pull request is merged on GitHub
+* Developers pull Develop from GitHub.
+
+Key things to bear in mind are: 
+
+* Merges to Develop are done via a pull request to ensure there has been some review of code before it is merged to Develop
+* No development should be done on the `Develop` or `Master` branches. Urgent fixes can be managed via the 'Hotfix' process of in [Git flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+
+### WordPress coding style for PHP
+
+As part of our efforts to ensure clean, readable and consistent code across projects and developers we follow the [WordPress PHP Coding Standards](https://make.wordpress.org/core/handbook/best-practices/coding-standards/php/)
+
+### Testing
+
+* PHP code is tested using PHPUnit. There is a wealth of documentation and guidance on the [PHPUnit website](https://phpunit.de/) including: a [getting started guide](https://phpunit.de/), extensive [library documentation](https://phpunit.de/manual/current/en/index.html) and [presentations and videos](https://phpunit.de/presentations.html) 
+* JavaScript and jQuery code is tested using QUnit. There is good documentation available on the [QUnit website] including [an introduction to unit testing](http://qunitjs.com/intro/), a [cookbook](http://qunitjs.com/cookbook/) and good [documentation](http://api.qunitjs.com/) of the API.
+* Travis CI has been integrated into the repository to run PHPUnit and QUnit tests automatically when a branch is pushed to GitHub. This is very simple to achieve via a `.travis.yml` file in the project root. Travis also has good [documentation](https://docs.travis-ci.com).
+
+## Checkpoint 2: We meet needs using HTML
 
 ### General HTML principles
 There are a few principles which we follow for all HTML we produce. The peer review will check that:
@@ -9,10 +35,6 @@ There are a few principles which we follow for all HTML we produce. The peer rev
 2. HTML validates (W3C validation tool options include http://validator.w3.org/ or the newer, but still experimental - as of October 2015 - http://validator.w3.org/nu/)
 3. The ```<title>``` tag is present and follows pattern ```{h1} - The National Archives```
 4. Source code is correctly indented to illustrate its structure
-
-#### Reviewer comments
-
-#### Developer(s) actions in response
 
 ---
 
@@ -25,10 +47,6 @@ HTML5 has considerably relaxed the syntax rules for HTML. To ensure consistency 
 3. Full attribute syntax is used and all attributes are quoted. See the W3C description of [quoted attribute syntax](http://www.w3.org/TR/html-markup/syntax.html#syntax-attributes)
 4. All tag names and attributes are in lower case
 
-#### Reviewer comments
-
-#### Developer(s) actions in response
-
 ---
 
 ### There is an appropriate HTML outline
@@ -39,10 +57,6 @@ The peer review will check that:
 
 1. The HTML outline is logical and based on an appropriate heading structure
 2. All content appears in the correct part of the outline
-
-#### Reviewer comments
-
-#### Developer(s) actions in response
 
 ---
 
@@ -57,10 +71,6 @@ We use WAI-ARIA landmark roles (```application, banner, complementary, contentin
 3. HTML5 sectioning elements are not over used in place of ```<div>``` elements
 4. All relevant WAI-ARIA landmarks have been applied
 
-#### Reviewer comments
-
-#### Developer(s) actions in response
-
 ---
 
 ### HTML is ordered to support user needs
@@ -69,10 +79,6 @@ Navigation will typically be before primary content, and secondary content after
 
 1. The order in which elements receive focus when a user tabs through the document supports user goals.
 2. In-page navigation is facilitated with 'skip to content' and 'back to top' links where appropriate
-
-#### Reviewer comments
-
-#### Developer(s) actions in response
 
 ---
 
@@ -90,10 +96,6 @@ We ensure our forms are **accessible**, **usable** and make best use of HTML5 an
 8. HTML5 form validation is used, supported by JavaScript validation for older browsers. This is covered in the JavaScript section of this document
 9. Error messages are clearly visible and associated (both visually and within the DOM) to the corresponding input
 
-#### Reviewer comments
-
-#### Developer(s) actions in response
-
 ---
 
 ### Tables
@@ -105,10 +107,6 @@ The peer review will check that:
 1. All tabular data is in ```<table>``` elements
 2. A brief descriptive ```<caption>``` is provided for tables
 3. Table headings are provided in ```<th>``` elements with an appropriate scope attribute
-
-#### Reviewer comments
-
-#### Developer(s) actions in response
 
 ---
 
@@ -130,11 +128,11 @@ Related resources are:
 
 Where SVGs are used, they are used accessibly
 
-#### Reviewer comments
-
-#### Developer(s) actions in response
-
 ---
+
+### Images
+
+Where appropriate and practical we do make use of the incoming `srcset` attribute on `<img>` elements.
 
 ### There is good use of appropriate ARIA roles to support native semantics
 
@@ -148,13 +146,9 @@ Related resources are:
 
 The peer review will check that ARIA roles are provided to support native semantics
 
-#### Reviewer comments
-
-#### Developer(s) actions in response
-
 ---
 
-## Checkpoint 2: Enhance with CSS
+## Checkpoint 3: Enhance with CSS
 
 ### General CSS principles
 
@@ -168,19 +162,11 @@ There are a number of principles which we adopt for all CSS. The peer review wil
 6. Styles targeting older IE are placed in IE specific stylesheets that are included using conditional comments
 7. Hacks for other browsers are placed in the 'shame.css' file
 
-#### Reviewer comments
-
-####  Developer(s) comments
-
 ---
 
 ### User focus is clearly visible
 
 It is important to ensure interactive elements have a distinct visual appearance when activated. The peer review will check that all interactive elements have a clearly differentiated visual appearance when they have focus (this can typically be achieved using ```:focus```)
-
-#### Reviewer comments
-
-#### Developer(s) actions in response
 
 ---
 
@@ -202,10 +188,6 @@ To ensure consistency across developers and assist with the maintainability of o
 2. Rules are separated with new lines
 3. All rules are closed with a semicolon
 
-#### Reviewer comments
-
-#### Developer(s) actions in response
-
 ---
 
 ### Print CSS
@@ -217,13 +199,9 @@ We need to ensure we have accounted for users printing our content. While modern
 3. The printed page includes full hyperlink destinations (appending our domain where they are relative)
 4. Print specific styles are contained within in a ```@media = print``` block
 
-#### Reviewer comments
-
-#### Developer(s) actions in response
-
 ---
 
-## Checkpoint 3: Enhance with JavaScript
+## Checkpoint 4: Enhance with JavaScript
 
 ### General JavaScript principles
 There are a few principles which we follow for all JavaScript development. The peer review will check that:
@@ -238,10 +216,6 @@ There are a few principles which we follow for all JavaScript development. The p
 
 Please speak to the Lead Front-end Developer if you need guidance on meeting any of these requirements.
 
-#### Reviewer comments
-
-#### Developer(s) actions in response
-
 ---
 
 ### jQuery or AngularJS are used for DOM abstraction
@@ -249,10 +223,6 @@ Please speak to the Lead Front-end Developer if you need guidance on meeting any
 * jQuery provides an excellent means of managing the complexity of DOM manipulation across browsers and devices. Attempting to manipulate the DOM without jQuery needlessly exposes us to a large number of cross-browser bugs and inconsistencies.
 
 We therefore use only jQuery or similarly 'battle tested' framework (such as AngularJS) for managing interaction with the DOM.
-
-#### Reviewer comments
-
-#### Developer(s) actions in response
 
 ---
 
@@ -264,10 +234,6 @@ It is essential that we consider the implications for users of assistive technol
 * We should not use plug-ins that do not provide suitable ARIA role and state management, unless they are available for open source contribution and we have the skills and resources to extend them in line with the WAI-ARIA authoring practices9.
 
 For this reason, jQueryUI presents a good tool as its authors have worked hard to include the necessary ARIA role and state management in the library components. Nonetheless, we should test the accessibility of custom widgets before they are used.
-
-#### Reviewer comments
-
-#### Developer(s) actions in response
 
 ---
 
@@ -283,22 +249,6 @@ When working outside of .NET MVC:
 
 When working with .NET MVC: the MVC framework provides mechanisms to manage client- and server-side validation in tandem. When working with .NET MVC it is important that we rely upon these since it will be substantially easier to implement and maintain. A Systems Architect or a Senior Developer can advise on a suitable approach when working with .NET.
 
-#### Reviewer comments
-
-#### Developer(s) actions in response
-
----
-
-### Our JavaScript library is used for common patterns
-We have a library of common utilities that cover a range of common UI patterns used across our digital services. The peer review will check that:
-
-* Where possible, we have made use of tna-definitions.js, tna-bindings.js, and tna-run-on-page-load.js rather than reinventing code that already exists.
-* Where appropriate, we have packaged any new patterns into reusable components that are included in tna-definitions.js
-
-#### Reviewer comments
-
-#### Developer(s) actions in response
-
 ---
 
 ## Checkpoint 5: pre-release checks
@@ -307,7 +257,7 @@ We have a library of common utilities that cover a range of common UI patterns u
 
 The peer reviewer will:
 
-1. Check compliance with the Web Content Accessibility Guidelines (WCAG 2.0) using the W3C Quick Reference
+1. Check compliance with the Web Content Accessibility Guidelines (WCAG 2.0) using the [W3C Quick Reference](https://www.w3.org/WAI/WCAG20/quickref/)
 2. Ensure the site remains accessible in the event that JavaScript and CSS are not available
 3. Review [An Alphabet of Accessibility Issues](https://the-pastry-box-project.net/anne-gibson/2014-july-31) to consider how the implementation will meet the needs described.
 
@@ -316,9 +266,6 @@ The peer reviewer will:
 1. WCAG compliant at AA, including appropriate use and management of ARIA roles and states
 2. Accessible and usable without JavaScript and/or CSS
 
-#### Reviewer comments
-
-#### Developer(s) actions in response
 
 ---
 
@@ -333,10 +280,6 @@ The site/service should be tested on:
 
 While issues remain, iterate.
 
-#### Reviewer comments
-
-#### Developer(s) actions in response
-
 ---
 
 ## Lessons learned
@@ -350,8 +293,3 @@ Questions to consider
 * What would you do differently if given the chance to begin this project again
 
 ### Having considered these questions, what are the key lessons to take forward for future projects?
-
-
-
-
-
