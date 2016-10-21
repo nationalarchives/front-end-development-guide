@@ -37,12 +37,20 @@ If for any reason it has not been possible to meet any individual standard set o
 
 ### Comments from peer reviewer and devloper(s)
 
+## Checkpoint 4: Implementation reflects key architectural considerations
+
+See related section in the Development Guide
+
+* All application logic resides on the server
+* Users can link to specific application states (i.e. a specific tab or step within a process)
+* Browser 'back' and 'forward' buttons behave as expected
+
 ## Checkpoint 5: pre-release checks
 
 * Release version is WCAG 2.0 compliant at AA
 * Testing user goals across browsers, devices and contexts
 
-### Comments from peer reviewer and devloper(s)
+### Comments from peer reviewer and developer(s)
 
 ## Lessons learned
 
