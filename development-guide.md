@@ -16,6 +16,15 @@ Key things to bear in mind are:
 * Merges to Develop are done via a pull request to ensure there has been some review of code before it is merged to Develop
 * No development should be done on the `Develop` or `Master` branches. Urgent fixes can be managed via the 'Hotfix' process of in [Git flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 
+### Architectural considerations
+
+The [Resource Oriented Client Architecture](http://roca-style.org/) describes a number of recommendations that should be reflected in the applications we produce, as appropriate. Some key considerations which are not represented elsewhere in this guide are:
+
+* All [application logic](http://roca-style.org/#application-logic) resides on the server
+* A user must be able to [link to a specific piece of information](http://roca-style.org/#link).
+* Browser ['back' and 'forward' buttons](http://roca-style.org/#browser-controls) should work as expected. There is a recommendation related to this regarding the [History API](http://roca-style.org/#historyapi)
+* All [JavaScript and CSS code must be static](http://roca-style.org/#static-assets) 
+
 ### WordPress coding style for PHP
 
 As part of our efforts to ensure clean, readable and consistent code across projects and developers we follow the [WordPress PHP Coding Standards](https://make.wordpress.org/core/handbook/best-practices/coding-standards/php/)
