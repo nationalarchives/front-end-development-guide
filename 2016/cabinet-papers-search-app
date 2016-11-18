@@ -12,20 +12,8 @@ There are a few principles which we follow for all HTML we produce. The peer rev
 
 #### Reviewer comments
 
-1. HTML5 doc type used with html tag with lang attribute
-2. HTML validates with three warnings and three errors
-  2.1 The frameborder attribute on the iframe element is obsolete
-  2.2 Section lacks heading
-  2.3 Bad character < after <
-  2.4 Style used inside <noscript> tags
-3. title and h1 tag present
-4. Source code nicely indented and formated
 
 #### Developer(s) actions in response
-2.1 This is a feature from youtube, which cannot be avoided.
-2.2 This has now been fixed, all sections now have a heading.
-2.3 The bad character indicates are greater and less then keys which is why the validater is treating it as a bad character. This has now been changed to symbols.
-2.4 The <noscript> has been removed now after speaking with other developers and is not using the no-js class to display content when js is turned off.
 
 ---
 
@@ -47,7 +35,7 @@ HTML5 has considerably relaxed the syntax rules for HTML. To ensure consistency 
 
 #### Developer(s) actions in response
 
-All checks fine.
+
 
 ### There is an appropriate HTML outline
 
@@ -87,7 +75,7 @@ We use WAI-ARIA landmark roles (```application, banner, complementary, contentin
 
 #### Developer(s) actions in response
 
-All checks fine.
+
 
 ### HTML is ordered to support user needs
 
@@ -103,7 +91,7 @@ Navigation will typically be before primary content, and secondary content after
 
 #### Developer(s) actions in response
 
-All checks fine
+
 
 ### Forms
 
@@ -125,7 +113,7 @@ NA
 
 #### Developer(s) actions in response
 
-NA
+
 
 ### Tables
 
@@ -143,7 +131,7 @@ NA
 
 #### Developer(s) actions in response
 
-NA
+
 
 ### SVGs are accessible
 Where appropriate images should be delivered in SVG format since this offers two significant accessibility benefits: the scalability of the image allows users with less than 20/20 vision to enjoy crisp images when zoomed, and; the inclusion of links within the SVG will allow for keyboard navigation by default. 
@@ -169,7 +157,7 @@ NA
 
 #### Developer(s) actions in response
 
-NA
+
 
 ### There is good use of appropriate ARIA roles to support native semantics
 
@@ -189,7 +177,6 @@ NA
 
 #### Developer(s) actions in response
 
-NA
 
 ## Checkpoint 2: Enhance with CSS
 
@@ -207,17 +194,16 @@ There are a number of principles which we adopt for all CSS. The peer review wil
 
 #### Reviewer comments
 
-1. CSS is not valid because of Bootstrap's carousel
+1. NA
 2. CSS is an external stylesheet
 3. Relative units are used, except for a few font-sizes
 4. ID and classes names reflect purpose
 5. !important are not used
-6. Where using Bootstrap, html5shiv.min.js and respond.min.js should be used as fallback for older IEs
+6. NA
 7. NA
 
 ####  Developer(s) comments
 
-6. The site has been browser tested with older versions of IE and it is compatible.
 
 ### User focus is clearly visible
 
@@ -225,11 +211,10 @@ It is important to ensure interactive elements have a distinct visual appearance
 
 #### Reviewer comments
 
-User focus not present
+User focus not present on Education resources when tabbing
 
 #### Developer(s) actions in response
 
-There is focus on every <a> element.
 
 ### SASS guidelines
 
@@ -268,13 +253,7 @@ We need to ensure we have accounted for users printing our content. While modern
 
 #### Reviewer comments
 
-1. Needs formatting
-3. Border and navigational elements should not be included. 
-   3.1 YouTube video should not be visible
-   3.2 Hide the tabs and leave the content
-   3.3 Hide the left and right arrows 
-4. No content hyperlinks present to test
-5. ```@media = print``` not present
+NA
 
 #### Developer(s) actions in response
 
@@ -303,14 +282,13 @@ Please speak to the Lead Front-end Developer if you need guidance on meeting any
 
 1. NA
 2. NA
-4. JS is within an external file with the exception of no js function
-5. JS framework minified
+4. JS is within an external file with
+5. NA
 6. JS dependent elements are not accessible with JS disabled
 7. NA
 
 #### Developer(s) actions in response
 
-NA
 
 ### jQuery or AngularJS are used for DOM abstraction
 
@@ -320,11 +298,10 @@ We therefore use only jQuery or similarly 'battle tested' framework (such as Ang
 
 #### Reviewer comments
 
-Is the no js function working?
 
 #### Developer(s) actions in response
 
-1. No JS function working fine
+
 
 ### jQueryUI is the primary source for custom widgets
 It is essential that we consider the implications for users of assistive technologies when reviewing third-party plugins that provide non-standard user interface elements. This will include:
@@ -341,7 +318,6 @@ NA
 
 #### Developer(s) actions in response
 
-NA
 
 ### JavaScript form validation
 
@@ -361,7 +337,6 @@ NA
 
 #### Developer(s) actions in response
 
-NA
 
 ### Our JavaScript library is used for common patterns
 We have a library of common utilities that cover a range of common UI patterns used across our digital services. The peer review will check that:
@@ -375,7 +350,7 @@ NA
 
 #### Developer(s) actions in response
 
-NA
+
 
 ## Checkpoint 5: pre-release checks
 
@@ -398,7 +373,6 @@ NA
 
 #### Developer(s) actions in response
 
-NA
 
 ### Testing user goals across browsers, devices and contexts
 
@@ -421,7 +395,6 @@ While issues remain, iterate.
 
 #### Developer(s) actions in response
 
-All checks fine.
 
 ## Lessons learned
 
