@@ -215,6 +215,8 @@ User focus not present on Education resources when tabbing
 
 #### Developer(s) actions in response
 
+This issue has now been fixed. Earlier radio buttons were used to show and hide the states of the but had to use the arrow navigation keys to access the `Education resourses`.
+Now users can tab through without using the arrow keys.
 
 ### SASS guidelines
 
@@ -407,3 +409,5 @@ Questions to consider
 * What would you do differently if given the chance to begin this project again
 
 ### Having considered these questions, what are the key lessons to take forward for future projects?
+
+Learnt more about accessibility. Even thought the previous itteration passed all accessibility criterias, the form factor of using radio buttons as tab tools it not appropriate for a visually impaired user.
