@@ -275,6 +275,11 @@ The peer reviewer will:
 1. WCAG compliant at AA, including appropriate use and management of ARIA roles and states
 2. Accessible and usable without JavaScript and/or CSS
 
+#### Useful tools for accessibility testing:
+In addition to the [W3C Quick Reference](https://www.w3.org/WAI/WCAG20/quickref/) tools that may be useful are the: 
+
+* [aXe Chrome Extension ](https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US) which provides a developer tools panel that allows you to run an in-browser audit against a page, including a colour and contrast check. The extension features are described on the [Google Chrome Developers channel on YouTube](https://youtu.be/cOmehxAU_4s?t=8m58s)
+* [Chrome accessibility Developer Tools](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?utm_source=gmail). This does many of the same things as the aXe extension but also provides colour suggestions where contrast issues are found. This is also described on the [Google Chrome Developers channel on YouTube](https://youtu.be/cOmehxAU_4s?t=10m6s)
 
 ---
 
