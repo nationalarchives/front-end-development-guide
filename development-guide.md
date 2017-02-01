@@ -145,13 +145,16 @@ Where appropriate and practical we do make use of the incoming `srcset` attribut
 
 ### There is good use of appropriate ARIA roles to support native semantics
 
-While HTML5 provides a range of new semantic elements which are recognised by newer browsers, there is poor support (even in newer browsers) when it comes to reporting these elements to the Accessibility API. This, and the lack of semantics when these elements are polyfilled with JavaScript, makes ARIA an important tool. Because the HTML5 spec was updated in mid-2014 to indicate compatibility between elements and ARIA roles, developers can see the compatibility of an element with ARIA roles, states and properties by looking up the tag within the [HTML5 specification](http://www.w3.org/TR/2014/REC-html5-20141028/) .
+While HTML5 provides a range of new semantic elements which are recognised by newer browsers, there is poor support (even in newer browsers) when it comes to reporting these elements to the Accessibility API. This, and the lack of semantics when these elements are polyfilled with JavaScript, makes ARIA an important tool. Because the HTML5 spec was updated in mid-2014 to indicate compatibility between elements and ARIA roles, developers can see the compatibility of an element with ARIA roles, states and properties by looking up the tag within the [HTML5 specification](http://www.w3.org/TR/2014/REC-html5-20141028/).
+
+Because we are focussed in Checkpoint 1 on the HTML delivered to the user's browser, developers should ensure that all relevant **static** ARIA roles have been applied (these being landmark, region, and speciality roles) as well as *any* relevant pseudo interactive roles (such as dialog). See ARIA role conformance matrices or ask a fellow developer for guidance if needed.
 
 Related resources are: 
 
 1. [W3C introduction to ARIA](http://www.w3.org/WAI/intro/aria) 
 2. [ARIA authoring guidance](http://www.w3.org/TR/wai-aria-practices/)
 3. [WCAG 2.0 Principle 4](http://www.w3.org/TR/WCAG20/#robust)
+4. [ARIA role matrices by Whatsock](http://whatsock.com/training/matrices/)
 
 The peer review will check that ARIA roles are provided to support native semantics
 
@@ -221,7 +224,8 @@ There are a few principles which we follow for all JavaScript development. The p
 4. JavaScript is externalised into .js files. We do not place JavaScript in ```<script>``` tags or use native8 inline event handling (i.e. ```<a href="#" onclick="triggerAlert('Bad practice!'); return false;">Joe</a>```)
 5. JavaScript is minified and concatenated where possible
 6. JavaScript dependent elements are created with JavaScript. For example, if a ```<button>``` is used to perform a JavaScript action only, that button should be created with JavaScript
-7. Server-side processing is used to ensure JavaScript is loaded only where needed
+7. Any DOM manipulation performed by JavaScript is accompanied by the application and management of relevant ARIA roles, states and properties. These should build upon the static and pseudo interactive roles applied during Checkpoint 2.
+8. Server-side processing is used to ensure JavaScript is loaded only where needed
 
 Please speak to the Lead Front-end Developer if you need guidance on meeting any of these requirements.
 

@@ -14,7 +14,7 @@ If for any reason it has not been possible to meet any individual standard set o
 * Forms
 * Tables
 * SVGs are accessible
-* There is good use of appropriate ARIA roles to support native semantics
+* There is good use of appropriate ARIA static roles (see ARIA section of development guide) to support native semantics
 
 ### Comments from peer reviewer and developer(s)
 
@@ -34,6 +34,7 @@ If for any reason it has not been possible to meet any individual standard set o
 * jQuery or AngularJS are used for DOM abstraction
 * jQueryUI is the primary source for custom widgets
 * JavaScript form validation
+* ARIA pseudo-interactive and interactive widget roles (see ARIA section of development guide) are correctly applied and managed with JavaScript
 
 ### Comments from peer reviewer and devloper(s)
 
