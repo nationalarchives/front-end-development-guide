@@ -65,6 +65,7 @@ See related section in the Development Guide
 ### Comments from peer reviewer and developer(s)
 
 * A `menu` should have at least one instance of a `menuitem`, `menuitemcheckbox`, or `menuitemradio`.
+* add.php and details.php: IDs 'download-form', 'upload-form' and 'delete-form' appears more than once.
 
 ## Lessons learned
 
