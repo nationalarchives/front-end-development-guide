@@ -18,8 +18,8 @@ If for any reason it has not been possible to meet any individual standard set o
 
 ### Comments from peer reviewer and developer(s)
 
-all: li missing for `<a href="/sign-in" id="bookmarkLink">Bookmark</a>`
-preview.php: li missing for `<a href="/browse">All departments</a>`
+* all: li missing for `<a href="/sign-in" id="bookmarkLink">Bookmark</a>`
+* preview.php: li missing for `<a href="/browse">All departments</a>`
 
 ## Checkpoint 2: Enhance with CSS
 
@@ -31,10 +31,10 @@ preview.php: li missing for `<a href="/browse">All departments</a>`
 
 ### Comments from peer reviewer and devloper(s)
 
-CSS passes validation with warnings
-No focus on select form element
-Text input form element focuses blue not yellow
-history.php: Print view bg icons not showing. Not really necessary. 
+* CSS passes validation with warnings
+* No focus on select form element
+* Text input form element focuses blue not yellow
+* history.php: Print view bg icons not showing. Not really necessary. 
 
 ## Checkpoint 3: Enhance with JavaScript
 
