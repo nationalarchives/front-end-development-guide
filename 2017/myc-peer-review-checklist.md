@@ -46,7 +46,8 @@ If for any reason it has not been possible to meet any individual standard set o
 
 ### Comments from peer reviewer and devloper(s)
 
-
+* jQuery looks fine and well commented
+* Uplaod form appears to have no validation
 
 ## Checkpoint 4: Implementation reflects key architectural considerations
 
@@ -62,6 +63,8 @@ See related section in the Development Guide
 * Testing user goals across browsers, devices and contexts
 
 ### Comments from peer reviewer and developer(s)
+
+* A `menu` should have at least one instance of a `menuitem`, `menuitemcheckbox`, or `menuitemradio`.
 
 ## Lessons learned
 
