@@ -289,36 +289,12 @@ In addition to the [W3C Quick Reference](https://www.w3.org/WAI/WCAG20/quickref/
 
 ### Testing user goals across browsers, devices and contexts
 
-#### Testing for compatibility
+The site/service should be tested on:
 
-> Users must be able to access and use all the information and features they need, regardless of which browser they use ([GDS Service Manual](https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices#test-for-compatibility))
-
-#### Operating systems and browsers to test in 
-
-##### For public facing services
-
-The ([Service Manual](https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices#browsers-to-test-in)) lists the Operating System and browser support levels that are expected for public facing services. The levels of support are __'compliant'__ and __'functional'__ and are described as:
-
-* 'Compliant' means your service **must look as good as it does in other modern browsers** (Note: this does not mean it should be visually identical)
-* 'Functional' means it might not look perfect **but must still be usable**
-
-At this point developers might ask how far back we are expected to support Internet Explorer on Windows. Check the most current information at the time of development but, as of February 2017, it is:
-
-* _functional_ support in IE8 on Windows
-* _compliant_ support in IE9+ on Windows
-
-##### For government facing services
-
-For government facing services the service manual states: 
-
-> If you service is aimed at internal users rather than the general public you should use the browsers in the table [for public facing services] as a starting point then **use your own analytics data to decide and appropriate level of support**
-
-#### Testing across contexts and conditions
-
-The site/service should also be tested on:
-
-1. a slow network connection (there are developer tools to assist with this)
-2. [Where appropriate] in the Reading Rooms and on IE within the IN domain
+1. all supported desktop browsers (the current list is available from Webmaster) 
+2. a representative range of touch screen devices. 
+3. a slow network connection (there are developer tools to assist with this)
+4. [Where appropriate] in the Reading Rooms and on IE within the IN domain
 
 While issues remain, iterate.
 
