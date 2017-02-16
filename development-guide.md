@@ -291,16 +291,16 @@ In addition to the [W3C Quick Reference](https://www.w3.org/WAI/WCAG20/quickref/
 
 #### Testing for compatibility
 
-Users must be able to access and use all the information and features then need, regardless of which browser they use ([Service Manual](https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices#test-for-compatibility))
+> Users must be able to access and use all the information and features they need, regardless of which browser they use ([GDS Service Manual](https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices#test-for-compatibility))
 
 #### Operating systems and browsers to test in 
 
 ##### For public facing services
 
-The ([Service Manual](https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices#browsers-to-test-in)) lists the Operating System and browser support levels that are expected for public facing services. The levels of support are 'compliant' and 'functional' and are described as:
+The ([Service Manual](https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices#browsers-to-test-in)) lists the Operating System and browser support levels that are expected for public facing services. The levels of support are __'compliant'__ and __'functional'__ and are described as:
 
-* 'Compliant' means your service must look as good as it does in other modern browsers (note that this does not mean it should be identical)
-* 'Functional' means it might not look perfect but must still be usable
+* 'Compliant' means your service **must look as good as it does in other modern browsers** (Note: this does not mean it should be visually identical)
+* 'Functional' means it might not look perfect **but must still be usable**
 
 At this point developers might ask how far back we are expected to support Internet Explorer on Windows. Check the most current information at the time of development but, as of February 2017, it is:
 
