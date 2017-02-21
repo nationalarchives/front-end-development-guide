@@ -120,6 +120,7 @@ The peer review will check that:
 ---
 
 ### SVGs are accessible
+
 Where appropriate images should be delivered in SVG format since this offers two significant accessibility benefits: the scalability of the image allows users with less than 20/20 vision to enjoy crisp images when zoomed, and; the inclusion of links within the SVG will allow for keyboard navigation by default. 
 
 Guidance for using SVG includes: 
@@ -155,6 +156,7 @@ Related resources are:
 2. [ARIA authoring guidance](http://www.w3.org/TR/wai-aria-practices/)
 3. [WCAG 2.0 Principle 4](http://www.w3.org/TR/WCAG20/#robust)
 4. [ARIA role matrices by Whatsock](http://whatsock.com/training/matrices/)
+5. The [A11Y Project](http://a11yproject.com/)
 
 The peer review will check that ARIA roles are provided to support native semantics
 
