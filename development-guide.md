@@ -103,7 +103,7 @@ We ensure our forms are **accessible**, **usable** and make best use of HTML5 an
 6. Appropriate use is made of HTML5 form semantics (i.e. ```<input type="tel" />```) so that user agents can assist users with an appropriate input mechanism
 7. Good use is made of appropriate ARIA landmark roles (i.e. ```<form role="search"><input type="search" /></form>```)
 8. HTML5 form validation is used, supported by JavaScript validation for older browsers. This is covered in the JavaScript section of this document
-9. Error messages are clearly visible and associated (both visually and within the DOM) to the corresponding input
+9. Error messages are clearly visible and associated (both visually and within the DOM) to the corresponding input. This includes appropriate use of ARIA attributes.
 
 ---
 
