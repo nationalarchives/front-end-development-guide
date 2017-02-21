@@ -109,7 +109,7 @@ We ensure our forms are **accessible**, **usable** and make best use of HTML5 an
 
 ### Tables
 
-Where appropriate, tabular data is placed in HTML ```<table>``` elements. We never use tables for layout and avoid re-purposing other elements to recreate table-like representations of data. WebAIM provide guidance on ensuring tables are accessible7
+Where appropriate, tabular data is placed in HTML ```<table>``` elements. We never use tables for layout and avoid re-purposing other elements to recreate table-like representations of data. WebAIM provide guidance on ensuring tables are accessible
 
 The peer review will check that:	
 
@@ -172,7 +172,7 @@ There are a number of principles which we adopt for all CSS. The peer review wil
 2. All CSS is placed in external stylesheets
 3. Relative units are used where possible
 4. ID and class names reflect the purpose of the element in question
-5. !important is avoided unless absolutely necessary (which is almost never)
+5. `!important` is avoided unless absolutely necessary (which is almost never)
 6. Styles targeting older IE are placed in IE specific stylesheets that are included using conditional comments
 7. Hacks for other browsers are placed in the 'shame.css' file
 
@@ -220,7 +220,7 @@ We need to ensure we have accounted for users printing our content. While modern
 ### General JavaScript principles
 There are a few principles which we follow for all JavaScript development. The peer review will check that:
 
-1. JavaScript is well commented to aid maintainability
+1. JavaScript is logically organised and, where necessary, well commented to aid understanding
 2. JavaScript is well formatted with consistent indentation
 3. JavaScript does not cause any errors (including tests across older IE which do not support ECMAScript 5)
 4. JavaScript is externalised into .js files. We do not place JavaScript in ```<script>``` tags or use native8 inline event handling (i.e. ```<a href="#" onclick="triggerAlert('Bad practice!'); return false;">Joe</a>```)
