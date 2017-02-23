@@ -2,40 +2,33 @@
 
 ## Introduction
 
-This repository outlines a development approach that will support us in delivering high quality, inclusive and maintainable digital services while achieving a good balance between innovation and effective use of our development capability. It is a living, open tool to which we should all contribute and is also comprehensively reviewed each year (See details of the [2016 review](reviews/2016-review.md) here).
+This repository outlines an approach that will support us in delivering high quality, inclusive and maintainable digital services while achieving a good balance between innovation and effective use of our development capability. It is a living, open tool to which we should all contribute and is comprehensively reviewed each year (See details of the [2016 review](reviews/2016-review.md) here).
 
-The [development guide](/development-guide.md) is presented as sequential checkpoints and can be used as a companion to the development process. Each section includes related peer review checks. This is accompanied by a [peer review checklist](/peer-review-checklist.md) with corresponding sections including:
+## What's included
 
- * A section for comments from the peer reviewer. 
- * A section for developer(s) comments.
+Key components of this are:
 
-The nature of web projects and tasks will mean that some checks are not relevant to all projects or tasks. **It is therefore the responsibility of developers to**: 
+1. a high level [peer review checklist](/peer-review-checklist.md) with sections covering: 
+    - **design** considerations
+    - **development** and pull requests
+    - **testing** of accessibility and compatibility
+2. a [development guide](/development-guide.md) describing the development standards for our digital services.
 
-1. Identify the checks relevant to the specific development activity and **ensure their development work meets all relevant checks**. 
+## Developer responsibilities
 
-2. Ensure all relevant **pre-release checks take place at a time that will allow for any necessary changes** before the product or service is made public. By following the progressive enhancement approach set out in this Development Guide, developers will have a good sense of the project 'health' at any given time, reducing the likelihood that substantial changes will be needed as development nears completion.
+It is the responsibility of developers to: 
 
-3. Where appropriate, discuss any lessons learned during a Design Team 10% meeting with a view to capturing insights that might benefit our approach to future projects.
+1. Ensure The National Archives' design patterns are reflected
+
+2. Identify the checks relevant to the specific development activity and **ensure their development work meets all relevant standards in the development standards**
+
+3. Ensure the **pull request takes place at a time that  allows for any necessary changes** before the product or service is made public. (Note: the progressive enhancement approach set out in this Development Guide is intentionally designed so that developers will have a good sense of the project 'health' at any given time, reducing the likelihood that substantial changes will be needed as development nears completion).
+
+4. Where appropriate, discuss any lessons learned during a Design Team 10% meeting with a view to capturing insights that might benefit our approach to future projects
 
 ## Conducting a peer review
 
-The process for conducting a peer review is separated into two distinct steps: 
-
-### Step 1: Before any code is migrated to a target platform (i.e. WordPress) 
-
-* The peer reviewer should clone this repository to their development machine and create a copy of ```peer-review-template.md```. The copy should then be added to this repository in the relevant folder. For example, a peer review of a meeting minutes template conducted in 2015 would be saved as ```peer-review-meeting-minutes.md``` within the ```2015``` directory.
+* The peer reviewer should clone this repository to their development machine and create a copy of ```peer-review-checklist.md```. The copy should then be added to this repository in the relevant folder. For example, a peer review of a meeting minutes template conducted in 2017 would be saved as ```peer-review-meeting-minutes.md``` within the ```2017``` directory.
 * The peer reviewer should then populate the created file with the peer review comments and discuss these with the developer when completed. 
-* The developer should then act on the comments and, where necessary, describe how they have addressed any issues raised. 
-
-Options for working with coded prototypes in the Discovery and Alpha phases of a project include using our dev.labs server or, preferably, linking an Azure website to the associated GitHub repository. Full instructions on deploying an Azure website can be found in [deploying-to-azure.md](/deploying-to-azure.md).
-
-Before migrating a prototype into a target environment **discuss the proposed approach with webmaster and the editorial team**. This is also an excellent knowledge sharing opportunity so please **discuss implementation and technical design decisions with others**
-
-### Step 2: Migrating the code into WordPress
-
-* Once the necessary changes have been made the code can be ported to the target platform (i.e. WordPress).
-* Having ported the code to the target platform the peer reviewer should:
-  * Perform all the **pre-release checks**
-  * Check that porting the code to a target platform hasn't compromised the code. 
-
-While this process has emerged from several discussions in the design team, it is open to change and improvement. **If any member of the team has concerns or suggestions about this process please raise them**. 
+* The developer should then act on the comments and, where necessary, describe how they have addressed any issues raised.
+* The merging of any code to `develop` is managed via a pull request process during which the reviewer(s) will be confirming that all development standards are met.
