@@ -4,17 +4,17 @@
 
 ### Version control and code reviews
 
-We follow the [Git Flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) branching methodology and routinely undertake code reviews using [pull requests](https://help.github.com/articles/about-pull-requests/) in GitHub to ensure all code has been reviewed before being merged into develop. The process is as follows: 
+We follow the [Git Flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) branching methodology and routinely undertake code reviews using [pull requests](https://help.github.com/articles/about-pull-requests/) in GitHub to ensure all code has been reviewed before being merged into `develop`. The process is as follows: 
 
-* A feature branch is made from `Develop` on a local development machine and pushed to GitHub
+* A feature branch is made from `develop` on a local development machine and pushed to GitHub
 * A pull request is made and assigned to one or more other developers
 * When work is concluded the pull request is merged on GitHub
-* Developers pull Develop from GitHub.
+* Developers pull the `develop` branch from GitHub.
 
 Key things to bear in mind are: 
 
-* Merges to Develop are done via a pull request to ensure there has been some review of code before it is merged to Develop
-* No development should be done on the `Develop` or `Master` branches. Urgent fixes can be managed via the 'Hotfix' process of in [Git flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+* Merges to `develop` are done via a pull request to ensure there has been some review of code before it is merged to `develop`
+* No development should be done on the `develop` or `master` branches. Urgent fixes can be managed via the 'Hotfix' process of in [Git flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 
 ### Architectural considerations
 
@@ -40,8 +40,8 @@ As part of our efforts to ensure clean, readable and consistent code across proj
 ### General HTML principles
 There are a few principles which we follow for all HTML we produce. The peer review will check that:
 
-1. HTML5 Document type is used and the ```<html>``` tag includes an appropriate ```'lang'``` attribute (typically ```en-gb```)
-2. HTML validates (W3C validation tool options include http://validator.w3.org/ or the newer, but still experimental - as of October 2015 - http://validator.w3.org/nu/)
+1. HTML5 Document type is used and the ```<html>``` tag includes an appropriate ```'lang'``` attribute (typically ```en```)
+2. HTML validates (W3C validation tool options include http://validator.w3.org/ or the newer, but still experimental - as of February 2017 - http://validator.w3.org/nu/)
 3. The ```<title>``` tag is present and follows pattern ```{h1} - The National Archives```
 4. Source code is correctly indented to illustrate its structure
 
@@ -103,13 +103,13 @@ We ensure our forms are **accessible**, **usable** and make best use of HTML5 an
 6. Appropriate use is made of HTML5 form semantics (i.e. ```<input type="tel" />```) so that user agents can assist users with an appropriate input mechanism
 7. Good use is made of appropriate ARIA landmark roles (i.e. ```<form role="search"><input type="search" /></form>```)
 8. HTML5 form validation is used, supported by JavaScript validation for older browsers. This is covered in the JavaScript section of this document
-9. Error messages are clearly visible and associated (both visually and within the DOM) to the corresponding input
+9. Error messages are clearly visible and associated (both visually and within the DOM) to the corresponding input. This includes appropriate use of ARIA attributes.
 
 ---
 
 ### Tables
 
-Where appropriate, tabular data is placed in HTML ```<table>``` elements. We never use tables for layout and avoid re-purposing other elements to recreate table-like representations of data. WebAIM provide guidance on ensuring tables are accessible7
+Where appropriate, tabular data is placed in HTML ```<table>``` elements. We never use tables for layout and avoid re-purposing other elements to recreate table-like representations of data. WebAIM provide guidance on ensuring tables are accessible
 
 The peer review will check that:	
 
@@ -120,6 +120,7 @@ The peer review will check that:
 ---
 
 ### SVGs are accessible
+
 Where appropriate images should be delivered in SVG format since this offers two significant accessibility benefits: the scalability of the image allows users with less than 20/20 vision to enjoy crisp images when zoomed, and; the inclusion of links within the SVG will allow for keyboard navigation by default. 
 
 Guidance for using SVG includes: 
@@ -147,7 +148,12 @@ Where appropriate and practical we do make use of the incoming `srcset` attribut
 
 While HTML5 provides a range of new semantic elements which are recognised by newer browsers, there is poor support (even in newer browsers) when it comes to reporting these elements to the Accessibility API. This, and the lack of semantics when these elements are polyfilled with JavaScript, makes ARIA an important tool. Because the HTML5 spec was updated in mid-2014 to indicate compatibility between elements and ARIA roles, developers can see the compatibility of an element with ARIA roles, states and properties by looking up the tag within the [HTML5 specification](http://www.w3.org/TR/2014/REC-html5-20141028/).
 
-Because we are focussed in Checkpoint 1 on the HTML delivered to the user's browser, developers should ensure that all relevant **static** ARIA roles have been applied (these being landmark, region, and speciality roles) as well as *any* relevant pseudo interactive roles (such as dialog). See ARIA role conformance matrices or ask a fellow developer for guidance if needed.
+Because we are focussed in Checkpoint 1 on the HTML delivered to the user's browser, developers should ensure that all relevant **static** ARIA roles have been applied (these being landmark, region, and speciality roles) as well as *any* relevant pseudo interactive roles (such as dialog). See ARIA role conformance matrices or ask a fellow developer for guidance if needed. At this stage it can be very helpful to think about the four 'rules of using ARIA in HTML' from [W3C notes on ARIA use in HTML](https://www.w3.org/TR/2015/WD-aria-in-html-20150521/#notes-on-aria-use-in-html): 
+
+1. If you can use an HTML element with the required semantics and behaviour built in, then do so
+2. Do not change native semantics, unless you really have to
+3. All interactive ARIA controls must be usable with a keyboard
+4. Do not use `role="presentation"` or `aria-hidden="true"` on a visible **focusable** element
 
 Related resources are: 
 
@@ -155,6 +161,8 @@ Related resources are:
 2. [ARIA authoring guidance](http://www.w3.org/TR/wai-aria-practices/)
 3. [WCAG 2.0 Principle 4](http://www.w3.org/TR/WCAG20/#robust)
 4. [ARIA role matrices by Whatsock](http://whatsock.com/training/matrices/)
+5. The [A11Y Project](http://a11yproject.com/)
+6. [W3C Notes on ARIA use in HTML](https://www.w3.org/TR/2015/WD-aria-in-html-20150521/#notes-on-aria-use-in-html)
 
 The peer review will check that ARIA roles are provided to support native semantics
 
@@ -170,7 +178,7 @@ There are a number of principles which we adopt for all CSS. The peer review wil
 2. All CSS is placed in external stylesheets
 3. Relative units are used where possible
 4. ID and class names reflect the purpose of the element in question
-5. !important is avoided unless absolutely necessary (which is almost never)
+5. `!important` is avoided unless absolutely necessary (which is almost never)
 6. Styles targeting older IE are placed in IE specific stylesheets that are included using conditional comments
 7. Hacks for other browsers are placed in the 'shame.css' file
 
@@ -218,7 +226,7 @@ We need to ensure we have accounted for users printing our content. While modern
 ### General JavaScript principles
 There are a few principles which we follow for all JavaScript development. The peer review will check that:
 
-1. JavaScript is well commented to aid maintainability
+1. JavaScript is logically organised and, where necessary, well commented to aid understanding
 2. JavaScript is well formatted with consistent indentation
 3. JavaScript does not cause any errors (including tests across older IE which do not support ECMAScript 5)
 4. JavaScript is externalised into .js files. We do not place JavaScript in ```<script>``` tags or use native8 inline event handling (i.e. ```<a href="#" onclick="triggerAlert('Bad practice!'); return false;">Joe</a>```)
