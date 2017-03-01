@@ -10,7 +10,7 @@ If for any reason it has not been possible to meet any individual standard set o
 
 ## Checkpoint 1: Design
 
-[TBC]
+The reviewer is satisfied the site, application or feature has followed the principles and patterns laid out in the [Design guide](http://designguide.livelb.nationalarchives.gov.uk/). Alternatively, for standalone sites and applications, the reviewer is satisfied the design meets the standards required by The National Archives' web team.
 
 ### Comments from peer reviewer and developer(s)
 
