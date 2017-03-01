@@ -13,7 +13,7 @@ If for any reason it has not been possible to meet any individual standard set o
 The reviewer is satisfied that:
 
 * the site, application or feature follows the principles and patterns laid out in The National Archives' [Design guide](http://designguide.livelb.nationalarchives.gov.uk/)
-* for standalone sites and applications, the design meets the standards required by The National Archives' web team
+* for standalone sites and applications, the design meets the standards required by The National Archives' web team.
 
 ### Comments from peer reviewer and developer(s)
 
