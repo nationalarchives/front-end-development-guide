@@ -1,55 +1,34 @@
 # Peer review checklist
 
-This checklist represents all the checks necessary to ensure that all steps contained in the accompanying [development guide](development-guide.md) have been followed. Each section corresponds to a Checkpoint in the Development Guide and there are sections for comments from both the developer(s) and peer reviewer.
+This checklist represents the high level checks necessary to ensure that sites, applications and features have been: 
+
+* **designed** in accordance with The National Archives' design patterns
+* **developed** to meet the standards set out in the development guide
+* **tested** for accessibility and compatibility with supported operating systems and browsers
 
 If for any reason it has not been possible to meet any individual standard set out in the development guide the reason and justification should be recorded here.
 
-## Checkpoint 1: We meet needs using HTML
+## Checkpoint 1: Design
 
-* General HTML principles
-* HTML5 syntax style
-* There is an appropriate HTML outline
-* Appropriate semantics are used
-* HTML is ordered to support user needs
-* Forms
-* Tables
-* SVGs are accessible
-* There is good use of appropriate ARIA static roles (see ARIA section of development guide) to support native semantics
+The reviewer is satisfied that:
+
+* the site, application or feature follows the principles and patterns laid out in The National Archives' [Design guide](http://designguide.livelb.nationalarchives.gov.uk/)
+* for standalone sites and applications, the design meets the standards required by The National Archives' web team.
 
 ### Comments from peer reviewer and developer(s)
 
-## Checkpoint 2: Enhance with CSS
+## Checkpoint 2: Development
 
-* General CSS principles
-* User focus is clearly visible
-* SASS guidelines
-* SASS/CSS formatting standards
-* Print CSS
+A pull request has been conducted before any code is merged to `develop` and the reviewer is satisfied that all development standards have been met.
 
-### Comments from peer reviewer and devloper(s)
+### Comments from peer reviewer and developer(s)
 
-## Checkpoint 3: Enhance with JavaScript
+## Checkpoint 3: Testing
 
-* General JavaScript principles
-* jQuery or AngularJS are used for DOM abstraction
-* jQueryUI is the primary source for custom widgets
-* JavaScript form validation
-* ARIA pseudo-interactive and interactive widget roles (see ARIA section of development guide) are correctly applied and managed with JavaScript
+The developer and peer reviewer are confident that:
 
-### Comments from peer reviewer and devloper(s)
-
-## Checkpoint 4: Implementation reflects key architectural considerations
-
-See related section in the Development Guide
-
-* All application logic resides on the server
-* Users can link to specific application states (i.e. a specific tab or step within a process)
-* Browser 'back' and 'forward' buttons behave as expected
-
-## Checkpoint 5: pre-release checks
-
-* Release version is WCAG 2.0 compliant at AA
-* Testing user goals across browsers, devices and contexts
+* The release version is WCAG 2.0 compliant at AA
+* The resulting site, application or feature is compatible with supported operating systems and browsers
 
 ### Comments from peer reviewer and developer(s)
 

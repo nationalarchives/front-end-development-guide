@@ -2,55 +2,33 @@
 
 ## Introduction
 
-This repository outlines a development approach that will support us in delivering high quality, inclusive and maintainable digital services while achieving a good balance between innovation and effective use of our development capability. It is a living, open tool to which we should all contribute and is also comprehensively reviewed each year (See details of the [2016 review](reviews/2016-review.md) here).
+This repository outlines an approach that will support us in delivering high quality, inclusive and maintainable digital services while achieving a good balance between innovation and effective use of our development capability. It is a living, open tool to which we should all contribute and is comprehensively reviewed each year (See details of the [2016 review](reviews/2016-review.md) here).
 
-## How it works
+## What's included
 
-The [development guide](/development-guide.md) is presented as sequential checkpoints and can be used as a companion to the development process. Each section includes related peer review checks. This is accompanied by a [peer review checklist](/peer-review-checklist.md) with corresponding sections including:
+Key components of this are:
 
- * A section for comments from the peer reviewer. 
- * A section for developer(s) comments.
- 
-## Who does what
+1. a high level [peer review checklist](/peer-review-checklist.md) with sections covering: 
+    - **design** considerations
+    - **development** and pull requests
+    - **testing** of accessibility and compatibility
+2. a [development guide](/development-guide.md) describing the development standards for our digital services.
 
-The nature of web projects and tasks will mean that some checks are not relevant to all projects or tasks. **It is therefore the responsibility of developers to**: 
+## Developer responsibilities
 
-1. Identify the checks relevant to the specific development activity and **ensure their development work meets all relevant checks**. 
+It is the responsibility of developers to: 
 
-2. Ensure all relevant **pre-release checks take place at a time that will allow for any necessary changes** before the product or service is made public. By following the progressive enhancement approach set out in this Development Guide, developers will have a good sense of the project 'health' at any given time, reducing the likelihood that substantial changes will be needed as development nears completion.
+1. Ensure The National Archives' design patterns are reflected
 
-3. Initiate and assign a pull request
+2. Identify the checks relevant to the specific development activity and **ensure their development work meets all relevant standards in the development standards**
 
-4. Address and/or respond to comments made by the peer reviewer
+3. Ensure the **pull request takes place at a time that  allows for any necessary changes** before the product or service is made public. (Note: the progressive enhancement approach set out in this Development Guide is intentionally designed so that developers will have a good sense of the project 'health' at any given time, reducing the likelihood that substantial changes will be needed as development nears completion).
 
-It is the **responsibility of the peer reviewer to**:
+4. Where appropriate, discuss any lessons learned during a Design Team 10% meeting with a view to capturing insights that might benefit our approach to future projects
 
-1. Review the code submitted in the peer request, make observations and - ultimately - to be responsible for it being merged into `develop`
-2. Record comments and observations in the [peer review checklist](peer-review-checklist.md) for future reference
+## Conducting a peer review
 
-
-It is the **responsibility of both** to discuss any lessons learned during a Design Team 10% meeting with a view to capturing insights that might benefit our approach to future projects.
-
-## The individual steps of a peer review
-
-The process for conducting a peer review is separated into two distinct steps: 
-
-### Step 1: Code review
-
-* The developer should initiate a pull request on GitHub and identify a peer reviewer
 * The peer reviewer should clone this repository to their development machine and create a copy of ```peer-review-checklist.md```. The copy should then be added to this repository in the relevant folder. For example, a peer review of a meeting minutes template conducted in 2017 would be saved as ```peer-review-meeting-minutes.md``` within the ```2017``` directory.
-* The peer reviewer should then:
-    * review the pull request, discussing the detail of code in GitHub
-    * populate the checklist with comments based on standards set out in the development guide 
-* The developer should then act on the comments (within the checklist and pull request) and, where necessary, describe how they have addressed any issues raised. 
-
-Before migrating a prototype into a target environment **discuss the proposed approach with webmaster and the editorial team**. This is also an excellent knowledge sharing opportunity so please **discuss implementation and technical design decisions with others**
-
-### Step 2: Pre-release checks
-
-* Once the necessary changes have been made the code can be ported to the target platform (i.e. WordPress).
-* Having ported the code to the target platform the peer reviewer should:
-  * Perform all the **pre-release checks**
-  * Check that porting the code to a target platform hasn't compromised the code. 
-
-While this process has emerged from several discussions in the design team, it is open to change and improvement. **If any member of the team has concerns or suggestions about this process please raise them**. 
+* The peer reviewer should then populate the created file with the peer review comments and discuss these with the developer when completed. 
+* The developer should then act on the comments and, where necessary, describe how they have addressed any issues raised.
+* The merging of any code to `develop` is managed via a pull request process during which the reviewer(s) will be confirming that all development standards are met.
