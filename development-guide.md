@@ -245,9 +245,9 @@ Please speak to the Lead Front-end Developer if you need guidance on meeting any
 
 ### jQuery or AngularJS are used for DOM abstraction
 
-* jQuery provides an excellent means of managing the complexity of DOM manipulation across browsers and devices. Attempting to manipulate the DOM without jQuery needlessly exposes us to a large number of cross-browser bugs and inconsistencies.
+jQuery provides an excellent means of managing the complexity of DOM manipulation across browsers and devices. Attempting to manipulate the DOM without jQuery - or a similarly 'battle tested' framework needlessly exposes us to a large number of cross-browser bugs and inconsistencies.
 
-We therefore use only jQuery or similarly 'battle tested' framework (such as AngularJS) for managing interaction with the DOM.
+We therefore use only established frameworks (such as AngularJS) for managing interactions with the DOM.
 
 ---
 
