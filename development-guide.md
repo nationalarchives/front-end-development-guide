@@ -235,6 +235,10 @@ There are a few principles which we follow for all JavaScript development. The p
 7. Any DOM manipulation performed by JavaScript is accompanied by the application and management of relevant ARIA roles, states and properties. These should build upon the static and pseudo interactive roles applied during Checkpoint 2.
 8. Server-side processing is used to ensure JavaScript is loaded only where needed
 
+Relevant resources include: 
+
+* [Writing JavaScript with accessibility in mind](https://medium.com/@matuzo/writing-javascript-with-accessibility-in-mind-a1f6a5f467b9)
+
 Please speak to the Lead Front-end Developer if you need guidance on meeting any of these requirements.
 
 ---
