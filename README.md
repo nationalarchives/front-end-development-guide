@@ -4,9 +4,9 @@
 
 This repository outlines an approach that will support us in delivering high quality, inclusive and maintainable digital services while achieving a good balance between innovation and effective use of our development capability. It is a living, open tool to which we should all contribute and is comprehensively reviewed each year (See details of the [2016 review](reviews/2016-review.md) here).
 
-## What's included
+There is also a [presentation pack](https://docs.google.com/presentation/d/1NOJYWAzMVNe-Uj-ZyUki3PiO1lR_cm9-ZmAwdl496fQ/edit?usp=sharing) which provides a more detailed outline of the purpose, scope and components of this guide.
 
-Key components of this are:
+## What's included
 
 1. a high level [peer review checklist](/peer-review-checklist.md) with sections covering: 
     - **design** considerations
