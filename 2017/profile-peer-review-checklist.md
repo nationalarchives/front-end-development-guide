@@ -17,11 +17,15 @@ The reviewer is satisfied that:
 
 ### Comments from peer reviewer and developer(s)
 
+Design elements meets with The National Archive design guide.
+
 ## Checkpoint 2: Development
 
 A pull request has been conducted before any code is merged to `develop` and the reviewer is satisfied that all development standards have been met.
 
 ### Comments from peer reviewer and developer(s)
+
+A pull request has been requested.
 
 ## Checkpoint 3: Testing
 
@@ -31,6 +35,8 @@ The developer and peer reviewer are confident that:
 * The resulting site, application or feature is compatible with supported operating systems and browsers
 
 ### Comments from peer reviewer and developer(s)
+
+Source code has been checked again the W3C validator, and all check fine.
 
 ## Lessons learned
 
