@@ -34,8 +34,8 @@ The developer and peer reviewer are confident that:
 * The release version is WCAG 2.0 compliant at AA
 * The resulting site, application or feature is compatible with supported operating systems and browsers
 
-The responsive view on iPads is not consistant.
-Equal heights are not working.
+* The responsive view on iPads is not consistant.
+* Equal heights are not working.
 
 ### Comments from peer reviewer and developer(s)
 
