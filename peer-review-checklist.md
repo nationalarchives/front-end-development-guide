@@ -19,7 +19,7 @@ The reviewer is satisfied that:
 
 ## Checkpoint 2: Development
 
-A pull request has been conducted before any code is merged to `develop` and the reviewer is satisfied that all development standards have been met.
+A pull request has been conducted before any code is merged to `develop` and the reviewer is satisfied that all development standards have been met. **Please include a link to the pull request in GitHub within the comments**
 
 ### Comments from peer reviewer and developer(s)
 
@@ -29,6 +29,8 @@ The developer and peer reviewer are confident that:
 
 * The release version is WCAG 2.0 compliant at AA
 * The resulting site, application or feature is compatible with supported operating systems and browsers
+
+Any issues identified should be handled as part of the pull request process (which is linked to above). The only comment needed here is to indicate that the issues have been addressed.
 
 ### Comments from peer reviewer and developer(s)
 
