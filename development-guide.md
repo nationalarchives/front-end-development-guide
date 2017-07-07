@@ -321,10 +321,10 @@ The ([Service Manual](https://www.gov.uk/service-manual/technology/designing-for
 * 'Compliant' means your service **must look as good as it does in other modern browsers** (Note: this does not mean it should be visually identical)
 * 'Functional' means it might not look perfect **but must still be usable**
 
-At this point developers might ask how far back we are expected to support Internet Explorer on Windows. Check the most current information at the time of development but, as of February 2017, it is:
+At this point developers might ask how far back we are expected to support Internet Explorer on Windows. Check the most current information at the time of development but, as of July 2017, it is:
 
-* _functional_ support in IE8 on Windows
-* _compliant_ support in IE9+ on Windows
+* _functional_ support in Internet Explorer 8 to 10 on Windows
+* _compliant_ support in Internet Explorer 11 on Windows
 
 ##### For government facing services
 
