@@ -330,7 +330,7 @@ At this point developers might ask how far back we are expected to support Inter
 
 For government facing services the service manual states: 
 
-> If you service is aimed at internal users rather than the general public you should use the browsers in the table [for public facing services] as a starting point then **use your own analytics data to decide and appropriate level of support**
+> If you service is aimed at internal users rather than the general public you should use the browsers in the table [for public facing services] as a starting point then **use your own analytics data to decide an appropriate level of support**
 
 #### Testing across contexts and conditions
 
