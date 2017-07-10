@@ -17,11 +17,15 @@ The reviewer is satisfied that:
 
 ### Comments from peer reviewer and developer(s)
 
+Design elements meets with The National Archive design guide.
+
 ## Checkpoint 2: Development
 
-A pull request has been conducted before any code is merged to `develop` and the reviewer is satisfied that all development standards have been met. **Please include a link to the pull request in GitHub within the comments**
+A pull request has been conducted before any code is merged to `develop` and the reviewer is satisfied that all development standards have been met.
 
 ### Comments from peer reviewer and developer(s)
+
+A pull request has been requested.
 
 ## Checkpoint 3: Testing
 
@@ -30,9 +34,12 @@ The developer and peer reviewer are confident that:
 * The release version is WCAG 2.0 compliant at AA
 * The resulting site, application or feature is compatible with supported operating systems and browsers
 
-Any issues identified should be handled as part of the pull request process (which is linked to above). The only comment needed here is to indicate that the issues have been addressed.
-
 ### Comments from peer reviewer and developer(s)
+
+Source code has been checked again the W3C validator, and all check fine.
+* The responsive view on iPads is not consistant.
+* Equal heights are not working.
+
 
 ## Lessons learned
 

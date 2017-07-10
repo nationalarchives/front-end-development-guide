@@ -243,11 +243,18 @@ Please speak to the Lead Front-end Developer if you need guidance on meeting any
 
 ---
 
-### jQuery or AngularJS are used for DOM abstraction
+### We use established libraries for DOM abstraction
 
-jQuery provides an excellent means of managing the complexity of DOM manipulation across browsers and devices. Attempting to manipulate the DOM without jQuery - or a similarly 'battle tested' framework needlessly exposes us to a large number of cross-browser bugs and inconsistencies.
+Established libraries such as jQuery, Angular and ReactJS provide an excellent means of managing the complexity of DOM manipulation across browsers and devices. Attempting to manipulate the DOM without a 'battle tested' framework needlessly exposes us to a large number of cross-browser bugs and inconsistencies.
 
-We therefore use only established frameworks (such as AngularJS) for managing interactions with the DOM.
+You can find out the number of cross browser bugs being addressed in the current version of jQuery, for example, with 
+
+```bash
+curl -L https://code.jquery.com/jquery-git2.js | grep Support: | wc -l
+```
+At the time of writing this reveals **104** cross browser bugs being managed in the current version of jQuery (which long since dropped support for IE6-8).  While many of cross-browser bugs are traditionally related to older browsers there are many fixes in these libraries tackling inconsistencies where you might not expect them.
+
+**We therefore use only established frameworks for managing interactions with the DOM**. If you are unsure about any of this please speak to the Lead Front End Developer.
 
 ---
 
@@ -314,16 +321,16 @@ The ([Service Manual](https://www.gov.uk/service-manual/technology/designing-for
 * 'Compliant' means your service **must look as good as it does in other modern browsers** (Note: this does not mean it should be visually identical)
 * 'Functional' means it might not look perfect **but must still be usable**
 
-At this point developers might ask how far back we are expected to support Internet Explorer on Windows. Check the most current information at the time of development but, as of February 2017, it is:
+At this point developers might ask how far back we are expected to support Internet Explorer on Windows. Check the most current information at the time of development but, as of July 2017, it is:
 
-* _functional_ support in IE8 on Windows
-* _compliant_ support in IE9+ on Windows
+* _functional_ support in Internet Explorer 8 to 10 on Windows
+* _compliant_ support in Internet Explorer 11 on Windows
 
 ##### For government facing services
 
 For government facing services the service manual states: 
 
-> If you service is aimed at internal users rather than the general public you should use the browsers in the table [for public facing services] as a starting point then **use your own analytics data to decide and appropriate level of support**
+> If you service is aimed at internal users rather than the general public you should use the browsers in the table [for public facing services] as a starting point then **use your own analytics data to decide an appropriate level of support**
 
 #### Testing across contexts and conditions
 
