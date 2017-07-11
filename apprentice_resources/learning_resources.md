@@ -19,3 +19,24 @@ The National Archives Development Guide is based on the principles of [progressi
  * The book [Adaptive Web Design](https://adaptivewebdesign.info/2nd-edition/) by Aaron Gustafson - the older [first edition](https://adaptivewebdesign.info/1st-edition/read/) is available to read for free online
  * The blog post [Why we use progressive enhancement to build GOV.UK](https://gdstechnology.blog.gov.uk/2016/09/19/why-we-use-progressive-enhancement-to-build-gov-uk/) by the Lead Front End Developer at Government Digital Service (GDS)
   * Jeremy Keith's [Resilience](https://vimeo.com/166790296) presentation from Render Conference 2016 
+  
+## PHP
+
+Perhaps the biggest challenge for new developers seeking to get to grips with PHP development is the huge amount of outdated information available on the Web. This can really lead learners astray and propagate bad practices and insecure code.
+
+### The basics
+
+Two online courses that are recommended for gaining a basic understanding of PHP are: 
+ 
+ * Kevin Skoglund's [PHP Essential Training](https://www.lynda.com/PHP-tutorials/PHP-Essential-Training/592510-2.html) course on Lynda.com
+ * Jeffrey Way's [The PHP Practitioner](https://laracasts.com/series/php-for-beginners) course on Laracasts
+ 
+Both of these will serve as good beginner references
+
+### Beyond the basics
+
+Once you've mastered the basics of PHP try: 
+
+* Jeffrey Way's [Object Oriented Bootcamp](https://laracasts.com/series/object-oriented-bootcamp-in-php) followed by the range of intermediate courses under the PHP skill on [Laracasts](https://laracasts.com/skills/php)
+* Josh Lockhart's [Modern PHP](https://www.safaribooksonline.com/library/view/modern-php/9781491905173/) will provide a good grounding in modern PHP practices, including: PSRs, components (including Packagist and Composer), good practices, and testing with PHPUnit
+* [PHP The Right Way](http://www.phptherightway.com/) provides a handy reference for current good practices in PHP
