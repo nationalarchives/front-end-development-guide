@@ -1,5 +1,15 @@
 # Development guide
 
+## Introduction: using progressive enhancement
+
+This development guide is based on the principle of progressive enhancement. This means building the interface of a website or application in layers. If the user’s browser only supports HTML they get content and forms. If the user’s browser also supports CSS the application looks better. If it can run JavaScript the user gains extra interactions. Only the core HTML though is required in order to meet users’ basic needs. 
+
+There are several resources for developers to understand, appreciate and communicate the value of progressive enhancement. These include: 
+
+* [Why we use progressive enhancement to build GOV.UK](https://gdstechnology.blog.gov.uk/2016/09/19/why-we-use-progressive-enhancement-to-build-gov-uk/)
+* [Jeremy Keith’s talk on Resilience at Render Conf 2016](https://vimeo.com/166790296)
+* [Adaptive Web Design by Aaron Gustafson](https://adaptivewebdesign.info/2nd-edition/)
+
 ## Checkpoint 1: Coding standards
 
 ### Version control and code reviews
