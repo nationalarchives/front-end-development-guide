@@ -6,6 +6,7 @@ This development guide is based on the principle of progressive enhancement. Thi
 
 There are several resources for developers to understand, appreciate and communicate the value of progressive enhancement. These include: 
 
+* [Progressive enhancement at The National Archives](https://docs.google.com/presentation/d/1HYTlFk25f9Bw7BSi3lu0WBetF8VbrL-tuVNZPfm13U4/edit?usp=sharing) slide pack
 * [Why we use progressive enhancement to build GOV.UK](https://gdstechnology.blog.gov.uk/2016/09/19/why-we-use-progressive-enhancement-to-build-gov-uk/)
 * [Jeremy Keith’s talk on Resilience at Render Conf 2016](https://vimeo.com/166790296)
 * [Adaptive Web Design by Aaron Gustafson](https://adaptivewebdesign.info/2nd-edition/)
