@@ -16,6 +16,7 @@ There are several resources for developers to understand, appreciate and communi
 This guide has a focus on the HTML, CSS and JavaScript code that is delivered to a user's browser and related client-side architectural considerations. Broader development guidance includes:
 
 * [Git workflows and branching strategies](version_control)
+* [Server-side coding standards](server_side_coding_standards)
 
 ### Client-side architectural considerations
 
@@ -30,11 +31,10 @@ The [Resource Oriented Client Architecture](http://roca-style.org/) describes a 
 
 As part of our efforts to ensure clean, readable and consistent code across projects and developers we follow the [WordPress PHP Coding Standards](https://make.wordpress.org/core/handbook/best-practices/coding-standards/php/)
 
-### Testing
+### JavaScript Testing
 
-* PHP code is tested using PHPUnit. There is a wealth of documentation and guidance on the [PHPUnit website](https://phpunit.de/) including: a [getting started guide](https://phpunit.de/), extensive [library documentation](https://phpunit.de/manual/current/en/index.html) and [presentations and videos](https://phpunit.de/presentations.html) 
-* JavaScript and jQuery code is tested using QUnit. There is good documentation available on the [QUnit website] including [an introduction to unit testing](http://qunitjs.com/intro/), a [cookbook](http://qunitjs.com/cookbook/) and good [documentation](http://api.qunitjs.com/) of the API.
-* Travis CI has been integrated into the repository to run PHPUnit and QUnit tests automatically when a branch is pushed to GitHub. This is very simple to achieve via a `.travis.yml` file in the project root. Travis also has good [documentation](https://docs.travis-ci.com).
+JavaScript and jQuery code is tested using QUnit. There is good documentation available on the [QUnit website] including [an introduction to unit testing](http://qunitjs.com/intro/), a [cookbook](http://qunitjs.com/cookbook/) and good [documentation](http://api.qunitjs.com/) of the API.
+
 
 ## Checkpoint 2: We meet needs using HTML
 
