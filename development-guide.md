@@ -17,7 +17,7 @@ This guide has a focus on the HTML, CSS and JavaScript code that is delivered to
 
 * [Git workflows and branching strategies](version_control)
 
-### Architectural considerations
+### Client-side architectural considerations
 
 The [Resource Oriented Client Architecture](http://roca-style.org/) describes a number of recommendations that should be reflected in the applications we produce, as appropriate. Some key considerations which are not represented elsewhere in this guide are:
 
