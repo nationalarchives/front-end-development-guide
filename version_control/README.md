@@ -1,10 +1,19 @@
-### Version control and code reviews
+# Version control
 
-We follow the [Git Flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) branching methodology and routinely undertake code reviews using [pull requests](https://help.github.com/articles/about-pull-requests/) in GitHub to ensure all code has been reviewed before being merged into `develop`. The process is as follows: 
+## Git
+
+When working with Git we:
+ 
+* follow the [Git Flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) branching methodology
+* undertake code reviews using [pull requests](https://help.github.com/articles/about-pull-requests/) in GitHub to ensure all code has been reviewed before being merged into `develop`. 
+
+### Using pull requests with Git Flow 
+
+The process for using pull requests with Git Flow is as follows: 
 
 * A feature branch is made from `develop` on a local development machine and pushed to GitHub
-* A pull request is made and assigned to one or more other developers
-* When work is concluded the pull request is merged on GitHub
+* A pull request is initiated on GitHub and assigned to one or more other developers
+* When the reviewer is satisfied that all standards are met and any work arising from the pull request is finished the pull request is merged on GitHub
 * Developers pull the `develop` branch from GitHub.
 
 Key things to bear in mind are: 
