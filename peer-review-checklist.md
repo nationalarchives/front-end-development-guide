@@ -36,7 +36,15 @@ Any issues identified should be handled as part of the pull request process (whi
 
 ## Lessons learned
 
-What are the key lessons to take forward for future projects?
+Everything we build provides opportunities to for improvement to our processes and approach. By documenting the lessons learned and considering their implications for this development guide, we can understand the root cause of any problems as well as any opportunities for improvement.
+Questions to consider
+
+* What worked well either for this project or for the team?
+* What didn't work well?
+* What surprises did the team have to deal with?
+* What would you do differently if given the chance to begin this project again
+
+### Having considered these questions, what are the key lessons to take forward for future projects?
 
 
 
