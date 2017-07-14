@@ -29,7 +29,7 @@ The [Resource Oriented Client Architecture](http://roca-style.org/) describes a 
 
 ### JavaScript Testing
 
-JavaScript and jQuery code is tested using QUnit. There is good documentation available on the [QUnit website] including [an introduction to unit testing](http://qunitjs.com/intro/), a [cookbook](http://qunitjs.com/cookbook/) and good [documentation](http://api.qunitjs.com/) of the API.
+JavaScript and jQuery code is tested using QUnit. There is good documentation available on the [QUnit website](https://qunitjs.com/) including [an introduction to unit testing](http://qunitjs.com/intro/), a [cookbook](http://qunitjs.com/cookbook/) and good [documentation](http://api.qunitjs.com/) of the API.
 
 
 ## Checkpoint 2: We meet needs using HTML
