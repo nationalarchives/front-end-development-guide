@@ -272,7 +272,6 @@ We provide JavaScript validation for user agents that do not support HTML5.
 
 When working outside of .NET MVC:
 
-* jQuery validate or AngularJS is used to provide client-side validation
 * When using jQuery validate, feature detection is used to determine the need for JavaScript validation and it is applied only when necessary
 * In all cases there is appropriate server-side validation in place
 
