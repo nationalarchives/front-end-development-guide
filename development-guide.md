@@ -1,22 +1,24 @@
 # Development guide
 
+## Introduction: using progressive enhancement
+
+This development guide is based on the principle of progressive enhancement. This means building the interface of a website or application in layers. If the user’s browser only supports HTML they get content and forms. If the user’s browser also supports CSS the application looks better. If it can run JavaScript the user gains extra interactions. Only the core HTML though is required in order to meet users’ basic needs. 
+
+There are several resources for developers to understand, appreciate and communicate the value of progressive enhancement. These include: 
+
+* [Progressive enhancement at The National Archives](https://docs.google.com/presentation/d/1HYTlFk25f9Bw7BSi3lu0WBetF8VbrL-tuVNZPfm13U4/edit?usp=sharing) slide pack
+* [Why we use progressive enhancement to build GOV.UK](https://gdstechnology.blog.gov.uk/2016/09/19/why-we-use-progressive-enhancement-to-build-gov-uk/)
+* [Jeremy Keith’s talk on Resilience at Render Conf 2016](https://vimeo.com/166790296)
+* [Adaptive Web Design by Aaron Gustafson](https://adaptivewebdesign.info/2nd-edition/)
+
 ## Checkpoint 1: Coding standards
 
-### Version control and code reviews
+This guide has a focus on the HTML, CSS and JavaScript code that is delivered to a user's browser and related client-side architectural considerations. Broader development guidance includes:
 
-We follow the [Git Flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) branching methodology and routinely undertake code reviews using [pull requests](https://help.github.com/articles/about-pull-requests/) in GitHub to ensure all code has been reviewed before being merged into `develop`. The process is as follows: 
+* [Git workflows and branching strategies](version_control)
+* [Server-side coding standards](server_side_coding_standards)
 
-* A feature branch is made from `develop` on a local development machine and pushed to GitHub
-* A pull request is made and assigned to one or more other developers
-* When work is concluded the pull request is merged on GitHub
-* Developers pull the `develop` branch from GitHub.
-
-Key things to bear in mind are: 
-
-* Merges to `develop` are done via a pull request to ensure there has been some review of code before it is merged to `develop`
-* No development should be done on the `develop` or `master` branches. Urgent fixes can be managed via the 'Hotfix' process of in [Git flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
-
-### Architectural considerations
+### Client-side architectural considerations
 
 The [Resource Oriented Client Architecture](http://roca-style.org/) describes a number of recommendations that should be reflected in the applications we produce, as appropriate. Some key considerations which are not represented elsewhere in this guide are:
 
@@ -29,11 +31,10 @@ The [Resource Oriented Client Architecture](http://roca-style.org/) describes a 
 
 As part of our efforts to ensure clean, readable and consistent code across projects and developers we follow the [WordPress PHP Coding Standards](https://make.wordpress.org/core/handbook/best-practices/coding-standards/php/)
 
-### Testing
+### JavaScript Testing
 
-* PHP code is tested using PHPUnit. There is a wealth of documentation and guidance on the [PHPUnit website](https://phpunit.de/) including: a [getting started guide](https://phpunit.de/), extensive [library documentation](https://phpunit.de/manual/current/en/index.html) and [presentations and videos](https://phpunit.de/presentations.html) 
-* JavaScript and jQuery code is tested using QUnit. There is good documentation available on the [QUnit website] including [an introduction to unit testing](http://qunitjs.com/intro/), a [cookbook](http://qunitjs.com/cookbook/) and good [documentation](http://api.qunitjs.com/) of the API.
-* Travis CI has been integrated into the repository to run PHPUnit and QUnit tests automatically when a branch is pushed to GitHub. This is very simple to achieve via a `.travis.yml` file in the project root. Travis also has good [documentation](https://docs.travis-ci.com).
+JavaScript and jQuery code is tested using QUnit. There is good documentation available on the [QUnit website] including [an introduction to unit testing](http://qunitjs.com/intro/), a [cookbook](http://qunitjs.com/cookbook/) and good [documentation](http://api.qunitjs.com/) of the API.
+
 
 ## Checkpoint 2: We meet needs using HTML
 
