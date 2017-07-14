@@ -4,4 +4,4 @@ Digital Teams at The National Archives use a range of technologies and platforms
 
 Individual guides are provided for: 
 
-* [PHP and WordPress](php_and_wordpress.md)
+* [PHP and WordPress](php-and-wordpress.md)
