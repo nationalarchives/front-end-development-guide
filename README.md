@@ -10,9 +10,11 @@ This repository outlines an approach to enable us deliver high quality, inclusiv
     - **design** considerations
     - **development** and pull requests
     - **testing** of accessibility and compatibility
-2. the detailed [development guide](/development-guide.md) which describes the development standards for our digital services.
-
-A [presentation pack](https://docs.google.com/presentation/d/1NOJYWAzMVNe-Uj-ZyUki3PiO1lR_cm9-ZmAwdl496fQ/edit?usp=sharing) is also included to provide a detailed introduction to the background, purpose and components of this guide for new developers.
+2. a detailed [development guide](/development-guide.md) covering client-side development standards for our digital services
+3. [server-side](/server_side_coding_standards) coding standards
+4. Supporting materials including:
+    * slides that provide [introduction for new developers](supporting_material/development_standards_introduction_for_new_developers.pdf) that explains the broader context, purpose and components of this guide
+    * an [introduction to progressive enhancement](supporting_material/progressive_enhancement_introduction.ppt) 
 
 ## Developer responsibilities
 
