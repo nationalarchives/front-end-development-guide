@@ -27,10 +27,6 @@ The [Resource Oriented Client Architecture](http://roca-style.org/) describes a 
 * Browser ['back' and 'forward' buttons](http://roca-style.org/#browser-controls) should work as expected. There is a recommendation related to this regarding the [History API](http://roca-style.org/#historyapi)
 * All [JavaScript and CSS code must be static](http://roca-style.org/#static-assets) 
 
-### WordPress coding style for PHP
-
-As part of our efforts to ensure clean, readable and consistent code across projects and developers we follow the [WordPress PHP Coding Standards](https://make.wordpress.org/core/handbook/best-practices/coding-standards/php/)
-
 ### JavaScript Testing
 
 JavaScript and jQuery code is tested using QUnit. There is good documentation available on the [QUnit website] including [an introduction to unit testing](http://qunitjs.com/intro/), a [cookbook](http://qunitjs.com/cookbook/) and good [documentation](http://api.qunitjs.com/) of the API.
