@@ -22,10 +22,10 @@ This guide has a focus on the HTML, CSS and JavaScript code that is delivered to
 
 The [Resource Oriented Client Architecture](http://roca-style.org/) describes a number of recommendations that should be reflected in the applications we produce, as appropriate. Some key considerations which are not represented elsewhere in this guide are:
 
-* All [application logic](http://roca-style.org/#application-logic) resides on the server
+* All [application logic](http://roca-style.org/#application-logic) resides on the server.
 * A user must be able to [link to a specific piece of information](http://roca-style.org/#link).
-* Browser ['back' and 'forward' buttons](http://roca-style.org/#browser-controls) should work as expected. There is a recommendation related to this regarding the [History API](http://roca-style.org/#historyapi)
-* All [JavaScript and CSS code must be static](http://roca-style.org/#static-assets) 
+* Browser ['back' and 'forward' buttons](http://roca-style.org/#browser-controls) should work as expected. There is a recommendation related to this regarding the [History API](http://roca-style.org/#historyapi).
+* All [JavaScript and CSS code must be static](http://roca-style.org/#static-assets).
 
 ## Checkpoint 2: We meet needs using HTML
 
@@ -35,7 +35,7 @@ There are a few principles which we follow for all HTML we produce. The peer rev
 1. HTML5 Document type is used and the ```<html>``` tag includes an appropriate ```'lang'``` attribute (typically ```en```)
 2. HTML validates (W3C validation tool options include http://validator.w3.org/ or the newer, but still experimental - as of July 2017 - http://validator.w3.org/nu/)
 3. The ```<title>``` tag is present and follows pattern ```{h1} - The National Archives```
-4. Source code is correctly indented to illustrate its structure
+4. Source code is indented to reflect its structure
 
 ---
 
@@ -184,7 +184,7 @@ It is important to ensure interactive elements have a distinct visual appearance
 
 ### SASS guidelines
 
-As we more routinely incorporate CSS-preprocessing into our workflow we need to ensure our approach is maintainable (and that future developers understand the code we're writing today) and as simple as possible. Some useful insights are provided at [SASS guidelines](http://sass-guidelin.es) but developers will need to exercise judgement about what is most appropriate in the specific circumstances. A useful principle to bear in mind (from the SASS guidelines) is that: 
+As we more routinely incorporate CSS-preprocessing into our workflow we need to ensure our approach is maintainable (so that future developers understand the code we're writing today) and as simple as possible. Some useful insights are provided at [SASS guidelines](http://sass-guidelin.es) but developers will need to exercise judgement about what is most appropriate in the specific circumstances. A useful principle to bear in mind (from the SASS guidelines) is that: 
 
 > ... CSS is a simple language. Sass, being intended to write CSS, should not get much more complex than regular CSS. The KISS principle (Keep It Simple Stupid) is key here and may even take precedence over the DRY principle (Don’t Repeat Yourself) in some circumstances.
 
