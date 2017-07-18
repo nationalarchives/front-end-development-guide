@@ -33,7 +33,7 @@ The [Resource Oriented Client Architecture](http://roca-style.org/) describes a 
 There are a few principles which we follow for all HTML we produce. The peer review will check that:
 
 1. HTML5 Document type is used and the ```<html>``` tag includes an appropriate ```'lang'``` attribute (typically ```en```)
-2. HTML validates (W3C validation tool options include http://validator.w3.org/ or the newer, but still experimental - as of February 2017 - http://validator.w3.org/nu/)
+2. HTML validates (W3C validation tool options include http://validator.w3.org/ or the newer, but still experimental - as of July 2017 - http://validator.w3.org/nu/)
 3. The ```<title>``` tag is present and follows pattern ```{h1} - The National Archives```
 4. Source code is correctly indented to illustrate its structure
 
