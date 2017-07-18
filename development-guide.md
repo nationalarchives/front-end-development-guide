@@ -6,10 +6,10 @@ This development guide is based on the principle of progressive enhancement. Thi
 
 There are several resources to help new developers appreciate and communicate the value of progressive enhancement. These include: 
 
-* [Progressive enhancement at The National Archives](https://docs.google.com/presentation/d/1HYTlFk25f9Bw7BSi3lu0WBetF8VbrL-tuVNZPfm13U4/edit?usp=sharing) slide pack
-* [Why we use progressive enhancement to build GOV.UK](https://gdstechnology.blog.gov.uk/2016/09/19/why-we-use-progressive-enhancement-to-build-gov-uk/)
-* [Jeremy Keith’s talk on Resilience at Render Conf 2016](https://vimeo.com/166790296)
-* [Adaptive Web Design by Aaron Gustafson](https://adaptivewebdesign.info/2nd-edition/)
+* the [Progressive enhancement at The National Archives](https://docs.google.com/presentation/d/1HYTlFk25f9Bw7BSi3lu0WBetF8VbrL-tuVNZPfm13U4/edit?usp=sharing) slide pack
+* [Why we use progressive enhancement to build GOV.UK](https://gdstechnology.blog.gov.uk/2016/09/19/why-we-use-progressive-enhancement-to-build-gov-uk/) by Government Digital Services
+* Jeremy Keith's keynote on [Resilience](https://vimeo.com/166790296) at Render Conf 2016
+* The book [Adaptive Web Design](https://adaptivewebdesign.info/2nd-edition/) by Aaron Gustafson
 
 ## Checkpoint 1: Coding standards
 
@@ -22,15 +22,10 @@ This guide has a focus on the HTML, CSS and JavaScript code that is delivered to
 
 The [Resource Oriented Client Architecture](http://roca-style.org/) describes a number of recommendations that should be reflected in the applications we produce, as appropriate. Some key considerations which are not represented elsewhere in this guide are:
 
-* All [application logic](http://roca-style.org/#application-logic) resides on the server
+* All [application logic](http://roca-style.org/#application-logic) resides on the server.
 * A user must be able to [link to a specific piece of information](http://roca-style.org/#link).
-* Browser ['back' and 'forward' buttons](http://roca-style.org/#browser-controls) should work as expected. There is a recommendation related to this regarding the [History API](http://roca-style.org/#historyapi)
-* All [JavaScript and CSS code must be static](http://roca-style.org/#static-assets) 
-
-### JavaScript Testing
-
-JavaScript and jQuery code is tested using QUnit. There is good documentation available on the [QUnit website](https://qunitjs.com/) including [an introduction to unit testing](http://qunitjs.com/intro/), a [cookbook](http://qunitjs.com/cookbook/) and good [documentation](http://api.qunitjs.com/) of the API.
-
+* Browser ['back' and 'forward' buttons](http://roca-style.org/#browser-controls) should work as expected. There is a recommendation related to this regarding the [History API](http://roca-style.org/#historyapi).
+* All [JavaScript and CSS code must be static](http://roca-style.org/#static-assets).
 
 ## Checkpoint 2: We meet needs using HTML
 
@@ -38,9 +33,9 @@ JavaScript and jQuery code is tested using QUnit. There is good documentation av
 There are a few principles which we follow for all HTML we produce. The peer review will check that:
 
 1. HTML5 Document type is used and the ```<html>``` tag includes an appropriate ```'lang'``` attribute (typically ```en```)
-2. HTML validates (W3C validation tool options include http://validator.w3.org/ or the newer, but still experimental - as of February 2017 - http://validator.w3.org/nu/)
+2. HTML validates (W3C validation tool options include http://validator.w3.org/ or the newer, but still experimental - as of July 2017 - http://validator.w3.org/nu/)
 3. The ```<title>``` tag is present and follows pattern ```{h1} - The National Archives```
-4. Source code is correctly indented to illustrate its structure
+4. Source code is indented to reflect its structure
 
 ---
 
@@ -189,7 +184,7 @@ It is important to ensure interactive elements have a distinct visual appearance
 
 ### SASS guidelines
 
-As we more routinely incorporate CSS-preprocessing into our workflow we need to ensure our approach is maintainable (and that future developers understand the code we're writing today) and as simple as possible. Some useful insights are provided at [SASS guidelines](http://sass-guidelin.es) but developers will need to exercise judgement about what is most appropriate in the specific circumstances. A useful principle to bear in mind (from the SASS guidelines) is that: 
+As we more routinely incorporate CSS-preprocessing into our workflow we need to ensure our approach is maintainable (so that future developers understand the code we're writing today) and as simple as possible. Some useful insights are provided at [SASS guidelines](http://sass-guidelin.es) but developers will need to exercise judgement about what is most appropriate in the specific circumstances. A useful principle to bear in mind (from the SASS guidelines) is that: 
 
 > ... CSS is a simple language. Sass, being intended to write CSS, should not get much more complex than regular CSS. The KISS principle (Keep It Simple Stupid) is key here and may even take precedence over the DRY principle (Don’t Repeat Yourself) in some circumstances.
 
@@ -220,7 +215,14 @@ We need to ensure we have accounted for users printing our content. While modern
 
 ## Checkpoint 4: Enhance with JavaScript
 
+### Transpiling new versions of ECMAScript to natively supported JavaScript
+
+New releases of the ECMAScript are expected to be released every year from now on with versions being referred to by their publication year (ES2017, for example). While Firefox, Chrome, Edge and Safari offer good (over 96%) compliance with the ECMAScript 6 (ES6) specification, the use of a transpiler - such as BabelJS - remains essential for developers seeking to use any language feature beyond those available to the browsers we support. At the time of writing this is ES3.
+ 
+ Developers are encouraged to make use of the benefits provided by newer language features provided that usage is via a local build system (such as GruntJS) which creates an output file that can be interpreted natively by supported browsers. Do not deliver unsupported code to the browser and rely upon including a script to transpile in the browser (these tools do exist but are intended for prototyping purposes only).
+
 ### General JavaScript principles
+
 There are a few principles which we follow for all JavaScript development. The peer review will check that:
 
 1. JavaScript is logically organised and, where necessary, well commented to aid understanding
@@ -237,6 +239,12 @@ Relevant resources include:
 * [Writing JavaScript with accessibility in mind](https://medium.com/@matuzo/writing-javascript-with-accessibility-in-mind-a1f6a5f467b9)
 
 Please speak to the Lead Front-end Developer if you need guidance on meeting any of these requirements.
+
+---
+
+### JavaScript Testing
+
+JavaScript and jQuery code is tested using QUnit. There is good documentation available on the [QUnit website](https://qunitjs.com/) including [an introduction to unit testing](http://qunitjs.com/intro/), a [cookbook](http://qunitjs.com/cookbook/) and good [documentation](http://api.qunitjs.com/) of the API.
 
 ---
 
