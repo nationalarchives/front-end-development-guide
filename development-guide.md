@@ -215,11 +215,14 @@ We need to ensure we have accounted for users printing our content. While modern
 
 ## Checkpoint 4: Enhance with JavaScript
 
-### JavaScript Testing
+### Transpiling new versions of ECMAScript to natively supported JavaScript
 
-JavaScript and jQuery code is tested using QUnit. There is good documentation available on the [QUnit website](https://qunitjs.com/) including [an introduction to unit testing](http://qunitjs.com/intro/), a [cookbook](http://qunitjs.com/cookbook/) and good [documentation](http://api.qunitjs.com/) of the API.
+New releases of the ECMAScript are expected to be released every year from now on with versions being referred to by their publication year (ES2017, for example). While Firefox, Chrome, Edge and Safari offer good (over 96%) compliance with the ECMAScript 6 (ES6) specification, the use of a transpiler - such as BabelJS - remains essential for developers seeking to use any language feature beyond those available to the browsers we support. At the time of writing this is ES3.
+ 
+ Developers are encouraged to make use of the benefits provided by newer language features provided that usage is via a local build system (such as GruntJS) which creates an output file that can be interpreted natively by supported browsers. Do not deliver unsupported code to the browser and rely upon including a script to transpile in the browser (these tools do exist but are intended for prototyping purposes only).
 
 ### General JavaScript principles
+
 There are a few principles which we follow for all JavaScript development. The peer review will check that:
 
 1. JavaScript is logically organised and, where necessary, well commented to aid understanding
@@ -236,6 +239,12 @@ Relevant resources include:
 * [Writing JavaScript with accessibility in mind](https://medium.com/@matuzo/writing-javascript-with-accessibility-in-mind-a1f6a5f467b9)
 
 Please speak to the Lead Front-end Developer if you need guidance on meeting any of these requirements.
+
+---
+
+### JavaScript Testing
+
+JavaScript and jQuery code is tested using QUnit. There is good documentation available on the [QUnit website](https://qunitjs.com/) including [an introduction to unit testing](http://qunitjs.com/intro/), a [cookbook](http://qunitjs.com/cookbook/) and good [documentation](http://api.qunitjs.com/) of the API.
 
 ---
 
