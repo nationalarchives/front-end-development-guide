@@ -27,11 +27,6 @@ The [Resource Oriented Client Architecture](http://roca-style.org/) describes a 
 * Browser ['back' and 'forward' buttons](http://roca-style.org/#browser-controls) should work as expected. There is a recommendation related to this regarding the [History API](http://roca-style.org/#historyapi)
 * All [JavaScript and CSS code must be static](http://roca-style.org/#static-assets) 
 
-### JavaScript Testing
-
-JavaScript and jQuery code is tested using QUnit. There is good documentation available on the [QUnit website](https://qunitjs.com/) including [an introduction to unit testing](http://qunitjs.com/intro/), a [cookbook](http://qunitjs.com/cookbook/) and good [documentation](http://api.qunitjs.com/) of the API.
-
-
 ## Checkpoint 2: We meet needs using HTML
 
 ### General HTML principles
@@ -219,6 +214,10 @@ We need to ensure we have accounted for users printing our content. While modern
 ---
 
 ## Checkpoint 4: Enhance with JavaScript
+
+### JavaScript Testing
+
+JavaScript and jQuery code is tested using QUnit. There is good documentation available on the [QUnit website](https://qunitjs.com/) including [an introduction to unit testing](http://qunitjs.com/intro/), a [cookbook](http://qunitjs.com/cookbook/) and good [documentation](http://api.qunitjs.com/) of the API.
 
 ### General JavaScript principles
 There are a few principles which we follow for all JavaScript development. The peer review will check that:
