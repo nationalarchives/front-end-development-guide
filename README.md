@@ -22,7 +22,7 @@ The two primary components of this guide are:
     - **design** standards;
     - **development** and pull requests;
     - **testing** of accessibility and compatibility.
-2. a detailed client-side [development guide](/development-guide.md) describing the **standards and client-side architectural considerations for our digital services**. This is intentionally focused on the code that is delivered to the user's browser and **applies to all products** - _regardless of the server-side technology used to deliver the HTML, CSS and JavaScript_
+2. a detailed client-side [development guide](/development-guide.md) describing the **standards and client-side architectural considerations for our digital services**. This is intentionally focused on the code that is delivered to the user's browser and is intended to **apply to all products** - _regardless of the server-side technology used to generate and deliver the HTML, CSS and JavaScript_
 
 ### Supplemental material
 
