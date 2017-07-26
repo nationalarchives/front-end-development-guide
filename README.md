@@ -28,8 +28,8 @@ The two primary components of this guide are:
 
 Additional materials include:
 
-* [Version control guidance](/version_control/) including the **branching methodologies** we use in Git and how to write useful commit messages
-* [Server-side](/server_side_coding_standards) coding standards _[Note: this is a new section (introduced in July 2017) but will be added to over time]_
+* [Version control guidance](/version_control/) including the **branching methodologies** we use in Git and how to write useful commit messages;
+* [Server-side](/server_side_coding_standards) coding standards _[Note: this is a new section (introduced in July 2017) but will be added to over time]_;
 * an [introduction for new developers](supporting_material/development_standards_introduction_for_new_developers.pdf) explaining the broader context, purpose and components of this guide;
 * a range of [templates](/templates/) including accessibility acceptance criteria;
 * an [introduction to progressive enhancement](supporting_material/progressive_enhancement_introduction.ppt).
