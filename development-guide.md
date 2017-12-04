@@ -2,11 +2,17 @@
 
 ## Introduction: using progressive enhancement
 
-This development guide is based on the principle of progressive enhancement. This means building the interface of a website or application in layers. If the user’s browser only supports HTML they get content and forms. If the user’s browser also supports CSS the application looks better. If it can run JavaScript the user gains extra interactions. Only the core HTML though is required in order to meet users’ basic needs. 
+This development guide is based on the principle of progressive enhancement. That means building the interface of a website or application in layers:
+ 
+* If the user’s browser only supports HTML they get content and forms. 
+* If the user’s browser also supports CSS the application looks better. 
+* If it can run JavaScript the user gains extra interactions. 
 
-There are several resources to help new developers appreciate and communicate the value of progressive enhancement. These include: 
+The important point is that **only the core HTML is required to meet users’ basic needs**. 
 
-* the [Progressive enhancement at The National Archives](https://docs.google.com/presentation/d/1HYTlFk25f9Bw7BSi3lu0WBetF8VbrL-tuVNZPfm13U4/edit?usp=sharing) slide pack
+Here are some resources to help new developers appreciate and communicate the value of progressive enhancement: 
+
+* the [Progressive enhancement at The National Archives](https://docs.google.com/presentation/d/1HYTlFk25f9Bw7BSi3lu0WBetF8VbrL-tuVNZPfm13U4/edit?usp=sharing) slide deck
 * [Why we use progressive enhancement to build GOV.UK](https://gdstechnology.blog.gov.uk/2016/09/19/why-we-use-progressive-enhancement-to-build-gov-uk/) by Government Digital Services
 * Jeremy Keith's keynote on [Resilience](https://vimeo.com/166790296) at Render Conf 2016
 * The book [Adaptive Web Design](https://adaptivewebdesign.info/2nd-edition/) by Aaron Gustafson
@@ -22,10 +28,10 @@ This guide has a focus on the HTML, CSS and JavaScript code that is delivered to
 
 The [Resource Oriented Client Architecture](http://roca-style.org/) describes a number of recommendations that should be reflected in the applications we produce, as appropriate. Some key considerations which are not represented elsewhere in this guide are:
 
-* All [application logic](http://roca-style.org/#application-logic) resides on the server.
-* A user must be able to [link to a specific piece of information](http://roca-style.org/#link).
-* Browser ['back' and 'forward' buttons](http://roca-style.org/#browser-controls) should work as expected. There is a recommendation related to this regarding the [History API](http://roca-style.org/#historyapi).
-* All [JavaScript and CSS code must be static](http://roca-style.org/#static-assets).
+* All [application logic](http://roca-style.org/#application-logic) resides on the server
+* A user must be able to [link to a specific piece of information](http://roca-style.org/#link)
+* Browser ['back' and 'forward' buttons](http://roca-style.org/#browser-controls) should work as expected. There is a recommendation related to this regarding the [History API](http://roca-style.org/#historyapi)
+* All [JavaScript and CSS code must be static](http://roca-style.org/#static-assets)
 
 ## Checkpoint 2: We meet needs using HTML
 
@@ -33,9 +39,9 @@ The [Resource Oriented Client Architecture](http://roca-style.org/) describes a 
 There are a few principles which we follow for all HTML we produce. The peer review will check that:
 
 1. HTML5 Document type is used and the ```<html>``` tag includes an appropriate ```'lang'``` attribute (typically ```en```)
-2. HTML validates (W3C validation tool options include http://validator.w3.org/ or the newer, but still experimental - as of July 2017 - http://validator.w3.org/nu/)
+2. HTML validates (W3C validation tool options include http://validator.w3.org/ or the newer, but still experimental - as of December 2017 - http://validator.w3.org/nu/)
 3. The ```<title>``` tag is present and follows pattern ```{h1} - The National Archives```
-4. Source code is indented to reflect its structure
+4. Source code is properly indented to reflect its structure
 
 ---
 
@@ -52,7 +58,7 @@ HTML5 has considerably relaxed the syntax rules for HTML. To ensure consistency 
 
 ### There is an appropriate HTML outline
 
-HTML outlines are an important means for navigating pages with assistive technologies. All digital services we produce should have a logical document outline with one ```<h1>``` tag, and each subsequent ```<h*>``` serving to 'section' the content below it. Because the HTML5 outlining algorithm is not yet implemented in any browsers, we do not rely on HTML5 sectioning elements for outlines.
+HTML outlines are an important means for navigating pages with assistive technologies. All digital services we produce should have a logical document outline with one ```<h1>``` tag, and each subsequent ```<h*>``` serving to 'section' the content below it. Because - as of December 2017 - the HTML5 outlining algorithm is not implemented in _any_ graphical browsers or assistive technology user agents, **we do not rely on HTML5 sectioning elements for outlines**.
 
 The peer review will check that:
 
@@ -63,7 +69,7 @@ The peer review will check that:
 
 ### Appropriate semantics are used
 
-We use HTML elements for their intended purpose, ensuring valid semantics wherever possible. We do use HTML5 sectioning element semantics (```<section>```, ```<article>```, ```<nav>```, ```<aside>```), but do so with care and avoid using them for document outlining (the HTML5 outline algorithm is not yet implemented in any user agents).
+We use HTML elements for their intended purpose, ensuring valid semantics wherever possible. We do use HTML5 sectioning element semantics (```<section>```, ```<article>```, ```<nav>```, ```<aside>```), but do so with care and avoid using them for document outlining.
 
 We use WAI-ARIA landmark roles (```application, banner, complementary, contentinfo, form, main, navigation, search```) and a traditional document outline for structuring documents. The peer review will check that:
 
