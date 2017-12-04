@@ -301,7 +301,8 @@ The peer reviewer will:
 
 1. Check compliance with the Web Content Accessibility Guidelines (WCAG 2.0) using the [W3C Quick Reference](https://www.w3.org/WAI/WCAG20/quickref/)
 2. Ensure the site remains accessible in the event that JavaScript and CSS are not available
-3. Review [An Alphabet of Accessibility Issues](https://the-pastry-box-project.net/anne-gibson/2014-july-31) to consider how the implementation will meet the needs described.
+3. Review [Understanding disabilities and impairments: user profiles](https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profilesdis) by GDS, paying particular attention to ensuring we have done all that is possible to make things work for each profile
+4. Review [An Alphabet of Accessibility Issues](https://the-pastry-box-project.net/anne-gibson/2014-july-31) to consider how the implementation will meet the needs described.
 
 <mark>Before any code is merged into Develop it should be:</mark>
 
