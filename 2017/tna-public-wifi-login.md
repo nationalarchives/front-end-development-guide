@@ -38,6 +38,30 @@ All key architectural considerations are OK here.
 **To be done after the issues identified above have been addressed**
 
 ### Comments from peer reviewer and developer(s)
+1. 10 **Priority*  related to the vue.js tags like .e.g v-cloak, v-if etc.
+> >  I'm not sure how could this be resolved, as these are the directives provided by the vue.js framework. I have spoken to our Lead front developer, and said that this should not be an issue.
+
+2. related to `<meta>` tag http-equiv and X-UA-Compatible
+> > This is an issue that has come from our TNA base, and would need to be flagged globally.
+
+3. **Priority* relate to a end tag 'br'.
+> > This is now fixed.
+
+4. related to the type attribute is unnecessary for JavaScript resources.
+> > This is now fixed.
+
+5. the 'email' field currently has no type and it should be 'email'
+> > This is now fixed.
+
+6. missing the 'for' attribute on the checkbox's 'label'.
+> > This is now fixed.
+
+7. the text is underlined on the connect button
+> > This is now fixed.
+
+8. there's no JS fallback on terms and conditions when JS is disabled in the browser.
+> > This is now fixed.
+
 
 ## Lessons learned
 
