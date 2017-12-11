@@ -24,6 +24,10 @@ The two primary components of this guide are:
     - **testing** of accessibility and compatibility.
 2. a detailed client-side [development guide](/development-guide.md) describing the **standards and client-side architectural considerations for our digital services**. This is intentionally focused on the code that is delivered to the user's browser and is intended to **apply to all products** - _regardless of the server-side technology used to generate and deliver the HTML, CSS and JavaScript_
 
+### What's not included
+
+This guide is focused on the details of implementation, not visual design elements which are covered in [The National Archives Design Guide](http://nationalarchives.gov.uk/design-guide)
+
 ### Supplemental material
 
 Additional materials include:
