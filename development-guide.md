@@ -1,8 +1,10 @@
 # Development guide
 
-## Introduction: using progressive enhancement
+## Introduction: 
 
-This development guide is based on the principle of progressive enhancement. That means building the interface of a website or application in layers:
+### A progressive enhancement approach
+
+This development guide describes an approach based on the principle of progressive enhancement. That means building the interface of a website or application in layers:
  
 * If the user’s browser only supports HTML they get content and forms. 
 * If the user’s browser also supports CSS the application looks better. 
@@ -16,6 +18,16 @@ Here are some resources to help new developers appreciate and communicate the va
 * [Why we use progressive enhancement to build GOV.UK](https://gdstechnology.blog.gov.uk/2016/09/19/why-we-use-progressive-enhancement-to-build-gov-uk/) by Government Digital Services
 * Jeremy Keith's keynote on [Resilience](https://vimeo.com/166790296) at Render Conf 2016
 * The book [Adaptive Web Design](https://adaptivewebdesign.info/2nd-edition/) by Aaron Gustafson
+
+
+### An emphasis on accessibility
+
+Developers will notice an emphasis upon accessibility throughout this guide. This is intentional and reflects the central importance of ensuring our services are accessible to users. This position is also reflected in the [GDS Service Manual](https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction) and the [GDS Technology Code of Practice: Point 2](https://www.gov.uk/government/publications/technology-code-of-practice/technology-code-of-practice), which states departments **must**:
+
+> Make sure your technology, infrastructure and systems are accessible for users.
+
+You can read the detail of this requirement in the [guidance for Point 2
+](https://www.gov.uk/guidance/make-things-accessible)
 
 ## Checkpoint 1: Coding standards
 
