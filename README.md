@@ -15,7 +15,7 @@ The two primary components of this guide are:
 
 1. a high-level [peer review checklist](/templates/peer-review-checklist.md) describing key considerations for digital services. This has sections covering: 
     - **design** standards set out in The National Archives [design guide](http://nationalarchives.gov.uk/design-guide/);
-    - **development** and pull requests;
+    - **development** standards and pull request code review;
     - **testing** of accessibility and compatibility.
 2. a detailed client-side [development guide](/development-guide.md) describing the **standards and client-side architectural considerations for our digital services**. This is intentionally focused on the code that is delivered to the user's browser and is intended to **apply to all products** - _regardless of the server-side technology used to generate and deliver the HTML, CSS and JavaScript_
 
@@ -27,11 +27,11 @@ This guide is focused on the details of implementation, not visual design elemen
 
 Additional materials include:
 
-* [Version control guidance](/version_control/) including the **branching methodologies** we use in Git and how to write useful commit messages;
-* [Server-side](/server_side_coding_standards) coding standards _[Note: this is a new section (introduced in July 2017) but will be added to over time]_;
 * an [introduction for new developers](supporting_material/development_standards_introduction_for_new_developers.pdf) explaining the broader context, purpose and components of this guide;
-* a range of [templates](/templates/) including accessibility acceptance criteria;
 * an [introduction to progressive enhancement](supporting_material/progressive_enhancement_introduction.ppt).
+* [Version control guidance](/version_control/) including the **branching methodologies** we use in Git and how to write useful commit messages;
+* a range of [templates](/templates/) including accessibility acceptance criteria;
+* [Server-side](/server_side_coding_standards) coding standards _[Note: this is a new section (introduced in July 2017) but will be added to over time]_;
     
 ## How to conduct a peer review 
 
