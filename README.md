@@ -37,9 +37,9 @@ Additional materials include:
 
 The process of conducting a peer review begins with the **developer** identifying a peer reviewer. This is followed by:
 
-* The **peer reviewer** cloning this repository to their development machine and creating a copy of the [peer review checklist](/templates/peer-review-checklist.md) in the relevant year folder. For example, a peer review of a meeting minutes template conducted in 2017 would be saved as ```peer-review-meeting-minutes.md``` within the ```2017``` directory.
-* The **peer reviewer** then populates the checklist and discusses these with the developer. 
-* The **developer** acts on the comments and describes how they have addressed any issues raised.
+* The **peer reviewer** cloning this repository to their development machine and creating a copy of the [peer review checklist](/templates/peer-review-checklist.md) in the relevant year folder. For example, a peer review of an API toolkit conducted in 2018 would be saved as ```peer-review-api-toolkit.md``` within the ```2018``` directory.
+* The **peer reviewer** then populates the checklist (including a link to the pull request on GitHub) and discusses these with the developer. 
+* The **developer** acts on the comments and describes how they were resolved in the same ```peer-review-api-toolkit.md``` file.
 
 ### Use pull requests for detailed discussions about code
 
