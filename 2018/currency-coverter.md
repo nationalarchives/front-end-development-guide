@@ -17,11 +17,15 @@ The reviewer is satisfied that:
 
 ### Comments from peer reviewer and developer(s)
 
+The design uses patterns from The National Archives' Design Guide and the design has been reviewed by the Senior Designer and stakeholders.
+
 ## Checkpoint 2: Development
 
 A pull request has been conducted before any code is merged to `develop` and the reviewer is satisfied that all development standards have been met. **Please include a link to the pull request in GitHub within the comments**
 
 ### Comments from peer reviewer and developer(s)
+
+A pull request for the currency converter has been created [on GitHub](https://github.com/nationalarchives/tna-currency-converter/pull/1) with a lot of the reviewer comments relating to progressive enhnacement not having been used. This seems to have been the result of a 'like-for-like' approach having been adopted (because the existing currency converter is JavaScript-first). It has been explained that this decision increased the overall complexity and development effort required.
 
 ## Checkpoint 3: Testing
 
