@@ -7,12 +7,7 @@ This repository provides several resources to help developers at The National Ar
 * deliver **high quality**, **inclusive** and **maintainable** digital services, while;
 * achieving a good **balance between innovation and effective use of our development capability**. 
 
-It is a living, open tool to which all can contribute and is:
-
-* regularly reviewed and refined to ensure it reflects emerging industry best practice; 
-* comprehensively reviewed by developers in Digital Services each year (See details of the [2016 review](reviews/2016-review.md) here).
-
-We welcome any and all feedback to be submitted either as a pull request or issue. 
+It is a living, open tool to which all can contribute and is regularly reviewed and refined to ensure it reflects emerging industry best practice. We welcome any and all feedback to be submitted either as a pull request or issue. 
 
 ## What's included
 
