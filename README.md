@@ -14,7 +14,7 @@ It is a living, open tool to which all can contribute and is regularly reviewed 
 The two primary components of this guide are:
 
 1. a high-level [peer review checklist](/templates/peer-review-checklist.md) describing key considerations for digital services. This has sections covering: 
-    - **design** standards;
+    - **design** standards set out in The National Archives [design guide](http://nationalarchives.gov.uk/design-guide/);
     - **development** and pull requests;
     - **testing** of accessibility and compatibility.
 2. a detailed client-side [development guide](/development-guide.md) describing the **standards and client-side architectural considerations for our digital services**. This is intentionally focused on the code that is delivered to the user's browser and is intended to **apply to all products** - _regardless of the server-side technology used to generate and deliver the HTML, CSS and JavaScript_
