@@ -26,8 +26,17 @@ Developers will notice an emphasis upon accessibility throughout this guide. Thi
 
 > Make sure your technology, infrastructure and systems are accessible for users.
 
-You can read the detail of this requirement in the [guidance for Point 2
-](https://www.gov.uk/guidance/make-things-accessible)
+You can read the detail of this requirement in the [guidance for Point 2](https://www.gov.uk/guidance/make-things-accessible)
+
+### Services for Government users 
+
+Most of us will have experienced the frustration resulting from using software that offers poor accessibilty or usability. Despite this there can be a tendency for development teams across the industry to pay less attention to accessibility and usability when developing tools for 'internal' use. GDS have provided clear [guidance for building or buying services for government](https://www.gov.uk/service-manual/design/services-for-government-users):
+
+> Hold internal services to the same standard you would a public-facing service. This guidance covers services for government users, whether you’re building them yourself or buying them.
+
+This guidance also describes the need to ensure accessibility:
+
+> As of 2017, 9.9% of civil servants who declared their disability status were disabled. It’s crucial that your service is fully accessible.
 
 ## Checkpoint 1: Coding standards
 
