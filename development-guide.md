@@ -85,10 +85,12 @@ We use HTML elements for their intended purpose, ensuring valid semantics wherev
 
 We use WAI-ARIA landmark roles (```application, banner, complementary, contentinfo, form, main, navigation, search```) and a traditional document outline for structuring documents. The peer review will check that:
 
-1. There should be one ```<main>``` element 
+1. There should be one `<main>` element and `role=main` should be applied for compatibility with older browsers.
 2. HTML5 sectioning elements are used for semantics not structure
 3. HTML5 sectioning elements are not over used in place of ```<div>``` elements
 4. All relevant WAI-ARIA landmarks have been applied
+
+Note: Developers should use `role="application"` with caution as it signals to screen reading software to turn off normal web navigation controls. Refer to [W3C guidance](https://www.w3.org/TR/aria-in-html/#using-application).
 
 ---
 
