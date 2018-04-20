@@ -54,6 +54,18 @@ The [Resource Oriented Client Architecture](http://roca-style.org/) describes a 
 * Browser ['back' and 'forward' buttons](http://roca-style.org/#browser-controls) should work as expected. There is a recommendation related to this regarding the [History API](http://roca-style.org/#historyapi)
 * All [JavaScript and CSS code must be static](http://roca-style.org/#static-assets)
 
+### Security considerations for front-end development 
+
+All our services need to appropriately secured. Developers should consider the security implications of all development choices and, where there is doubt, approach a senior or lead developer for advice. Concerns that are of particular importance for front-end development are: 
+
+* The need to _sanitize_ and _validate_ input, and _escape_ output:
+    * *Sanitize* refers to escaping or removing unsafe characters from input data before it reaches an application storage layer
+    * *Validate* refers to ensuring the received data matches expectations
+    * *Escape* refers to preventing malicious code from being rendered and inadvertently executed by application users
+    
+* Recognition that client-side technologies alone are insufficient to protect against malicious behaviour (for example, client-side form validation must be accompanied by server-side validation)
+* Recognition that resources sent to a browser can be obtained by users (for example, relying on CSS or JavaScript to obfuscate an image is not sufficient)
+
 ## Checkpoint 2: We meet needs using HTML
 
 ### General HTML principles
