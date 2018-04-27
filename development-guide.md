@@ -56,7 +56,7 @@ The [Resource Oriented Client Architecture](http://roca-style.org/) describes a 
 
 ### Security considerations for front-end development 
 
-All our services need to appropriately secured. Developers should consider the security implications of all development choices and, where there is doubt, approach a senior or lead developer for advice. Concerns that are of particular importance for front-end development are: 
+All our services need to be appropriately secured. Developers should consider the security implications of all development choices and, where there is doubt, approach a senior or lead developer for advice. Concerns that are of particular importance for front-end development are: 
 
 * The need to _sanitize_ and _validate_ input, and _escape_ output:
     * *Sanitize* refers to escaping or removing unsafe characters from input data before it reaches an application storage layer
