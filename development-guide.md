@@ -14,7 +14,7 @@ The important point is that **only the core HTML is required to meet users’ ba
 
 Here are some resources to help new developers appreciate and communicate the value of progressive enhancement: 
 
-* the [Progressive enhancement at The National Archives](https://docs.google.com/presentation/d/1HYTlFk25f9Bw7BSi3lu0WBetF8VbrL-tuVNZPfm13U4/edit?usp=sharing) slide deck
+* the [Progressive enhancement at The National Archives](supporting_material/progressive_enhancement_at_tna.pdf) slide deck
 * [Why we use progressive enhancement to build GOV.UK](https://gdstechnology.blog.gov.uk/2016/09/19/why-we-use-progressive-enhancement-to-build-gov-uk/) by Government Digital Services
 * Jeremy Keith's keynote on [Resilience](https://vimeo.com/166790296) at Render Conf 2016
 * The book [Adaptive Web Design](https://adaptivewebdesign.info/2nd-edition/) by Aaron Gustafson
