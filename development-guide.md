@@ -339,13 +339,16 @@ The peer reviewer will:
 
 1. Check compliance with the Web Content Accessibility Guidelines (WCAG 2.0) using the [W3C Quick Reference](https://www.w3.org/WAI/WCAG20/quickref/)
 2. Ensure the site remains accessible in the event that JavaScript and CSS are not available
-3. Review [Understanding disabilities and impairments: user profiles](https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profilesdis) by GDS, paying particular attention to ensuring we have done all that is possible to make things work for each profile
-4. Review [An Alphabet of Accessibility Issues](https://the-pastry-box-project.net/anne-gibson/2014-july-31) to consider how the implementation will meet the needs described.
+3. Take a broad view of accessibility considerations that may be relevant, paying particular attention to ensuring we have done all that is possible to make things as accessible as possible. Resources to help with this judgement include:
+    * the [Understanding disabilities and impairments: user profiles](https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profilesdis) by GDS
+    * the (now archived) [BBC case studies](http://www.bbc.co.uk/accessibility/best_practice/case_studies) that illustrate how users with different abilities adapt the way they use the web
+    * an [Alphabet of Accessibility Issues](https://the-pastry-box-project.net/anne-gibson/2014-july-31) to consider how the implementation will meet the needs described.
 
-<mark>Before any code is merged into Develop it should be:</mark>
+<mark>**Before** any code from a feature branch is merged the peer reviewer should be satisfied that:</mark>
 
-1. WCAG compliant at AA, including appropriate use and management of ARIA roles and states
-2. Accessible and usable without JavaScript and/or CSS
+1. Code is WCAG compliant at AA, including appropriate use and management of ARIA roles and states
+2. We have considered a broad range of different abilities
+3. The service is accessible and usable without JavaScript and/or CSS
 
 #### Useful tools for accessibility testing:
 In addition to the [W3C Quick Reference](https://www.w3.org/WAI/WCAG20/quickref/) tools that may be useful are the: 
