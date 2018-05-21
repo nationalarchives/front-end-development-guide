@@ -2,10 +2,10 @@
 
 ## We use Git
 
-All developers should version control their development work. We use the [Git version control system (VCS)](https://git-scm.com/) at The National Archives. While we do allow individual teams some latitude in selecting a branching strategy that is most suitable for the specific product (for example, [Git Flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) or a more trunk-based approach), developers across teams are expected to:
+All developers should version control their development work. We use the [Git version control system (VCS)](https://git-scm.com/) at The National Archives. While we do allow individual teams some latitude in selecting a branching strategy that is most suitable for the specific product (examples are provided below), developers across teams are expected to:
 
 * use **feature branches** for all their work, and
-* use **Pull Requests** as the mechanism by which all branches are merged (so that all code has been reviewed and is understood by more than one developer)
+* use **[pull requests](https://www.youtube.com/watch?v=d5wpJ5VimSU)** as the mechanism by which all branches are merged (so that all code has been reviewed and is understood by more than one developer)
 
 ## We use GitHub
 
@@ -23,7 +23,33 @@ The process for using pull requests is as follows:
 Key things to bear in mind are: 
 
 * Merges to are done via a pull request to ensure there has been some review of code before it is merged
-* No development should be done outside of a feature branchk.
+* No development should be done outside of a feature branch.
+
+### Selecting a branching strategy
+
+Individual teams should identify and adopt a branching strategy that best meets their needs **while fulfilling the requirements for pull request and feature branches**. Options include: 
+
+* [GitHub flow](https://guides.github.com/introduction/flow/)
+* [Trunk based development](https://trunkbaseddevelopment.com/)
+* [Git flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+
+#### Using pull requests with Git Flow 
+
+The process for using pull requests with Git Flow is as follows: 
+
+* A feature branch is made from `develop` on a local development machine and pushed to GitHub
+* A pull request is initiated on GitHub and assigned to one or more other developers
+* When the reviewer is satisfied that all standards are met and any work arising from the pull request is finished the pull request is merged on GitHub
+* Developers pull the `develop` branch from GitHub.
+
+#### Using pull requests with trunk-based development
+
+The process for using pull requests with trunk-based development is as follows:
+
+* A feature branch is made from the trunk branch (which may be named `main`, `master` or similar) and pushed to GitHub
+* A pull request is initiated on GitHub and assigned to one more other developers 
+* When the reviewer is satisfied that all standards are met and any work arising from the pull request is finished the pull request is merged on GitHub
+* Developers pull the trunk branch from Github
 
 ### Providing useful commit messages
 
