@@ -29,6 +29,7 @@ The developer and peer reviewer are confident that:
 
 * The release version is WCAG 2.0 compliant at AA
 * The resulting site, application or feature is compatible with supported operating systems and browsers
+* All analytics are working as expected (including in a staging environment and when being viewed through the analytics dashboard)
 
 Any issues identified should be handled as part of the pull request process (which is linked to above). The only comment needed here is to indicate that the issues have been addressed.
 
