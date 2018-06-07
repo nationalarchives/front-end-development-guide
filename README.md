@@ -52,6 +52,7 @@ The peer review checklist is intended to ensure standards are met. It is not nor
 Perhaps the most important thing to bear in mind is the need to involve other specialists early since this can avoid significant problems later on. This includes:
 
 * **Speaking to the User Experience and Editorial teams before beginning development**. Their perspective and expertise will help shape the approach taken and can avoid significant changes later on.
+* **Discuss analytics requirements with the Web Metrics Analyst to establish what is required and how we can best support/achieve it
 * **Server-side and front-end developers discussing the technical approach _together_ before development begins**. A short conversation to agree on a technical approach that works from both perspectives can bring significant benefits and avoid one or both having to do significant refactoring and re-work.
 * Identifying a peer reviewer early.
 
