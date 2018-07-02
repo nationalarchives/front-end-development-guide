@@ -8,7 +8,7 @@ This development guide describes an approach based on the principle of progressi
  
 * If the user’s browser only supports HTML they get content and the abilities to navigate and interact using forms. 
 * If the user’s browser also supports CSS the application looks better. 
-* If it can run JavaScript (and/or supports the newer JavaScript APIs colloquially known as _HTML5_) these technologies will be enhanced by those capabilities. 
+* If it can run JavaScript (and/or supports newer technologies colloquially known as _HTML5_) the experience will be enhanced by those capabilities. 
 
 The important points are that:
 * **only the core HTML is required to meet users’ basic needs**, and; 
