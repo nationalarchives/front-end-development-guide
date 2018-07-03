@@ -366,7 +366,7 @@ The Service Manual provides clear guidance on cross Operating System and browser
  
  The Service Manual also describes a number of Operating Systems and browsers that service team developers are expected to test in to ensure their service is __'compliant'__. In this context, 'compliant' means a service **must look as good as it does in other modern browsers** (Note: this does not mean it should be visually identical). For all other browsers the service must be usable. 
 
-At this point developers might ask how far back we are expected to support Internet Explorer on Windows. Check the most current information at the time of development but, in of June 2018, [GDS announced](https://gdstechnology.blog.gov.uk/2018/06/26/changing-our-testing-requirements-for-internet-explorer-8-9-and-10/) that service team developers no longer needed to test on Internet Explorer 8, 9 and 10.
+At this point developers might ask how far back we are expected to support Internet Explorer on Windows. Check the most current information at the time of development but, in June 2018, [GDS announced](https://gdstechnology.blog.gov.uk/2018/06/26/changing-our-testing-requirements-for-internet-explorer-8-9-and-10/) that service team developers no longer needed to test on Internet Explorer 8, 9 and 10.
 
 #### Government facing services
 
