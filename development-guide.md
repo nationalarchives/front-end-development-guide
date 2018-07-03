@@ -19,7 +19,7 @@ Here are some resources to help new developers appreciate and communicate the va
 * the [Progressive enhancement at The National Archives](supporting_material/progressive_enhancement_at_tna.pdf) slide deck
 * [Why we use progressive enhancement to build GOV.UK](https://gdstechnology.blog.gov.uk/2016/09/19/why-we-use-progressive-enhancement-to-build-gov-uk/) by Government Digital Services
 * the [Everyone has JavaScript, right?](https://kryogenix.org/code/browser/everyonehasjs.html) site which describes several scenarios that might result in your JavaScript not running
-* Jeremy Keith's keynote on [Resilience](https://vimeo.com/166790296) at Render Conf 2016
+* Jeremy Keith's [Resilience: Building a Robust Web That Lasts](https://aneventapart.com/news/post/resilience-building-a-robust-web-that-lasts-jeremy-keith-an-event-apart) from An Event Apart 2018
 * The book [Adaptive Web Design](https://adaptivewebdesign.info/2nd-edition/) by Aaron Gustafson
 
 
