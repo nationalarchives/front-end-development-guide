@@ -4,11 +4,11 @@
 
 ### A progressive enhancement approach
 
-This development guide describes an approach based on the principle of progressive enhancement as a response to the reality of the web's inherent variability. In practice this means building the interface of a website or application in layers:
+In acknowledgement of the web's inherent variability this development guide describes an approach based on the principle of progressive enhancement. In practice this means building the interface of a website or application in layers:
  
 * If the user’s browser only supports HTML they get content and the abilities to navigate and interact using forms. 
 * If the user’s browser also supports CSS the application looks better. 
-* If it can run JavaScript (and/or supports newer technologies colloquially known as _HTML5_) the experience will be enhanced by those capabilities. 
+* If it can run JavaScript (and/or supports newer technologies colloquially known as _HTML5_ and _ESNext_) the experience will be enhanced by those capabilities. 
 
 The important points are that:
 * **only the core HTML is required to meet users’ basic needs**, and; 
@@ -25,7 +25,7 @@ Here are some resources to help new developers appreciate and communicate the va
 
 ### An emphasis on accessibility
 
-Developers will notice an emphasis upon accessibility throughout this guide. This is intentional and reflects the central importance of ensuring our services are accessible to users. This position is also reflected in the [GDS Service Manual](https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction) and the [GDS Technology Code of Practice: Point 2](https://www.gov.uk/government/publications/technology-code-of-practice/technology-code-of-practice), which states departments **must**:
+Developers will also notice an emphasis upon accessibility throughout this guide. This is intentional and reflects the central importance of ensuring our services are accessible to users. This position is also reflected in the [GDS Service Manual](https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction) and the [GDS Technology Code of Practice: Point 2](https://www.gov.uk/government/publications/technology-code-of-practice/technology-code-of-practice), which states departments **must**:
 
 > Make sure your technology, infrastructure and systems are accessible for users.
 
@@ -360,25 +360,15 @@ In addition to the [W3C Quick Reference](https://www.w3.org/WAI/WCAG20/quickref/
 
 ### Testing user goals across browsers, devices and contexts
 
-#### Testing for compatibility
+The Service Manual provides clear guidance on cross Operating System and browser compatibility:
+ 
+ > Your service must be universally accessible. This means building it to work on every browser or device that your users access it on ([GDS Service Manual](https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices#browsers-to-test-in))
+ 
+ The Service Manual also describes a number of Operating Systems and browsers that service team developers are expected to test in to ensure their service is __'compliant'__. In this context, 'compliant' means a service **must look as good as it does in other modern browsers** (Note: this does not mean it should be visually identical). For all other browsers the service must be usable. 
 
-> Users must be able to access and use all the information and features they need, regardless of which browser they use ([GDS Service Manual](https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices#test-for-compatibility))
+At this point developers might ask how far back we are expected to support Internet Explorer on Windows. Check the most current information at the time of development but, in of June 2018, [GDS announced](https://gdstechnology.blog.gov.uk/2018/06/26/changing-our-testing-requirements-for-internet-explorer-8-9-and-10/) that service team developers no longer needed to test on Internet Explorer 8, 9 and 10.
 
-#### Operating systems and browsers to test in 
-
-##### For public facing services
-
-The ([Service Manual](https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices#browsers-to-test-in)) lists the Operating System and browser support levels that are expected for public facing services. The levels of support are __'compliant'__ and __'functional'__ and are described as:
-
-* 'Compliant' means your service **must look as good as it does in other modern browsers** (Note: this does not mean it should be visually identical)
-* 'Functional' means it might not look perfect **but must still be usable**
-
-At this point developers might ask how far back we are expected to support Internet Explorer on Windows. Check the most current information at the time of development but, as of July 2017, it is:
-
-* _functional_ support in Internet Explorer 8 to 10 on Windows
-* _compliant_ support in Internet Explorer 11 on Windows
-
-##### For government facing services
+#### Government facing services
 
 For government facing services the service manual states: 
 
