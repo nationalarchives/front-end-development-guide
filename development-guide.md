@@ -329,13 +329,6 @@ For this reason, jQueryUI presents a good tool as its authors have worked hard t
 
 We provide JavaScript validation for user agents that do not support HTML5.
 
-When working outside of .NET MVC:
-
-* When using jQuery validate, feature detection is used to determine the need for JavaScript validation and it is applied only when necessary
-* In all cases there is appropriate server-side validation in place
-
-When working with .NET MVC: the MVC framework provides mechanisms to manage client- and server-side validation in tandem. When working with .NET MVC it is important that we rely upon these since it will be substantially easier to implement and maintain. A Systems Architect or a Senior Developer can advise on a suitable approach when working with .NET.
-
 ---
 
 ## Checkpoint 5: pre-release checks
