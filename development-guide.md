@@ -31,6 +31,19 @@ Developers will also notice an emphasis upon accessibility throughout this guide
 
 You can read the detail of this requirement in the [guidance for Point 2](https://www.gov.uk/guidance/make-things-accessible)
 
+### Moving towards a component mindset
+
+On 12 September 2018, front end developers at The National Archives met to discuss ways we might be able to work more effectively across the broad range of applications we support. Primary concerns were: 
+
+* Ensuring consistency of changes across multiple teams, applications and platforms
+* Establishing a 'single source of truth' for functionality, design, shared content and implementation across services
+* Avoiding duplication of effort when implementing a change
+
+Having considered some options we have opted to start implementing new functionality that is shared across multiple services as components that will reside on - and be referenced directly from - our CDN. Where these are JavaScript components, develops must ensure that: 
+
+* users' basic user needs are still met if the component is unavailable for any reason (See 'A progressive enhancement approach' section)
+* the relevant product owner is aware of any implementation choices and how these relate to GDS guidance
+
 ### Services for Government users 
 
 Most of us will have experienced the frustration resulting from using software that offers poor accessibilty or usability. Despite this there can be a tendency for development teams across the industry to pay less attention to accessibility and usability when developing tools for 'internal' use. GDS have provided clear [guidance for building or buying services for government](https://www.gov.uk/service-manual/design/services-for-government-users):
