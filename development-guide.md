@@ -307,12 +307,19 @@ At the time of writing this reveals **109** cross browser bugs being managed in 
 
 ---
 
-### jQueryUI is the primary source for custom widgets
-It is essential that we consider the implications for users of assistive technologies when reviewing third-party plugins that provide non-standard user interface elements. This will include:
+### Accessibility is a primary concern when using JavaScript to introduce rich interactions
+
+It is essential that we consider the implications for users of assistive technologies when:
+ 
+* Writing JavaScript to provide rich interactions
+* Reviewing third-party plugins that provide non-standard user interface elements.
+ 
+This will include:
 
 * Ensuring that suitable ARIA role and state management is provided
 * Ensuring the plug-in does not make the DOM inaccessible (the overwhelming majority of assistive technology users are likely to have JavaScript enabled)
-* We should not use plug-ins that do not provide suitable ARIA role and state management, unless they are available for open source contribution and we have the skills and resources to extend them in line with the WAI-ARIA authoring practices9.
+
+We should not use plug-ins that do not provide suitable ARIA role and state management, unless they are available for open source contribution and we have the skills and resources to extend them in line with the WAI-ARIA authoring practices9.
 
 For this reason, jQueryUI presents a good tool as its authors have worked hard to include the necessary ARIA role and state management in the library components. Nonetheless, we should test the accessibility of custom widgets before they are used.
 
