@@ -288,7 +288,7 @@ Please speak to the Lead Front-end Developer if you need guidance on meeting any
 
 ### JavaScript Testing
 
-JavaScript and jQuery code is tested using QUnit. There is good documentation available on the [QUnit website](https://qunitjs.com/) including [an introduction to unit testing](http://qunitjs.com/intro/), a [cookbook](http://qunitjs.com/cookbook/) and good [documentation](http://api.qunitjs.com/) of the API.
+JavaScript and jQuery code is tested using well established testing tools. Tools currently in use include [Jest](https://jestjs.io), [QUnit](https://qunitjs.com/), [Jasmine](https://jasmine.github.io) and [Mocha](https://mochajs.org). We are open to exploring other options but please discuss this with all team members so that we can be considered and surefooted in our adoption of new tools.
 
 ---
 
