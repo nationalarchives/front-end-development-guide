@@ -294,16 +294,16 @@ JavaScript and jQuery code is tested using well established testing tools. Tools
 
 ### We use established libraries for DOM abstraction
 
-Established libraries such as jQuery, Angular and ReactJS provide an excellent means of managing the complexity of DOM manipulation across browsers and devices. Attempting to manipulate the DOM without a 'battle tested' framework needlessly exposes us to a large number of cross-browser bugs and inconsistencies.
+Established libraries such as jQuery, Angular and ReactJS provide an excellent means of managing the complexity of DOM manipulation across browsers and devices. Attempting all but the simplest DOM manipulation without a 'battle tested' framework needlessly exposes us to a large number of cross-browser bugs and inconsistencies.
 
-You can find out the number of cross browser bugs being addressed in the current version of jQuery, for example, with 
+In our experience many newer developers are unaware of this. To demonstrate, you can find out the number of cross browser bugs being addressed in the current version of jQuery (which has long since dropped support for older IE), for example, with 
 
 ```bash
 curl -L https://code.jquery.com/jquery-git2.js | grep Support: | wc -l
 ```
-At the time of writing this reveals **104** cross browser bugs being managed in the current version of jQuery (which long since dropped support for IE6-8).  While many of cross-browser bugs are traditionally related to older browsers there are many fixes in these libraries tackling inconsistencies where you might not expect them.
+At the time of writing this reveals **109** cross browser bugs being managed in the current version of jQuery .  While many of cross-browser bugs are traditionally related to older browsers there are many fixes in these libraries tackling inconsistencies where you might not expect them.
 
-**We therefore use only established frameworks for managing interactions with the DOM**. If you are unsure about any of this please speak to the Lead Front End Developer.
+**We therefore use only established frameworks for managing complex interactions with the DOM**. If you are unsure about any of this please speak to the Lead Front End Developer.
 
 ---
 
