@@ -272,7 +272,7 @@ There are a few principles which we follow for all JavaScript development. The p
 1. JavaScript is logically organised and, where necessary, well commented to aid understanding
 2. JavaScript is well formatted with consistent indentation
 3. JavaScript does not cause any errors (including tests across older IE which do not support ECMAScript 5)
-4. JavaScript is externalised into .js files. We do not place JavaScript in ```<script>``` tags or use native8 inline event handling (i.e. ```<a href="#" onclick="triggerAlert('Bad practice!'); return false;">Joe</a>```)
+4. JavaScript is externalised into .js files. We do not place JavaScript in ```<script>``` tags or use native inline event handling (i.e. ```<a href="#" onclick="triggerAlert('Bad practice!'); return false;">Joe</a>```)
 5. JavaScript is minified and concatenated where possible
 6. JavaScript dependent elements are created with JavaScript. For example, if a ```<button>``` is used to perform a JavaScript action only, that button should be created with JavaScript
 7. Any DOM manipulation performed by JavaScript is accompanied by the application and management of relevant ARIA roles, states and properties. These should build upon the static and pseudo interactive roles applied during Checkpoint 2.
