@@ -263,7 +263,7 @@ We need to ensure we have accounted for users printing our content. While modern
 
 New releases of the ECMAScript are expected to be released every year from now on with versions being referred to by their publication year (ES2017, for example). While Firefox, Chrome, Edge and Safari offer good (over 96%) compliance with the ECMAScript 6 (ES6) specification, the use of a transpiler - such as BabelJS - remains essential for developers seeking to use any language feature beyond those available to the browsers we support. At the time of writing this is ES3.
  
- Developers are encouraged to make use of the benefits provided by newer language features provided that usage is via a local build system (such as GruntJS) which creates an output file that can be interpreted natively by supported browsers. Do not deliver unsupported code to the browser and rely upon including a script to transpile in the browser (these tools do exist but are intended for prototyping purposes only).
+ Developers are encouraged to make use of the benefits provided by newer language features provided that usage is via a local build system (such as Webpack and Babel) which creates an output file that can be interpreted natively by supported browsers. Do not deliver unsupported code to the browser and rely upon including a script to transpile in the browser (these tools do exist but are intended for prototyping purposes only).
 
 ### General JavaScript principles
 
