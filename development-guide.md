@@ -44,6 +44,20 @@ Having considered some options we have opted to start implementing new functiona
 * users' basic user needs are still met if the component is unavailable for any reason (See 'A progressive enhancement approach' section)
 * the relevant product owner is aware of any implementation choices and how these relate to GDS guidance
 
+#### Not all JavaScript should be written as a component
+
+The move to a component mindset does not mean that all JavaScript features will be implements as React components, or that all new features should be implemented in React. There is a place for vanilla JavaScript and jQuery.
+
+#### How to identify whether a feature is an appropriate candidate for implementation as a component
+
+There are a number of questions that developers should use to determine whether the component approach is suitable for a specific feature. These include: 
+
+* Is this a feature that is - or is likely to be - implemented across multiple applications and stacks? If so, it may be a candidate for componentization. If not, it probably isn't.
+* On balance, does the development of a component help us over the short- medium- and long-term.
+* To what extent will the component be replicating functionality that will also exist in the server-rendered code? If it is essentially the same, it may be that the server-rendered code alone will suffice (subject to the impact on user experience, of course)
+
+**Please always speak to the Lead Front End Developer _before_ embarking on development of a component.**
+
 ### Services for Government users 
 
 Most of us will have experienced the frustration resulting from using software that offers poor accessibilty or usability. Despite this there can be a tendency for development teams across the industry to pay less attention to accessibility and usability when developing tools for 'internal' use. GDS have provided clear [guidance for building or buying services for government](https://www.gov.uk/service-manual/design/services-for-government-users):
