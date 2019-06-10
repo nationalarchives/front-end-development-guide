@@ -46,19 +46,23 @@ Having considered some options we have opted to start implementing new functiona
 
 Further detail about the approach and implementation can be found in [tna-components](https://github.com/nationalarchives/tna-components) which acts as **the sole repository** for components that are to be used across environments.
 
-#### Not all JavaScript should be written as a component
+### Some key points about components
 
-The move to a component mindset does not mean that all JavaScript features will be implements as React components, or that all new features should be implemented in React. There is a place for vanilla JavaScript and jQuery.
-
-#### How to identify whether a feature is an appropriate candidate for implementation as a component
+#### How to determine if a feature is an appropriate candidate for implementation as a component
 
 There are a number of questions that developers should use to determine whether the component approach is suitable for a specific feature. These include: 
 
-* Is this a feature that is - or is likely to be - implemented across multiple applications and stacks? If so, it may be a candidate for componentization. If not, it probably isn't.
+* Is it a feature that is - or is likely to be - implemented across multiple applications and stacks? If so, it may be a candidate for componentization. If not, it probably isn't.
 * On balance, does the development of a component help us over the short- medium- and long-term.
 * To what extent will the component be replicating functionality that will also exist in the server-rendered code? If it is essentially the same, it may be that the server-rendered code alone will suffice (subject to the impact on user experience, of course)
 
-**Please always speak to the Lead Front End Developer _before_ embarking on development of a component.**
+#### ⚠️ Speak to the Lead Front End Developer _before_ embarking on creating a component
+
+This will help ensure we have a consistent approach and to allow developers to get a view on how best we might approach the feature as well as get a view on any potential pitfalls. 
+
+#### ⚠️ Not all JavaScript should be written as a component
+
+The move to a component mindset does not mean that all JavaScript features will be implements as React components, or that all new features should be implemented in React. There is a place for vanilla JavaScript and jQuery.
 
 ### Services for Government users 
 
