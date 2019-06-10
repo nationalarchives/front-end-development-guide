@@ -44,6 +44,8 @@ Having considered some options we have opted to start implementing new functiona
 * users' basic user needs are still met if the component is unavailable for any reason (See 'A progressive enhancement approach' section)
 * the relevant product owner is aware of any implementation choices and how these relate to GDS guidance
 
+Further detail about the approach and implementation can be found in [tna-components](https://github.com/nationalarchives/tna-components) which acts as **the sole repository** for components that are to be used across environments.
+
 #### Not all JavaScript should be written as a component
 
 The move to a component mindset does not mean that all JavaScript features will be implements as React components, or that all new features should be implemented in React. There is a place for vanilla JavaScript and jQuery.
