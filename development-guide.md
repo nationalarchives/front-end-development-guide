@@ -211,12 +211,16 @@ Where SVGs are used, they are used accessibly
 
 ### Images
 
-Decorative images should be implemented using the CSS `background-image` property, so that Assistive Technology can ignore the images. If a decorative image must be implemented using the HTML `<img>` element, you must ensure that:
+Decorative images should be implemented using the CSS `background-image` property, so that assistive technologies can ignore the images. If a decorative image must be implemented using the HTML `<img>` element, you must ensure that:
  
  - The element's `title` attribute is either absent or empty. 
- - The element's `alt` attribute is empty (`alt="""`). 
+ - The element's `alt` attribute is empty (`alt=""`). 
+ - The element's `role` attribute is set to presentation (`role="presentation"`).
  
- [See the W3C specification for more information.](https://www.w3.org/TR/WCAG20-TECHS/H67.html)
+For more information, see:
+
+1. [W3C's decorative images tutorial.](https://www.w3.org/WAI/tutorials/images/decorative/)
+2. [W3C's specification.](https://www.w3.org/TR/WCAG20-TECHS/H67.html)
 
 Where appropriate and practical we do make use of the incoming `srcset` attribute on `<img>` elements.
 
