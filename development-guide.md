@@ -175,8 +175,8 @@ We ensure our forms are **accessible**, **usable** and make best use of HTML5 an
 9. Error messages are clearly visible and associated (both visually and within the DOM) to the corresponding input. This includes: appropriate use of ARIA attributes; including `Error:` in the `<title>` tag; adding `Error:` `<span>` elements to labels of erroring inputs; and adding a `border-left` to erroring fieldsets.
 10. When forms are presenting one question at a time to the user, include the `<h1>` element inside of `<legend>` tag. If no `<legend>` exists, where appropriate, include the form field's `<label>` element inside of the `<h1>`. This prevents screen readers reading out the question multiple times.
 11. There is no reliance on the user clicking labels to select an option. Elements such as radio buttons and checkboxes should be enlarged and styled with custom CSS to improve their visibility and bounding box.
-12. Where appropriate, allow users to check their answers before submitting the form. Display clear confirmation once the form is submitted, and provide next steps.
-13. Date fields are appropriately implemented. DD/MM/YYYY text inputs take precedence over datepickers. An example of a valid date should be provided (i.e. 01/12/2020) and the user's browser focus should not automatically move between the day, month, and year boxes.
+12. Date fields are appropriately implemented. DD/MM/YYYY text inputs take precedence over datepickers. An example of a valid date should be provided (i.e. 01/12/2020) and the user's browser focus should not automatically move between the day, month, and year boxes.
+13. Where appropriate, allow users to check their answers before submitting the form. Display clear confirmation once the form is submitted, and provide next steps. 
 
 ---
 
