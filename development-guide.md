@@ -173,6 +173,7 @@ We ensure our forms are **accessible**, **usable** and make best use of HTML5 an
 7. Good use is made of appropriate ARIA landmark roles (i.e. ```<form role="search"><input type="search" /></form>```)
 8. HTML5 form validation is used, supported by JavaScript validation for older browsers. This is covered in the JavaScript section of this document
 9. Error messages are clearly visible and associated (both visually and within the DOM) to the corresponding input. This includes appropriate use of ARIA attributes.
+10. When forms are presenting one question at a time to the user, include the `<h1>` element inside of `<legend>` tag. If no `<legend>` exists, where appropriate, include the form field's `<label>` element inside of the `<h1>`. This prevents screen readers reading out the question multiple times.
 
 ---
 
