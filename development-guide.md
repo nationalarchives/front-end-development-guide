@@ -165,15 +165,18 @@ Navigation will typically be before primary content, and secondary content after
 We ensure our forms are **accessible**, **usable** and make best use of HTML5 and ARIA semantics. The peer review will check that:
 
 1. Forms are fully accessible via keyboard alone
-2. Forms are logically organised
+2. Forms are logically organised. GDS recommends labels and related inputs sit "top-to-bottom" instead of "left-to-right", as this prevents users having to scan in multiple directions to understand the form. GDS also recommend showing one question at a time, with users clicking "Continue" to progress the form.
 3. Instructions (such as 'required' fields) and cues are clearly identified to users
 4. Where appropriate, ```<fieldset>``` is used to group related inputs and ```<legend>``` is used to describe these groupings
 5. Form elements are appropriately labelled, with labels having a ```'for'``` attribute linking them to the corresponding input (we do not nest inputs in label elements)
 6. Appropriate use is made of HTML5 form semantics (i.e. ```<input type="tel" />```) so that user agents can assist users with an appropriate input mechanism
 7. Good use is made of appropriate ARIA landmark roles (i.e. ```<form role="search"><input type="search" /></form>```)
 8. HTML5 form validation is used, supported by JavaScript validation for older browsers. This is covered in the JavaScript section of this document
-9. Error messages are clearly visible and associated (both visually and within the DOM) to the corresponding input. This includes appropriate use of ARIA attributes.
+9. Error messages are clearly visible and associated (both visually and within the DOM) to the corresponding input. This includes: appropriate use of ARIA attributes; including `Error:` in the `<title>` tag; adding `Error:` `<span>` elements to labels of erroring inputs; and adding a `border-left` to erroring fieldsets.
 10. When forms are presenting one question at a time to the user, include the `<h1>` element inside of `<legend>` tag. If no `<legend>` exists, where appropriate, include the form field's `<label>` element inside of the `<h1>`. This prevents screen readers reading out the question multiple times.
+11. There is no reliance on the user clicking labels to select an option. Elements such as radio buttons and checkboxes should be enlarged and styled with custom CSS to improve their visibility and bounding box.
+12. Where appropriate, allow users to check their answers before submitting the form. Display clear confirmation once the form is submitted, and provide next steps.
+13. Date fields are appropriately implemented. DD/MM/YYYY text inputs take precedence over datepickers. An example of a valid date should be provided (i.e. 01/12/2020) and the user's browser focus should not automatically move between the day, month, and year boxes.
 
 ---
 
