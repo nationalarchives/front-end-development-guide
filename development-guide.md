@@ -317,6 +317,12 @@ We need to ensure we have accounted for users printing our content. While modern
 
 ---
 
+### CSS Colours & Shapes
+
+We need to ensure that colour contrasts meet the WCAG AA standard. This means that colour contrasts between the background/foreground of elements must be a minimum of 4.5:1. There is also an AAA standard which requires a 7:1 ratio. It is also important to note that if a user changes the page colours using their browser, it will change border colours to the same colour as the page's text colour. In this scenario, transparent borders are also modified to match the page's text colour. Therefore relying on CSS to display shapes (i.e. triangles) may not be appropriate, and patching this with `clip-path` is not supported on IE11.
+
+---
+
 ## Checkpoint 4: Enhance with JavaScript
 
 ### Transpiling new versions of ECMAScript to natively supported JavaScript
