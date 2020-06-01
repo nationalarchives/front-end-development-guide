@@ -225,6 +225,18 @@ For more information, see:
 
 Where appropriate and practical we do make use of the incoming `srcset` attribute on `<img>` elements.
 
+---
+
+### `<a>` buttons
+
+`<a>` tags can be styled to look like buttons. These are used to mimic the look of `<button>` and `<input type="submit">` elements when directing users to another page. When using these, it is important to:
+
+- Ensure these elements have the `role="button"` attribute. This allows users of assisstive technologies to say for example "Click the _help_ button."
+- Ensure these elements have the `draggable="false"` attribute. This prevents users with motor conditions from dragging the button by accident when they are trying to click on it.
+- Use JavaScript to allow users to interact with `<a>` buttons using the spacebar. See the [GDS implementation](https://github.com/alphagov/govuk-frontend/blob/master/src/govuk/components/button/button.js) for guidance.
+
+---
+
 ### There is good use of appropriate ARIA roles to support native semantics
 
 While HTML5 provides a range of new semantic elements which are recognised by newer browsers, there is poor support (even in newer browsers) when it comes to reporting these elements to the Accessibility API. This, and the lack of semantics when these elements are polyfilled with JavaScript, makes ARIA an important tool. Because the HTML5 spec was updated in mid-2014 to indicate compatibility between elements and ARIA roles, developers can see the compatibility of an element with ARIA roles, states and properties by looking up the tag within the [HTML5 specification](http://www.w3.org/TR/2014/REC-html5-20141028/).
