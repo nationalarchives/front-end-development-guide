@@ -25,6 +25,37 @@ Progressive enhancement sometimes confuses developers who are unfamiliar with th
 * the book [Adaptive Web Design](https://adaptivewebdesign.info/2nd-edition/) by Aaron Gustafson
 * the talk [Inclusive forms](https://obyford.com/posts/inclusive-forms/) by Ollie Byford
 
+## Frontend libraries and frameworks we use
+
+![jQuery logo](/images/jquery-logo.jpg "jQuery logo") ![React logo](/images/react-logo.jpg "React logo") ![Sass logo](/images/sass-logo.jpg "Sass logo") ![D3 logo](/images/d3-logo.jpg "Sass logo")
+
+In July 2020 front end developers met to review the front end technologies we use. This included: an honest discussion about how well our current front end approach meets our needs, and; reviewing industry trends to assess if there are new approaches we might benefit from.
+
+At the time of this review we had been using:
+
+* [jQuery](https://jquery.com) for DOM abstraction and simple progressive enhancements involving JavaScript
+* [React](https://reactjs.org) where a more involved and/or stateful component is required
+* [SASS](https://sass-lang.com) as a CSS extension language
+* [D3](https://d3js.org) to build bespoke dynamic JavaScript visualisations 
+ 
+These remain the leading frameworks in their space: Sass is by far the most mature, stable and popular CSS extension; D3 is the leading library for creating bespoke visualisations; and React and jQuery are the leading client-side JavaScript libraries:
+ 
+<blockquote cite="https://insights.stackoverflow.com/survey/2020#technology-programming-scripting-and-markup-languages-all-respondents">
+    <p>When focusing purely on web frameworks, we see that jQuery is still king, but is slowly losing ground to React.js and Angular year over year. We do see some consolidation, as more than 35% of respondents use jQuery, React, a version of Angular (combining Angular, which represents Angular 2+, and Angular.js) or a flavor of ASP.NET (ASP.NET or ASP.NET Core).
+</p>
+    <footer><a href="https://insights.stackoverflow.com/survey/2020#technology-programming-scripting-and-markup-languages-all-respondents"><cite>Stack Overflow - 2020 developer survey (Web Frameworks)</cite></a></footer>
+</blockquote> 
+
+There was broad consensus that these technologies are a good fit for the team and will help us meet challenges ahead. We have decided to continue using these technologies for The National Archives' new online platform.
+
+### How we use these frameworks
+
+During the review it was clear that there are varying levels of confidence with these frameworks. Some developers have less confidence with React, and the team as a whole has only recently started learning and working with D3. With this in mind developers have been asked to identify and undertake any additional learning they require to be comfortable working across these frameworks. 
+
+As we move forward with these technologies we want to ensure there is a level playing field going forward and avoid the tendency for any one individual to become a single-point-of-failure. In support of this, developers have been asked to ensure:
+ 
+* these frameworks are used with consideration for 'the next developer', avoiding unnecessary complexity
+* they actively avoid esoteric and/or emerging features **without first securing the buy in off all other developers**.
 
 ### An emphasis on accessibility
 
