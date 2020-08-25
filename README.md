@@ -1,49 +1,39 @@
-# Development guide and peer review
+![The National Archives logo](/images/tna.jpg "The National Archives logo")
+
+
+# Front end development guide
 
 ## Introduction
 
-This repository provides several resources to help developers at The National Archives:
+This guide has been produced to help developers at The National Archives:
 
-* deliver **high quality**, **inclusive** and **maintainable** digital services, while;
+* deliver **high quality**, **inclusive** and **maintainable** digital services, which 
+* ensure their work is **compliant with the standards and regulations** that apply to public sector websites
 * achieving a good **balance between innovation and effective use of our development capability**. 
 
-It is a living, open tool to which all can contribute and is regularly reviewed and refined to ensure it reflects emerging industry best practice. We welcome any and all feedback to be submitted either as a pull request or issue. 
+It covers all aspects of modern front end development and is regularly reviewed and refined to ensure it reflects emerging industry best practice. Please let us know if you think anything is missing or unclear, and we'll look into it. **This a living, open tool and contributions are welcomed**.  
 
 ## What's included
 
-The two primary components of this guide are:
+The [development guide](/development-guide.md) describes **standards and client-side architectural considerations for our digital services**. 
 
-1. a high-level [peer review checklist](/templates/peer-review-checklist.md) describing key considerations for digital services. This has sections covering: 
-    - **design** standards set out in The National Archives [design guide](http://nationalarchives.gov.uk/design-guide/);
-    - **development** standards and pull request code review;
-    - **testing** of accessibility and compatibility.
-2. a detailed client-side [development guide](/development-guide.md) describing the **standards and client-side architectural considerations for our digital services**. This is intentionally focused on the code that is delivered to the user's browser and is intended to **apply to all products** - _regardless of the server-side technology used to generate and deliver the HTML, CSS and JavaScript_
+All guidance is intentionally focused on the code that is delivered to the user's browser so it can **apply to all products** - _regardless of the server-side technology or client side frameworks_ being used for a particular application or site.
 
 ### What's not included
 
-This guide is focused on the details of implementation, not visual design elements which are covered in [The National Archives Design Guide](http://nationalarchives.gov.uk/design-guide)
+This guide is tightly focused on development practice and considerations related to implementation. It does not address visual and interaction design or user experience patterns.
 
 ### Supplemental material
 
 Additional materials include:
 
-* an [introduction for new developers](supporting_material/development_standards_introduction_for_new_developers.pdf) explaining the broader context, purpose and components of this guide;
-* an [introduction to progressive enhancement](supporting_material/progressive_enhancement_introduction.ppt).
-* [Version control guidance](/version_control/) including the **branching methodologies** we use in Git and how to write useful commit messages;
-* a range of [templates](/templates/) including accessibility acceptance criteria;
-* [Server-side](/server_side_coding_standards) coding standards _[Note: this is a new section (introduced in July 2017) but will be added to over time]_;
+* an [introduction to the front end development standards for new developers](supporting_material/front_end_development_standards_introduction_for_new_developers.pdf) explaining the broader context, purpose and components of this guide
+* an [introduction to progressive enhancement](supporting_material/progressive_enhancement_at_tna.pdf)
+* [Git guidance](/version_control/) including the **branching methodologies** we use in Git and how to write useful commit messages
     
-## How to conduct a peer review 
+## Use pull requests for peer review 
 
-The process of conducting a peer review begins with the **developer** identifying a peer reviewer. This is followed by:
-
-* The **peer reviewer** cloning this repository to their development machine and creating a copy of the [peer review checklist](/templates/peer-review-checklist.md) in the relevant year folder. For example, a peer review of an API toolkit conducted in 2018 would be saved as ```peer-review-api-toolkit.md``` within the ```2018``` directory.
-* The **peer reviewer** then populates the checklist (including a link to the pull request on GitHub) and discusses these with the developer. 
-* The **developer** acts on the comments and describes how they were resolved in the same ```peer-review-api-toolkit.md``` file.
-
-### Use pull requests for detailed discussions about code
-
-The peer review checklist is intended to ensure standards are met. It is not normally the correct place for detailed technical discussions about code. Such detailed technical discussions should instead be conducted as part of the **pull request**
+All code should be reviewed using the Pull Request process before it is merged or deployed. This review should ensure all relevant standards are met.
 
 ## Key things for developers to keep in mind
 
@@ -52,9 +42,9 @@ The peer review checklist is intended to ensure standards are met. It is not nor
 Perhaps the most important thing to bear in mind is the need to involve other specialists early since this can avoid significant problems later on. This includes:
 
 * **Speaking to the User Experience and Editorial teams before beginning development**. Their perspective and expertise will help shape the approach taken and can avoid significant changes later on.
-* **Discuss analytics requirements with the Web Metrics Analyst to establish what is required and how we can best support/achieve it
+* **Understanding analytics requirements to establish what is required and how we can best support/achieve it**
 * **Server-side and front-end developers discussing the technical approach _together_ before development begins**. A short conversation to agree on a technical approach that works from both perspectives can bring significant benefits and avoid one or both having to do significant refactoring and re-work.
-* Identifying a peer reviewer early.
+* Identifying a peer reviewer early, and discussing the technical approach with them as it evolves.
 
 ### Try to anticipate what is relevant to the activity and plan for it
 
@@ -63,4 +53,4 @@ Perhaps the most important thing to bear in mind is the need to involve other sp
 
 ### Let us know how we can improve this guidance
 
-The purpose of the development guide and peer review is to ensure we are delivering digital services that meet user needs in a way that is both efficient and effective. To achieve this it must work for product teams. While the current version has emerged over several iterations to reflect lessons we have learned, we are keen for it to continue to evolve. We therefore actively encourage to contribution to the guide via either a pull request, discussion at the Digital Services 10% meeting or by raising an issue in GitHub.
+The purpose of the development guide and peer review is to ensure we are delivering digital services that meet user needs in a way that is both efficient and effective. To achieve this it must work for product teams. While the current version has emerged over several iterations to reflect lessons we have learned, we are keen for it to continue to evolve. We therefore actively encourage to contribution to the guide via either a pull request, discussion at Code Club or by raising an issue in GitHub.
