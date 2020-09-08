@@ -33,7 +33,7 @@ In July 2020 front end developers met to review the front end technologies we us
 
 At the time of this review we had been using:
 
-* [jQuery](https://jquery.com) for DOM abstraction and simple progressive enhancements involving JavaScript
+* [jQuery](https://jquery.com) for simple DOM abstraction and progressive enhancements involving JavaScript
 * [React](https://reactjs.org) where a more involved and/or stateful component is required
 * [SASS](https://sass-lang.com) as a CSS extension language
 * [D3](https://d3js.org) to build bespoke dynamic JavaScript visualisations 
