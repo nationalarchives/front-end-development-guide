@@ -55,7 +55,7 @@ During the review it was clear that there are varying levels of confidence with 
 As we move forward with these technologies we want to ensure there is a level playing field going forward and avoid the tendency for any one individual to become a single-point-of-failure. In support of this, developers have been asked to ensure:
  
 * these frameworks are used with consideration for 'the next developer', avoiding unnecessary complexity
-* they actively avoid esoteric and/or emerging features **without first securing the buy in off all other developers**.
+* they actively avoid esoteric and/or emerging features **without first securing the buy in of all other developers**.
 
 ### An emphasis on accessibility
 
