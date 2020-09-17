@@ -402,7 +402,7 @@ We provide JavaScript validation for user agents that do not support HTML5.
 
 To ensure we meet our [legal duty to ensure our services are accessible to users](https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps#who-has-to-meet-the-2018-accessibility-regulations) the code reviewer will:
 
-1. Check compliance with the Web Content Accessibility Guidelines (WCAG 2.1) using the [W3C Quick Reference](https://www.w3.org/WAI/WCAG21/quickref/?currentsidebar=%23col_overview&levels=aaa&technologies=smil%2Cflash%2Csl) and an automated tool such as [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) or [WAVE](https://wave.webaim.org)
+1. Check compliance with the Web Content Accessibility Guidelines (WCAG 2.1) using the [W3C Quick Reference](https://www.w3.org/WAI/WCAG21/quickref/?currentsidebar=%23col_overview&levels=aaa&technologies=smil%2Cflash%2Csl) and an automated tool such as [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) or [WAVE](https://wave.webaim.org) **in addition to manual testing**.
 2. Ensure the site remains accessible in the event that JavaScript and CSS are not available
 3. Take a broad view of accessibility considerations that may be relevant, paying particular attention to ensuring we have done all that is possible to make things as accessible as possible. Resources to help with this judgement include:
     * the [Understanding disabilities and impairments: user profiles](https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles) by GDS
@@ -415,7 +415,16 @@ To ensure we meet our [legal duty to ensure our services are accessible to users
 2. We have considered a broad range of different abilities
 3. The service is accessible and usable without JavaScript and/or CSS
 
+#### You must include manual testing
+
+You must manually test for accessibility. Automated testing alone will not suffice.
+
+> "We cannot check all accessibility aspects automatically. Human judgement is required. Sometimes evaluation tools can produce false or misleading results. Web accessibility evaluation tools can not determine accessibility, they can only assist in doing so" [Selecting Web Accessibility Evaluation Tools, W3C WAI](https://www.w3.org/WAI/test-evaluate/tools/selecting/#cannot)
+
+If you need advice or guidance the front end specialists in Digital Services will be happy to help you.
+
 #### Useful tools for accessibility testing:
+
 In addition to the [W3C Quick Reference](https://www.w3.org/WAI/WCAG21/quickref/?currentsidebar=%23col_overview&levels=aaa&technologies=smil%2Cflash%2Csl) tools that may be useful are the: 
 
 * [Google Lighthouse](https://developers.google.com/web/tools/lighthouse)
