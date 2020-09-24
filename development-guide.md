@@ -430,6 +430,13 @@ In addition to the [W3C Quick Reference](https://www.w3.org/WAI/WCAG21/quickref/
 * [Google Lighthouse](https://developers.google.com/web/tools/lighthouse)
 * The Web Accessibility Evaluation Tool [(WAVE)](https://wave.webaim.org)
 * [aXe Chrome Extension ](https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US) which provides a developer tools panel that allows you to run an in-browser audit against a page, including a colour and contrast check. The extension features are described on the [Google Chrome Developers channel on YouTube](https://youtu.be/cOmehxAU_4s?t=8m58s)
+* The [Web Disability simulator](https://chrome.google.com/webstore/detail/web-disability-simulator/olioanlbgbpmdlgjnnampnnlohigkjla/related?hl=en-GB) is a Chrome extension that tries to simulate how a page might be experienced by different users
+* A screenreader such as:
+    * [Orca](https://help.gnome.org/users/orca/stable/) for Linux (included in some distributions) 
+    * [VoiceOver](https://www.apple.com/voiceover/info/guide/_1121.html) for Mac (built into macOS)
+    * [NVDA](https://www.nvaccess.org) for Windows. This is [now the most popular screen reader](https://webaim.org/projects/screenreadersurvey8/#used), having recently overtaken [JAWS](https://www.freedomscientific.com/products/software/jaws/) 
+
+If you come across any additional tools please let us know.
 
 ---
 
