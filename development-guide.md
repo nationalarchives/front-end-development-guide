@@ -421,7 +421,9 @@ You must manually test for accessibility. Automated testing alone will not suffi
 
 > "We cannot check all accessibility aspects automatically. Human judgement is required. Sometimes evaluation tools can produce false or misleading results. Web accessibility evaluation tools can not determine accessibility, they can only assist in doing so" [Selecting Web Accessibility Evaluation Tools, W3C WAI](https://www.w3.org/WAI/test-evaluate/tools/selecting/#cannot)
 
-If you need advice or guidance the front end specialists in Digital Services will be happy to help you.
+GDS provide [advice on how to perform manual testing](https://www.gov.uk/service-manual/helping-people-to-use-your-service/testing-for-accessibility). At the time of writing (September 2020) the recommendation is to use the checklist maintained by the US government's digital agency which categorises tests into three levels of compliance. We expect compliance with all levels and, if there are any failures, review the impact on WCAG 2.1 AA. 
+
+If you need specific advice or guidance the front end specialists in Digital Services will be happy to help you.
 
 #### Useful tools for accessibility testing:
 
