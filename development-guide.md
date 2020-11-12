@@ -25,6 +25,10 @@ Progressive enhancement sometimes confuses developers who are unfamiliar with th
 * the book [Adaptive Web Design](https://adaptivewebdesign.info/2nd-edition/) by Aaron Gustafson
 * the talk [Inclusive forms](https://obyford.com/posts/inclusive-forms/) by Ollie Byford
 
+### Practical application of progressive enhancement at TNA
+
+The practical application of progressive enhancement is mapped out [here](Front%20end%20design%20and%20build%20process.pdf). Essentially there are three distinct stages an interface must progress through to be considered done. This can be summarised as all user journeys being met with reliance upon only HTML and HTTP. Once this is in place we apply design, layout and other enhancements as non-breaking changes to the underlying journey.
+
 ## Frontend libraries and frameworks we use
 
 ![jQuery logo](/images/jquery-logo.jpg "jQuery logo") ![React logo](/images/react-logo.jpg "React logo") ![Sass logo](/images/sass-logo.jpg "Sass logo") ![D3 logo](/images/d3-logo.jpg "Sass logo")
