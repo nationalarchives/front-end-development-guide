@@ -27,7 +27,7 @@ Progressive enhancement sometimes confuses developers who are unfamiliar with th
 
 ### Practical application of progressive enhancement at TNA
 
-The practical application of progressive enhancement is mapped out [here](Front%20end%20design%20and%20build%20process.pdf). Essentially there are three distinct stages an interface must progress through to be considered done. This can be summarised as all user journeys being met with reliance upon only HTML and HTTP. Once this is in place we apply design, layout and other enhancements as non-breaking changes to the underlying journey.
+The practical application of progressive enhancement is mapped out [here](/supporting_material/Front%20end%20design%20and%20build%20process.pdf). Essentially there are three distinct stages an interface must progress through to be considered done. This can be summarised as all user journeys being met with reliance upon only HTML and HTTP. Once this is in place we apply design, layout and other enhancements as non-breaking changes to the underlying journey.
 
 ## Frontend libraries and frameworks we use
 
