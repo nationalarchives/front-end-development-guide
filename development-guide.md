@@ -65,6 +65,12 @@ As we move forward with these technologies we want to ensure there is a level pl
 * these frameworks are used with consideration for 'the next developer', avoiding unnecessary complexity
 * they actively avoid esoteric and/or emerging features **without first securing the buy in of all other developers**.
 
+#### CSS methodology: Block, Element, Modifier (BEM)
+
+On 4 Feb 2021, front end developers met to agree a CSS methodology for use in Etna and a The National Archives toolkit. Having considered a recommendation for utility CSS (as represented in [Tailwind.css](https://tailwindcss.com)) and results of the most recent [state of CSS survey](https://2020.stateofcss.com/en-US/technologies/), the team agreed that the [BEM methodology](http://getbem.com) would best reflect the needs of the team at this time.
+
+BEM will be used for CSS from this point forward.
+
 ### An emphasis on accessibility
 
 Developers will also notice an emphasis upon accessibility throughout this guide. This reflects the [legal duty to ensure our services are accessible to users](https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps#who-has-to-meet-the-2018-accessibility-regulations) which all developers should be aware of.
