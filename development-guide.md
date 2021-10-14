@@ -29,7 +29,7 @@ Progressive enhancement sometimes confuses developers who are unfamiliar with th
 
 The practical application of progressive enhancement is shown below and can be downloaded in [PDF format](/supporting_material/front_end_design_and_build_process.pdf). 
 
-![Front end design and development approach](/images/front-end-development-flow.png "jQuery logo") 
+![Front end design and development approach](/images/front-end-development-flow.png) 
 
 Essentially there are three distinct stages an interface must progress through to be considered done. This can be summarised as all user journeys being met with reliance upon only HTML and HTTP. Once this is in place we apply design, layout and other enhancements as non-breaking changes to the underlying journey.
 
