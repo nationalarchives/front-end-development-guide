@@ -380,7 +380,7 @@ Established libraries such as jQuery, Angular and ReactJS provide an excellent m
 In our experience many newer developers are unaware of this. To demonstrate, you can find out the number of cross browser bugs being addressed in the current version of jQuery (which has long since dropped support for older IE), for example, with 
 
 ```bash
-curl -L https://code.jquery.com/jquery-git2.js | grep Support: | wc -l
+curl -L https://code.jquery.com/jquery-3.6.0.js  | grep Support: | wc -l
 ```
 At the time of writing (July 2020) this reveals **61** cross browser bugs being managed in the current version of jQuery .  While many of cross-browser bugs are traditionally related to older browsers there are many fixes in these libraries tackling inconsistencies where you might not expect them.
 
