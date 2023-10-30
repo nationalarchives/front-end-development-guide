@@ -1,7 +1,10 @@
 ![The National Archives logo](/images/tna.jpg "The National Archives logo")
 
-
 # Front end development guide
+
+> ⚠️ October 2023
+> This handbook is no longer maintained.
+> It has been replaced with the [National Archives Engineering Handbook](https://github.com/nationalarchives/engineering-handbook).
 
 ## Introduction
 
